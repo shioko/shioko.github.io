@@ -69,10 +69,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-180610" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-180611-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/20180610-180610.html" class="article-date">
-  <time datetime="2018-06-10T15:00:00.000Z" itemprop="datePublished">2018-06-10</time>
+    <a href="/2018/180611-hello-world.html" class="article-date">
+  <time datetime="2018-06-10T16:00:00.000Z" itemprop="datePublished">2018-06-11</time>
 </a>
     
   </div>
@@ -83,7 +83,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/20180610-180610.html">第一篇文章！x</a>
+      <a class="article-title" href="/2018/180611-hello-world.html">第一篇文章！x</a>
     </h1>
   
 
@@ -91,57 +91,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>试一试能不能成功发表。<br>呜呜。</p>
+        <p>　　第一篇文章！！！<br>　　纪念一下，折腾了3个小时终于成功了qaq</p>
+<p>　　做点笔记，win7系统+hexo+gitBash。</p>
+<ul>
+<li><p>Windows系统可能会遇到的问题：ssh验证失败<br>　　错误提示：<br>　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxxxxxxx.<br>　　<del>可能是Windows系统下git bash没有访问本地host文件的原因</del><br>　　解决方案：<br>　　输入命令<br>···<br>ssh-keyscan -t rsa github.com &gt;&gt; ~/.ssh/known_hosts<br>···<br>　　然后再重复ssh验证步骤，会提示一行warning，直接回车就好。<br>　　 <del>万恶的windows</del></p>
+</li>
+<li><p>国内用户可能会遇到的问题：写作5分钟上传两小时<br>　　我不知道你们有没有遇到，反正我是遇到了，浏览器也是，不挂ssr根本刷不开github。<br>　　但是光ssr是没法全局代理的，需要用sstap才行，具体操作可以求助一下你玩外服游戏的朋友【。</p>
+</li>
+<li><p>github pages 404+域名绑定的问题<br>　　域名绑定需要用到CNAME，只支持输入·xxx.xxx.xxx·的格式。<br>　　然后github给每个用户只分配一个二级域名，就是username.github.io，所以你的仓库名也一定要建成这个！不然没的绑域名！<br>　　记住一定要是username.github.io，不是光username，否则实测没法把github pages挂到个人页面（master）底下，只能用分支页面，地址是username.github.io/reponame，没法绑CNAME。<br>　　然后80%的404问题和这个相关……因为实际的github pages地址并不是你想象的那一个：）眼瞎如我就出现了username.github.io/username这样的悲剧，心态大崩。<br>　　当然你如果不绑定自定域名的话，用分支界面也是一样可以部署hexo的。如果非要<del>白嫖</del>绑两个github pages的话，你不会再注册一个号吗→_→</p>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/20180610-180610.html" data-id="cji92cpaq0000qgs73t7gp213" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/20180610-hello-world.html" class="article-date">
-  <time datetime="2018-06-10T14:55:54.855Z" itemprop="datePublished">2018-06-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/20180610-hello-world.html">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/20180610-hello-world.html" data-id="cji92cpbc0001qgs7nhlw2ssw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/180611-hello-world.html" data-id="cji93xgts0000d0s76ukoxd7c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -182,11 +146,7 @@
       <ul>
         
           <li>
-            <a href="/2018/20180610-180610.html">第一篇文章！x</a>
-          </li>
-        
-          <li>
-            <a href="/2018/20180610-hello-world.html">Hello World</a>
+            <a href="/2018/180611-hello-world.html">第一篇文章！x</a>
           </li>
         
       </ul>
