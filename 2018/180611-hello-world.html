@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="少女癌">
 <meta property="og:description" content="第一篇文章！！！　　纪念一下，折腾了3个小时终于成功了qaq 　　做点笔记，win7系统+hexo+gitBash。  Windows系统可能会遇到的问题：ssh验证失败　　错误提示：　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxx">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-10T17:30:05.112Z">
+<meta property="og:updated_time" content="2018-06-10T17:36:37.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇文章！x">
 <meta name="twitter:description" content="第一篇文章！！！　　纪念一下，折腾了3个小时终于成功了qaq 　　做点笔记，win7系统+hexo+gitBash。  Windows系统可能会遇到的问题：ssh验证失败　　错误提示：　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxx">
@@ -93,18 +93,21 @@
         <p>　　第一篇文章！！！<br>　　纪念一下，折腾了3个小时终于成功了qaq</p>
 <p>　　做点笔记，win7系统+hexo+gitBash。</p>
 <ul>
-<li><p>Windows系统可能会遇到的问题：ssh验证失败<br>　　错误提示：<br>　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxxxxxxx.<br>　　<del>可能是Windows系统下git bash没有访问本地host文件的原因</del><br>　　解决方案：<br>　　输入命令<br>···<br>ssh-keyscan -t rsa github.com &gt;&gt; ~/.ssh/known_hosts<br>···<br>　　然后再重复ssh验证步骤，会提示一行warning，直接回车就好。<br>　　 <del>万恶的windows</del></p>
+<li>Windows系统可能会遇到的问题：ssh验证失败<br>　　错误提示：<br>　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxxxxxxx.<br>　　<del>可能是Windows系统下git bash没有访问本地host文件的原因</del><br>　　解决方案：<br>　　输入命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keyscan -t rsa github.com &gt;&gt; ~/.ssh/known_hosts</span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<p>　　然后再重复ssh验证步骤，会提示一行warning，直接回车就好。<br>　　 <del>万恶的windows</del></p>
+<ul>
 <li><p>国内用户可能会遇到的问题：写作5分钟上传两小时<br>　　我不知道你们有没有遇到，反正我是遇到了，浏览器也是，不挂ssr根本刷不开github。<br>　　但是光ssr是没法全局代理的，需要用sstap才行，具体操作可以求助一下你玩外服游戏的朋友【。</p>
 </li>
-<li><p>github pages 404+域名绑定的问题<br>　　域名绑定需要用到CNAME，只支持输入·xxx.xxx.xxx·的格式。<br>　　然后github给每个用户只分配一个二级域名，就是username.github.io，所以你的仓库名也一定要建成这个！不然没的绑域名！<br>　　记住一定要是username.github.io，不是光username，否则实测没法把github pages挂到个人页面（master）底下，只能用分支页面，地址是username.github.io/reponame，没法绑CNAME。<br>　　然后80%的404问题和这个相关……因为实际的github pages地址并不是你想象的那一个：）眼瞎如我就出现了username.github.io/username这样的悲剧，心态大崩。<br>　　当然你如果不绑定自定域名的话，用分支界面也是一样可以部署hexo的。如果非要<del>白嫖</del>绑两个github pages的话，你不会再注册一个号吗→_→</p>
+<li><p>github pages 404+域名绑定的问题<br>　　域名绑定需要用到CNAME，只支持输入<code>xxx.xxx.xxx</code>的格式。<br>　　然后github给每个用户只分配一个二级域名，就是<code>username.github.io</code>，所以你的仓库名也一定要建成这个！不然没的绑域名！<br>　　记住一定要是<code>username.github.io</code>，不是光<code>username</code>，否则实测没法把github pages挂到个人页面（master）底下，只能用分支页面，地址是<code>username.github.io/reponame</code>，没法绑CNAME。<br>　　然后80%的404问题和这个相关……因为实际的github pages地址并不是你想象的那一个：）眼瞎如我就出现了<code>username.github.io/username</code>这样的悲剧，心态大崩。<br>　　当然你如果不绑定自定域名的话，用分支界面也是一样可以部署hexo的。如果非要<del>白嫖</del>绑两个github pages的话，你不会再注册一个号吗→_→</p>
 </li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/180611-hello-world.html" data-id="cji93xgts0000d0s76ukoxd7c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/180611-hello-world.html" data-id="cji942byj0000t8s76y7dz1gn" class="article-share-link">Share</a>
       
       
     </footer>
