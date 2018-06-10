@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="少女癌">
 <meta property="og:description" content="第一篇文章！！！　　纪念一下，折腾了3个小时终于成功了qaq 　　做点笔记，win7系统+hexo+gitBash。  Windows系统可能会遇到的问题：ssh验证失败　　错误提示：　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxx">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-10T17:48:39.181Z">
+<meta property="og:updated_time" content="2018-06-10T18:00:22.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇文章！x">
 <meta name="twitter:description" content="第一篇文章！！！　　纪念一下，折腾了3个小时终于成功了qaq 　　做点笔记，win7系统+hexo+gitBash。  Windows系统可能会遇到的问题：ssh验证失败　　错误提示：　　The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxx">
@@ -102,12 +102,14 @@
 </li>
 <li><p>github pages 404+域名绑定的问题<br>　　域名绑定需要用到CNAME，只支持输入<code>xxx.xxx.xxx</code>的格式。<br>　　然后github给每个用户只分配一个二级域名，就是<code>username.github.io</code>，所以你的仓库名也一定要建成这个！不然没的绑域名！<br>　　记住一定要是<code>username.github.io</code>，不是光<code>username</code>，否则实测没法把github pages挂到个人页面（master）底下，只能用分支页面，地址是<code>username.github.io/reponame</code>，没法绑CNAME。<br>　　然后80%的404问题和这个相关……因为实际的github pages地址并不是你想象的那一个：）眼瞎如我就出现了<code>username.github.io/username</code>这样的悲剧，心态大崩。<br>　　当然你如果不绑定自定域名的话，用分支界面也是一样可以部署hexo的。如果非要<del>白嫖</del>绑两个github pages的话，你不会再注册一个号吗→_→</p>
 </li>
+<li><p>补充一下<br>　　关于域名绑定，本地添加CNAME文件之后ping一下github pages页面的dns，然后直接把dns地址绑定给域名【而不要再用cname绑定】，访问速度会快很多(๑•̀ㅂ•́)ﻭ✧<br>　　不要问我是什么原理，我也不知道，可能跟国内网络供应商的dns污染有关吧╮(╯_╰)╭</p>
+</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/180610-hello-world.html" data-id="cji94o84f0000lws7f8pp5cr8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/180610-hello-world.html" data-id="cji94x82f00004gs7m1tugek7" class="article-share-link">Share</a>
       
       
     </footer>
