@@ -1094,7 +1094,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #f9a972;
+  background: #fff;
 }
 .site-meta {
   margin: 0;
@@ -1840,7 +1840,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2474ff;
+  background: #914fdb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2288,7 +2288,7 @@ img:hover {
   height: 10px;
   opacity: 0.5;
   background: #555;
-  border: 1px solid #fff;
+  border: 0;
   border-radius: 50%;
 }
 .category-all-page .category-all-title {
@@ -2974,13 +2974,15 @@ body {
   box-shadow: 0 8px 20px -3px rgba(0,0,0,0.6);
 }
 .site-meta {
-  background: #000;
-  border-radius: 0 0 70px 70px;
-  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
+  border-radius: 0 0 0 0;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.6);
   transition: all 0.2s linear;
 }
 .site-meta:hover {
-  border-radius: 0 0 10px 10px;
+  background: rgba(0,0,0,0.9);
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.6);
 }
 .site-title {
   color: #f9a972;
@@ -2991,20 +2993,32 @@ body {
   color: #fff;
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.75);
   border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.menu {
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.menu .menu-item a {
+  border-radius: 50px 0 0 50px;
+}
+.menu .menu-item a:hover,
+.menu-item-active a {
+  background: rgba(255,255,255,0.5);
+  border-radius: 50px 0 0 50px;
+  border-color: transparent;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
 }
 .sidebar {
   background: transparent;
 }
 .sidebar-inner {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.75);
   border-radius: 10px;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
-}
-.site-author-name {
-  color: #000;
 }
 .content-wrap {
   background: rgba(255,255,255,0.9);
@@ -3024,13 +3038,48 @@ body {
 .posts-expand .post-tags a:hover {
   border-bottom: 0;
 }
+.site-author-name {
+  padding-top: 15px;
+  font-size: 18px;
+  color: #000;
+  text-shadow: 0 0 15px transparent;
+  transition: all 0.2s linear;
+}
+.site-author-name:hover {
+  color: #f9a972;
+  text-shadow: 0 0 15px #fff;
+}
 .site-state-item,
 .site-state-item:first-child {
   padding: 10px 15px;
 }
-.links-of-author a:hover {
-  text-shadow: 1px 1px 2px #fff;
+.site-state-item:hover {
+  text-shadow: 0 0 15px #fff;
+}
+.site-description,
+.site-state-item-name {
+  color: #666;
+  text-shadow: 1px 1px 1px #fff;
+}
+.site-overview {
+  text-align: left;
+}
+.links-of-author {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.links-of-author a {
   background: transparent;
+  border-radius: 50px 0 0 50px;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0);
+  transition: all 0.2s linear;
+}
+.links-of-author a:hover {
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px #fff;
+  border-radius: 50px 0 0 50px;
 }
 .tag-cloud a:hover {
   border-bottom: 1px solid transparent;
@@ -3040,4 +3089,18 @@ body {
   border: 2px solid #f9a972;
   border-radius: 5px;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.posts-collapse::after {
+  background: transparent;
+  border-left: 2px dashed #f9a972;
+  opacity: 0.3;
+}
+.posts-collapse .collection-title::before {
+  margin-left: -6px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 10px #fff;
+}
+.posts-collapse .post-header::before {
+  border: 0;
 }
