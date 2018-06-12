@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="今天给主题加了背景！加了圆角！加了小动画！　　超级开心了xd">
+<meta name="keywords" content="佐信,素材库,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="捣鼓CSS+一个佐信脑洞">
+<meta property="og:url" content="http://co5.me/2018/180613-diary.html">
+<meta property="og:site_name" content="†少女癌†">
+<meta property="og:description" content="今天给主题加了背景！加了圆角！加了小动画！　　超级开心了xd">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-12T16:35:53.254Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="捣鼓CSS+一个佐信脑洞">
+<meta name="twitter:description" content="今天给主题加了背景！加了圆角！加了小动画！　　超级开心了xd">
+
+
+
+
+
+
+  <link rel="canonical" href="http://co5.me/2018/180613-diary.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>捣鼓CSS+一个佐信脑洞 | †少女癌†</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">†少女癌†</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">-Candy Cancer-</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />-首页 °| Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />-关于 °| About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />-标签 °| Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />-分类 °| Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />-归档 °| Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-to-natsu">
+    <a href="/categories/遠夏/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-paper-plane"></i> <br />【-遠・夏-】</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://co5.me/2018/180613-diary.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="co5=Shioko">
+      <meta itemprop="description" content="大声BB，小声填坑。">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="†少女癌†">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">捣鼓CSS+一个佐信脑洞
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-13 00:35:39 / 修改时间：00:35:53" itemprop="dateCreated datePublished" datetime="2018-06-13T00:35:39+08:00">2018-06-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/汐喵晒鱼/" itemprop="url" rel="index"><span itemprop="name">汐喵晒鱼</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>　　今天给主题加了背景！加了圆角！加了小动画！<br>　　超级开心了xd</p>
+<a id="more"></a>
+<p>　　暂时还没有解决的问题：</p>
+<ul>
+<li>左边菜单栏的按钮动画，是js脚本格式的，不知道能不能改成透明的。</li>
+<li>想加一个头图，然后发现左边的头像框是按滚动多少距离悬挂的，如果加了头图就会提前挂起来挡住菜单栏，只能暂时作罢了=-=</li>
+<li>手机界面元素共通，出现了很多难以言喻的问题，比如圆角背景突然漏了个洞【痴呆.jpg</li>
+<li>字数统计和搜索插件，感觉好像是自带了，但实际上不知道怎么调用哎x明天再试试看好了？</li>
+</ul>
+<p>　　总之目标是能把next改得不像next？感觉还是很有难度的啊_ (:з」∠) _</p>
+<p>　　网易云日推真是个夸不得的东西，昨天刚夸它质量高全部收藏了，今天就给我推一堆肥宅快乐曲，谁tm要一边听幼女喊欧尼酱一边做css代码啊！找个空气嗓的loli喊欧内酱我还能考虑一下好吗【？<br>　　昨天把佐信短篇都搬过来了，然后睡前<del>大概是早上8点</del>翻了一遍发现大腿肉真好吃……于是又想开新坑了。</p>
+<ul>
+<li>脑洞1：底特律paro</li>
+</ul>
+<p>　　警局局长异三郎在调查自己妻女失踪案件时收留了骸酱，后来因为一直长不大发现骸酱是仿生人，然而并没有发现骸酱还是军用儿童型原型机。<br>　　异三郎发现Cyberlife正在秘密进行新型军用仿生人实验企图颠覆政权，因此被Cyberlife高层（虚大大）做掉了，骸酱悲痛欲绝，一番颓废之后站起来参加了仿生人革命大军……<br>　　但是感觉江户：变人听起来就像是个什么变戏法的，不如把设定改改，仿生人改成人偶写个和风故事？</p>
+<p>　　于是有了下面这个↓</p>
+<ul>
+<li>脑洞2：底特律paro·改</li>
+</ul>
+<p>　　传闻有妖怪在江户下了诅咒，人偶会突然有自我的意识获得生命从主人家逃跑，甚至伤害主人。人偶师异三郎决心找出这一系列事件的幕后黑手，途中收留了被诅咒的人偶骸酱，两人一起经历了许多凑章节数的故事【？】，最后找出了幕后黑手虚大大！<br>　　然后被虚大大打败了【……<br>　　于是长大后的信女也成为了人偶师【被诅咒的人偶就可以长大了！】继承了异三郎的遗志行走在江户的大街小巷之中——<br>　　完全变成别的故事了吧，喂x</p>
+<p>　　早上去微博发脑洞的时候还抓到了好久不见的锦岛【牵丝戏的<del>坑主</del>作者】，跟我的lofter一样从17年7月开始就销声匿迹了【……，不过碰巧我刷微博的时候她也在，还聊了几句，开心。锦岛君说我是“一个人撑起一个tag”的同人作者233333想想有点凄凉，同人热度写得跟原创一样也是没谁了x<br>　　不过我确实是抱着原创的态度写的，即使是原文的设定都会一丝不苟地再交代一遍。话虽如此，在真正写起原创的时候，却发现“同人的认真”和“原创需要的认真”相比起来简直是九牛一毛。同人的设定交代只是单纯的把原作里有的内容概括地一提即可，读者会自动在脑内搜索出相关的内容；而原创则完全不能用这种概括的手法，每个设定都必须交代清楚，否则读者压根看不懂你在写什么。这几年车祸的原创脚本也就是输在世界观与剧情割裂或者根本没交代清楚这一点，还有一个特例是突然拉出外星反派的国家队……你们的剧本团队是不是混了只猩猩进去啊x<br>　　总之现阶段试试能不能梦蚀和那个江户人偶的故事双开吧，但是我还有KY三部曲想写……哎头疼。<br>　　怎么说呢，年纪大了确实没有当初那个一有脑洞就可以马上刷刷刷写完的行动力了，也可能是我太久没写文疏于情节构造，以及手机上码字的观感和电脑也不一样……难以控制篇幅。现在的我开个坑大纲要来来回回重写三五遍，年轻的时候【？】有这个时间都已经写完前三章了，岁月啊~<br>　　不过想想一个人撑起一个坑的时间不也是那么过来的嘛，我继续一个人撑起一个坑也没什么不好。<br>　　我就在坑底坐着，看看又有哪个小可爱会不小心掉进来~</p>
+<p>　　感觉活下去的意义+1</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/佐信/" rel="tag"># 佐信</a>
+          
+            <a href="/tags/素材库/" rel="tag"># 素材库</a>
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/180612-music.html" rel="next" title="用google drive给hexo文章添加BGM">
+                <i class="fa fa-chevron-left"></i> 用google drive给hexo文章添加BGM
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="co5=Shioko" />
+            
+              <p class="site-author-name" itemprop="name">co5=Shioko</p>
+              <p class="site-description motion-element" itemprop="description">大声BB，小声填坑。</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/shioko" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://cmx.im/@shioko" target="_blank" title="Mastodon"><i class="fa fa-fw fa-comments"></i>Mastodon</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:shioko@protonmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://shioko.lofter.com" target="_blank" title="Lofter"><i class="fa fa-fw fa-book"></i>Lofter</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">co5=Shioko</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">24k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">43 分钟</span>
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
