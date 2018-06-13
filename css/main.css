@@ -1840,7 +1840,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa1ff;
+  background: #e9ff58;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3162,4 +3162,64 @@ del {
 }
 del:hover {
   color: #aaa;
+}
+.gitment-container {
+  font-family: "PingFang SC", "Microsoft YaHei" !important;
+}
+a.gitment-header-issue-link:hover,
+a.gitment-footer-project-link:hover,
+a.gitment-editor-login-link:hover,
+a.gitment-comment-name:hover,
+.gitment-container a:hover {
+  text-decoration: none !important;
+  color: #f9a972 !important;
+  text-shadow: 1px 1px 1px #fff;
+}
+.gitment-header-container span:hover {
+  color: #f9a972 !important;
+}
+.gitment-header-like-btn.liked svg,
+.gitment-comment-like-btn.liked svg {
+  color: #f9a972 !important;
+}
+.gitment-comment-header {
+  background: transparent !important;
+}
+.gitment-editor-main::after,
+.gitment-comment-main::after {
+  border-color: transparent !important;
+}
+.gitment-comment-main,
+.gitment-editor-main {
+  border-radius: 10px !important;
+  background: rgba(255,255,255,0.3) !important;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.gitment-editor-body textarea {
+  border-radius: 0 0 10px 10px !important;
+}
+.gitment-editor-tab {
+  border-radius: 10px 10px 0 0 !important;
+}
+.gitment-editor-submit,
+.gitment-comments-init-btn {
+  background: rgba(255,255,255,0.5) !important;
+  color: #f9a972 !important;
+  border-radius: 10px !important;
+  border: 2px solid #f9a972 !important;
+  transition: all 0.2s linear;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3) !important;
+}
+.gitment-editor-submit:hover,
+.gitment-comments-init-btn:hover {
+  background: #f9a972 !important;
+  color: #fff !important;
+}
+a.gitment-footer-project-link,
+a.gitment-editor-login-link {
+  color: #aaa !important;
+}
+.gitment-container a,
+.gitment-container a:visited {
+  border-bottom: 0 !important;
 }
