@@ -1840,7 +1840,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #88b6ff;
+  background: #ddf4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2969,8 +2969,9 @@ body {
 }
 .headband {
   height: 0px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0);
   border-bottom: 5px solid #000;
+/*-webkit-border-image:url(https://www.w3schools.com/cssref/border.png) 30 round;*/
   box-shadow: 0 8px 20px -3px rgba(0,0,0,0.6);
 }
 .site-meta {
@@ -2981,8 +2982,8 @@ body {
 }
 .site-meta:hover {
   background: rgba(0,0,0,0.9);
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.6);
+  border-radius: 0 0 70px 70px;
+  box-shadow: 0 8px 20px -3px rgba(0,0,0,0.6);
 }
 .site-title {
   color: #f9a972;
@@ -3085,10 +3086,14 @@ body {
   border-bottom: 1px solid transparent;
 }
 .btn {
+  background: transparent;
   color: #f9a972;
   border: 2px solid #f9a972;
   border-radius: 5px;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.page-archive .posts-collapse .archive-move-on {
+  background: #000;
 }
 .posts-collapse::after {
   background: transparent;
@@ -3100,7 +3105,48 @@ body {
   width: 10px;
   height: 10px;
   box-shadow: 0 0 10px #fff;
+  z-index: 500;
 }
 .posts-collapse .post-header::before {
   border: 0;
+}
+.posts-collapse .collection-title h2 {
+  margin-left: -20px;
+  margin-right: 400px;
+  padding: 5px 20px 5px 0;
+  text-align: right;
+  background: rgba(255,255,255,0.3);
+  border-radius: 0 50px 50px 0;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
+}
+.posts-collapse .collection-title h2:hover {
+  margin-right: 100px;
+  background: rgba(255,255,255,0.5);
+}
+.posts-collapse .collection-title h3 {
+  margin-left: -20px;
+  margin-right: 470px;
+  padding: 5px 20px 5px 0;
+  text-align: right;
+  background: rgba(255,255,255,0.3);
+  border-radius: 0 50px 50px 0;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
+}
+.posts-collapse .collection-title h3:hover {
+  margin-right: 350px;
+  background: rgba(255,255,255,0.5);
+}
+.footer a {
+  color: #ddd;
+}
+.footer a:hover {
+  color: #f9a972;
+}
+del {
+  color: #fff;
+}
+del:hover {
+  color: #aaa;
 }
