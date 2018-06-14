@@ -1748,16 +1748,6 @@ pre .javascript .function {
 .site-author-image {
   border-radius: 100%;
 }
-img:hover {
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -ms-transform: rotate(360deg);
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -ms-transform: rotateZ(360deg);
-  -o-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
-}
 .site-author-name {
   margin: 0;
   text-align: center;
@@ -1840,7 +1830,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4f6e1a;
+  background: #39901b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3057,7 +3047,7 @@ body {
   font-size: 18px;
   color: #000;
   text-shadow: 0 0 15px transparent;
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
 }
 .site-author-name:hover {
   color: #f9a972;
@@ -3125,7 +3115,7 @@ body {
 }
 .posts-collapse .collection-title h2 {
   margin-left: -20px;
-  margin-right: 400px;
+  width: 180px;
   padding: 5px 20px 5px 0;
   text-align: right;
   background: rgba(255,255,255,0.3);
@@ -3134,12 +3124,12 @@ body {
   transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
 }
 .posts-collapse .collection-title h2:hover {
-  margin-right: 100px;
+  width: 400px;
   background: rgba(255,255,255,0.5);
 }
 .posts-collapse .collection-title h3 {
   margin-left: -20px;
-  margin-right: 470px;
+  width: 100px;
   padding: 5px 20px 5px 0;
   text-align: right;
   background: rgba(255,255,255,0.3);
@@ -3148,7 +3138,7 @@ body {
   transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
 }
 .posts-collapse .collection-title h3:hover {
-  margin-right: 350px;
+  width: 250px;
   background: rgba(255,255,255,0.5);
 }
 .footer a {
@@ -3244,4 +3234,42 @@ a.gitment-editor-login-link {
   border-radius: 5px;
   color: #f9a972;
   margin: 0 2px;
+}
+.menu .menu-item-search {
+  background: rgba(0,0,0,0.7);
+  margin-left: -10px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.4) inset, 0 -8px 20px -8px rgba(255,255,255,0.4) inset;
+  transition: background 0.1s linear;
+}
+.menu .menu-item-search:hover {
+  background: rgba(0,0,0,0.8);
+}
+.menu .menu-item-search a {
+  margin-left: 10px;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+.menu .menu-item-search a:hover {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: 0 0 10px #fff;
+}
+.site-author-image {
+  padding: 2px;
+}
+.site-author-image:hover {
+  padding: 2px;
+}
+.posts-expand .post-body img {
+  border-radius: 20px;
+  max-width: 90%;
+  opacity: 0.8;
+  box-shadow: 0px 8px 20px -10px #000;
+  transition: all 0.2s linear;
+}
+.posts-expand .post-body img:hover {
+  border-radius: 0;
+  opacity: 1;
 }
