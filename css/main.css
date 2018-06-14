@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d15b6b;
+  background: #cf8cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3152,6 +3152,18 @@ del {
 }
 del:hover {
   color: #aaa;
+}
+.post-body,
+.posts-collapse {
+  margin-bottom: 50px;
+}
+.category-all-page .category-list {
+  column-count: 2;
+  max-width: 70%;
+  margin-left: 25%;
+}
+.category-all-page .category-list-item {
+  margin-top: 0;
 }
 .gitment-container {
   font-family: "PingFang SC", "Microsoft YaHei" !important;

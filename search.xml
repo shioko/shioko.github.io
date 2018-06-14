@@ -107,6 +107,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[【About】一个试图自学前端开发的美少女]]></title>
+    <url>%2F2018%2F180611-about.html</url>
+    <content type="text"><![CDATA[————June 11 / 2018———— 标题是骗人的 .+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+. 你好，这里是shioko 你也可以叫我汐汐子/汐喵/袖口 技能是写作和画画 以及曾经在V坑认证的微博音乐人 我真的已经完全忘记怎么编曲了，虽然写曲子的技能点还在 .+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+. 爱好是打游戏_ (:з」∠) _ 你可以跟我讨论少女前线/崩坏2/守望先锋 正在试图研究做自己的avg游戏 题材是靠潜入梦境查案的轻推理xd 这个设定已经推倒重写了好几年了，这次应该是彻底定下来了 名字是 【梦蚀 / Dear Dreamer】 应该也会后续在这里放出同名的小说(๑•̀ㅂ•́)ﻭ✧ 游戏这123456年里多半是做不出来的，先把剧本写出来吧省的忘了 .+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+. 域名的意思 co5在日文中读作shi o go 刚好是shioko的谐音xd 不过读音跟盐湖可能更像一点OTL .+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+. 我是真的在试图自学前端开发x 就算数据收集做不好，至少也要做一个合格的网页美工吧 _ (:з」∠) _ 为Mastodon写过一个草莓主题，委托站长发在github上 stylish上也有不定期更新 下一个目标是给自己的部落格写个新主题！]]></content>
+      <categories>
+        <category>维护日志</category>
+      </categories>
+      <tags>
+        <tag>about</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第一篇文章！x]]></title>
     <url>%2F2018%2F180611-hello-world.html</url>
     <content type="text"><![CDATA[第一篇文章！！！ 纪念一下，折腾了3个小时终于成功了qaq 做点笔记，win7系统+hexo+gitBash。 Windows系统可能会遇到的问题：ssh验证失败 错误提示： The authenticity of host ‘gitbub.com(192.30.255.113)’ can’t be established. RSA key fingerprint is xxxxxxxxxx. 可能是Windows系统下git bash没有访问本地host文件的原因 解决方案： 输入命令1ssh-keyscan -t rsa github.com &gt;&gt; ~/.ssh/known_hosts 然后再重复ssh验证步骤，会提示一行warning，直接回车就好。 万恶的windows 国内用户可能会遇到的问题：写作5分钟上传两小时 我不知道你们有没有遇到，反正我是遇到了，浏览器也是，不挂ssr根本刷不开github。 但是光ssr是没法全局代理的，需要用sstap才行，具体操作可以求助一下你玩外服游戏的朋友【。 github pages 404+域名绑定的问题 域名绑定需要用到CNAME，只支持输入xxx.xxx.xxx的格式。 然后github给每个用户只分配一个二级域名，就是username.github.io，所以你的仓库名也一定要建成这个！不然没的绑域名！ 记住一定要是username.github.io，不是光username，否则实测没法把github pages挂到个人页面（master）底下，只能用分支页面，地址是username.github.io/reponame，没法绑CNAME。 然后80%的404问题和这个相关……因为实际的github pages地址并不是你想象的那一个：）眼瞎如我就出现了username.github.io/username这样的悲剧，心态大崩。 当然你如果不绑定自定域名的话，用分支界面也是一样可以部署hexo的。如果非要白嫖绑两个github pages的话，你不会再注册一个号吗→_→ 补充一下 关于域名绑定，本地添加CNAME文件之后ping一下github pages页面的dns，然后直接把dns地址绑定给域名【而不要再用cname绑定】，访问速度会快很多(๑•̀ㅂ•́)ﻭ✧ 不要问我是什么原理，我也不知道，可能跟国内网络供应商的dns污染有关吧╮(╯_╰)╭]]></content>
