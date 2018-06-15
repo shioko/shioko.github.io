@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8a3c14;
+  background: #b9fffe;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3116,7 +3116,7 @@ body {
 }
 .posts-collapse .collection-title h2 {
   margin-left: -20px;
-  width: 180px;
+  width: 33%;
   padding: 5px 20px 5px 0;
   text-align: right;
   background: rgba(255,255,255,0.3);
@@ -3125,12 +3125,12 @@ body {
   transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
 }
 .posts-collapse .collection-title h2:hover {
-  width: 400px;
+  width: 66%;
   background: rgba(255,255,255,0.5);
 }
 .posts-collapse .collection-title h3 {
   margin-left: -20px;
-  width: 100px;
+  width: 20%;
   padding: 5px 20px 5px 0;
   text-align: right;
   background: rgba(255,255,255,0.3);
@@ -3139,7 +3139,7 @@ body {
   transition: all 1s cubic-bezier(0.17, 0.08, 0.04, 0.99);
 }
 .posts-collapse .collection-title h3:hover {
-  width: 250px;
+  width: 45%;
   background: rgba(255,255,255,0.5);
 }
 .footer a {
@@ -3154,9 +3154,24 @@ del {
 del:hover {
   color: #aaa;
 }
+.posts-expand .post-meta {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  max-width: 70%;
+}
+.post-time {
+  display: block;
+  margin-bottom: 10px;
+}
+.post-category .post-meta-divider {
+  display: none;
+}
 .post-body,
 .posts-collapse {
+  margin: auto;
   margin-bottom: 50px;
+  max-width: 95%;
 }
 .category-all-page .category-list {
   column-count: 2;
