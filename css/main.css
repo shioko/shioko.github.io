@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3736ff;
+  background: #bdf7a1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3148,12 +3148,6 @@ body {
 .footer a:hover {
   color: #f9a972;
 }
-del {
-  color: #fff;
-}
-del:hover {
-  color: #aaa;
-}
 .posts-expand .post-meta {
   margin: auto;
   margin-top: 25px;
@@ -3291,6 +3285,7 @@ a.gitment-editor-login-link {
   padding: 2px;
 }
 .posts-expand .post-body img {
+  margin: 5px auto -15px;
   border-radius: 20px;
   max-width: 90%;
   opacity: 0.8;
@@ -3300,4 +3295,27 @@ a.gitment-editor-login-link {
 .posts-expand .post-body img:hover {
   border-radius: 0;
   opacity: 1;
+}
+.posts-expand .post-body li img {
+  margin: 5px auto 7px;
+}
+del {
+  color: #fff;
+}
+del:hover {
+  color: #aaa;
+}
+code {
+  border-radius: 5px;
+  margin: auto 2px;
+  border: 1px solid #aaa;
+  background: rgba(255,255,255,0.4);
+}
+code:hover {
+  color: #f9a972;
+  border-color: #f9a972;
+  background: rgba(255,255,255,0.6);
+}
+ul {
+  margin-top: 0;
 }
