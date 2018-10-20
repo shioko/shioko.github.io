@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfe91b;
+  background: #8f877f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3318,4 +3318,31 @@ code:hover {
 }
 ul {
   margin-top: 0;
+}
+.feed-link {
+  border-top: 0;
+  border-bottom: 0;
+}
+.feed-link a {
+  color: #555;
+  margin: 0 30%;
+  padding: 0 0;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px dotted #eee;
+  transition: all 0.5s cubic-bezier(0.17, 0.08, 0.04, 0.99);
+}
+.feed-link a i {
+  color: #555;
+  transition: all 0.5s cubic-bezier(0.17, 0.08, 0.04, 0.99);
+}
+.feed-link a:hover {
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px #fff;
+  padding-top: 5px;
+  margin-bottom: -5px;
+  color: #f9a972;
+}
+.feed-link a:hover i {
+  color: #f9a972;
 }
