@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8f877f;
+  background: #ffebff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3029,6 +3029,7 @@ body {
   border-radius: 0 0 10px 10px;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
   margin-bottom: 50px;
+  min-height: 520px;
 }
 .back-to-top {
   font-size: 18px;
@@ -3042,6 +3043,7 @@ body {
 }
 .posts-expand .post-tags a:hover {
   border-bottom: 0;
+  margin-bottom: 1px;
 }
 .site-author-name {
   padding-top: 15px;
@@ -3345,4 +3347,7 @@ ul {
 }
 .feed-link a:hover i {
   color: #f9a972;
+}
+.tag-cloud a:hover {
+  color: #f9a972 !important;
 }
