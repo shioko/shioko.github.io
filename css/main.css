@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #39d69f;
+  background: #a8ff95;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2964,7 +2964,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("https://www.pakutaso.com/shared/img/thumb/003KAZUKIHIRO171011_TP_V.jpg");
+  background: url("bk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3364,7 +3364,4 @@ ul {
 }
 .gallery-column a {
   border-bottom: 0px;
-}
-#gallery-column a:active {
-  text: expression("_blank");
 }
