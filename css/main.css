@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #26e0ff;
+  background: #ff7af6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3361,4 +3361,10 @@ ul {
 .gallery-column {
   display: flex;
   flex-direction: column-reverse;
+}
+.gallery-column a {
+  border-bottom: 0px;
+}
+#gallery-column a:active {
+  text: expression("_blank");
 }
