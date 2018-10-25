@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[可能是史上最简单的hexo相册实现方法]]></title>
+    <url>%2F2018%2F181025-gallery.html</url>
+    <content type="text"><![CDATA[半夜摸鱼的时候突然想搞个相册，google了一圈教程，然后发现大概是因为不同版本的hexo next主题layout的原理不同，前前后后试了大概4种方法，没一个能跑的…… 万念俱灰时转念一想，我不就是想做个静态的图集页面吗，研究那么多JS渲染干嘛？？于是有了这个逆练css实现的相册界面_(:з」∠)_ .+†+. 首先是实现的效果浏览，为了防止各位照我的方法做完发现不是自己想要的↓-画廊-|†少女癌† 已经实现的效果： 三等分列√ 按图片原长宽比平铺√ 本地保存图片√ 与文章内插图保持格式统一√ 待实现的效果： 点击查看大图○ 我觉得这个效果后续还是挺好实现的，加个超链接新窗口打开图片就OK了，但是今天又通了个宵有点困所以写鸽置一下…… 那么接下来是实现过程XD 创建相册页面 在hexo根目录下执行： hexo new page photos 会自动在hexo\source目录下生成photos文件夹，然后打开对应的主题设置界面设置导航栏的文字内容和图标，跟创建别的页面是一样的。 然后注意要在标题底下加一行comments: false来关闭评论。 图片的存放与处理 在刚生成的hexo\source\photos目录下新建一个文件夹存放图片，我是命名为img了。 然后这种方法是把你的相册图片和blog内容一起推送到git pages的，加载的时候也会一起读取，所以为了读取速度最好把图片缩放一下。 注意事项：不需要统一高度，不需要统一宽度，什么都不需要统一，只要文件大小合适就可以了！ 然后就可以开始创建相册内容。 编辑相册内容 打开刚才生成的photos/index.md，添加如下代码：123456789101112131415&lt;div class=&quot;gallery-page&quot;&gt; &lt;div class=&quot;gallery-list&quot;&gt; &lt;div class=&quot;gallery-column&quot;&gt; &lt;img src=&quot;img/图片1.xxx&quot;&gt; &lt;img src=&quot;img/图片2.xxx&quot;&gt; &lt;img src=&quot;img/图片3.xxx&quot;&gt; &lt;/div&gt; &lt;div class=&quot;gallery-column&quot;&gt; &lt;img src=&quot;img/...&quot;&gt; &lt;/div&gt; &lt;div class=&quot;gallery-column&quot;&gt; &lt;img src=&quot;img/..x&quot;&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; 这个时候在本地浏览中打开相册页面，应该有图片依次出现在页面上了，如果没有请检查图片路径。 我用的是分三列的代码，如果你只要分两列就去掉一个&lt;div class=&quot;gallery-column&quot;&gt;，分四列就再加一个，以此类推。 实现图片分栏排列 为了实现分栏+顶端对齐的效果我用的是flex布局，参考了这篇知乎文章：https://zhuanlan.zhihu.com/p/25303493 在用户自定义css文件custom.styl中添加如下代码：123456.gallery-list &#123; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: flex-start;&#125; 然后回本地刷新一下，相册的形状就完成了√ 如果发现有哪一列的图片特别长，调整一下index.md里的html代码把超长图片补到最短的一列即可。 实现图片倒序显示（可选） 因为正常的书写习惯是从上到下写图片列表，但是相册显示的时候一般还是把最近图片放在顶端比较好。 用css的flex布局可以直接实现倒序显示，当然你也可以直接倒序写图片列表，就不用看这里了。 在用户自定义css文件custom.styl中添加如下代码：1234.gallery-column &#123; display: flex; flex-direction: column-reverse;&#125; 至此就全部完成啦~ 装饰篇（可选） 然后这个相册其实还是一个普通的markdown文件，你还可以在相册的上方和下方写点小作文，比如我的： 甚至可以加些小插件什么的，正文可以实现的效果都能实现。这个相册大概就算是一个加强版的文章插图吧…… 因为完全不涉及js代码做出来难免非常简陋OTLLL但是这种方法有一个优点，就是可以用相同的方式插入到正文里，稍微拓展一下似乎可以实现相册分类的效果？总之等有空的时候再研究啦~]]></content>
+      <categories>
+        <category>维护日志</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【版聊搬运】181018 - 低龄触]]></title>
     <url>%2F2018%2F181017-cmx2.html</url>
     <content type="text"><![CDATA[又翻到了低龄触讨论。 我在微博上说过这个话题，对于低龄触的焦虑来自于年龄越大就越容易发现自己努力多少多少年都甚至还够不到人家的起点。 这还不够让人绝望的吗。 .+†+. 说白了确实是一种嫉妒啊。 生下来以为自己是动画片的主角地球围着劳资转，长大以后却发现自己只是主角的背景板。 这种认知落差很打击人的。 怎么说呢，其实也不是刻意比较。 只是儿时大家都或多或少幻想过自己是像达芬奇一样的天才，梦想长大以后当什么作家画家宇航员，而这些梦想长大以后会被现实磨钝渐渐遗忘，变成为了温饱奔波没有棱角的卵石。 但是这样的卵石还是会被偶尔路过的类似低龄触一样耀眼的存在刺痛一下，开始幻想如果自己小的时候再努力一点会不会变得更好。 但是水还是会继续流，低龄触很快就会往更远的地方游走，卵石还是会呆在原地，变得越来越圆。 是这样，卵石偶尔也能追上水流往前动一动，但还是会在不知道什么地方卡住无法前进，终究是比不上那些天赋异禀甚至生来就是鱼的人的。 不过反过来想也成立，虽然比不上那些天赋异禀的人，偶尔能追上水流往前动一动也是挺好的吧_(:з」∠)_ 而且有句话叫“痛苦是艺术之源”。 【如果没人说过那就当是我今天说的x 用低劣的创造水准痛苦地追寻神圣的审美就是艺术求道者穷其一生的宿命。]]></content>
@@ -255,8 +267,8 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-        <tag>CSS</tag>
         <tag>插件</tag>
+        <tag>CSS</tag>
         <tag>ow</tag>
       </tags>
   </entry>

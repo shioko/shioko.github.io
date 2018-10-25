@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f1d5b6;
+  background: #ff322b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3350,4 +3350,15 @@ ul {
 }
 .tag-cloud a:hover {
   color: #f9a972 !important;
+}
+.gallery-list {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.gallery-column {
+  display: flex;
+  flex-direction: column-reverse;
 }
