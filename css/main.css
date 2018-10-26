@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a8ff95;
+  background: #81f542;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3351,17 +3351,39 @@ ul {
 .tag-cloud a:hover {
   color: #f9a972 !important;
 }
-.gallery-list {
+.gallery-page {
   margin-top: -50px;
+}
+.img-list,
+.gallery-list {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
 }
-.gallery-column {
+.img-column {
   display: flex;
   flex-direction: column-reverse;
 }
+.img-column a,
 .gallery-column a {
   border-bottom: 0px;
+}
+.gallery-item {
+  margin-bottom: -50px;
+}
+.gallery-item p {
+  margin: -25px 25% -10px;
+  text-align: center;
+  font-size: 15px;
+  color: #f9a972;
+  background: rgba(255,255,255,0.3);
+  border-radius: 7px;
+  border: 1px solid #f9a972;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.posts-expand .post-body .gallery-column a img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
 }
