@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff516;
+  background: #abb1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3373,7 +3373,8 @@ ul {
   margin-bottom: -50px;
 }
 .gallery-item p {
-  margin: -25px 25% -10px;
+  margin: -25px auto -10px;
+  max-width: 50%;
   text-align: center;
   font-size: 15px;
   color: #f9a972;
@@ -3386,4 +3387,16 @@ ul {
   height: 250px;
   width: 300px;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .header-inner {
+    border-radius: 0;
+  }
+  .gallery-item p {
+    min-width: 75px;
+    font-size: 13px;
+  }
+  .posts-expand {
+    margin: 0 10px;
+  }
 }
