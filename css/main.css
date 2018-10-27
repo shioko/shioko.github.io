@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #abb1ff;
+  background: #5dff55;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3029,7 +3029,7 @@ body {
   border-radius: 0 0 10px 10px;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
   margin-bottom: 50px;
-  min-height: 520px;
+  min-height: 800px;
 }
 .back-to-top {
   font-size: 18px;
@@ -3175,7 +3175,13 @@ body {
   margin-left: 20%;
 }
 .category-all-page .category-list-item {
-  margin-top: 0;
+  margin: 0 10px;
+}
+.posts-expand .post-body ul li {
+  list-style: square;
+}
+.category-all-page .category-list-child .category-list-item {
+  list-style: circle;
 }
 .gitment-container {
   font-family: "PingFang SC", "Microsoft YaHei" !important;
@@ -3399,4 +3405,34 @@ ul {
   .posts-expand {
     margin: 0 10px;
   }
+  .content-wrap {
+    min-height: 520px;
+  }
+}
+.sidebar-nav .sidebar-nav-active,
+.post-toc .nav .active-current > a {
+  color: #f9a972;
+  background: rgba(255,255,255,0.5);
+}
+.sidebar-nav li:hover,
+.sidebar-nav .sidebar-nav-active:hover,
+.post-toc .nav .active-current > a:hover {
+  color: #f9a972;
+  text-shadow: 0 0 15px #fff;
+}
+.sidebar-nav .sidebar-nav-active {
+  padding: 0 10px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px dotted #eee;
+}
+.post-toc ol a {
+  padding: 3px 15px 3px 5px;
+  border-bottom: 0px;
+  border-left: 1px dotted #eee;
+  border-radius: 0px 10px 10px 0px;
+}
+.post-toc .nav .active-current > a {
+  border-bottom: 0px;
+  border-left: 1px dotted #eee;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
 }
