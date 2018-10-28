@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f2ffff;
+  background: #2dfffe;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2101,19 +2101,6 @@ pre .javascript .function {
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
-}
-#gitment-display-button {
-  display: inline-block;
-  padding: 0 15px;
-  color: #0a9caf;
-  cursor: pointer;
-  font-size: 14px;
-  border: 1px solid #0a9caf;
-  border-radius: 4px;
-}
-#gitment-display-button:hover {
-  color: #fff;
-  background: #0a9caf;
 }
 .post-spread {
   margin-top: 20px;
@@ -3435,4 +3422,44 @@ ul {
   border-bottom: 0px;
   border-left: 1px dotted #eee;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.v .vwrap {
+  padding: 5px 20px !important;
+  border: 1px solid #eee !important;
+  border-radius: 10px !important;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.v * {
+  line-height: 1 !important;
+}
+.v .power,
+.v .power a {
+  line-height: 2 !important;
+}
+.v a {
+  border-bottom: 0px !important;
+}
+.v a:before {
+  background: #f9a972 !important;
+}
+.v .vwrap .vedit .vctrl span:hover {
+  color: #f9a972;
+  border-bottom: 1px solid #f9a972;
+  margin-bottom: -1px;
+}
+.vheader.item3 {
+  display: flex;
+}
+.v .vbtn {
+  color: #f9a972 !important;
+  background: rgba(255,255,255,0.3) !important;
+  border: 2px solid #f9a972 !important;
+  border-radius: 10px !important;
+  margin-bottom: 10px !important;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+}
+.v .vbtn:hover {
+  color: #fff !important;
+  background: #f9a972 !important;
 }

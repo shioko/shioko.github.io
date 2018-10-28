@@ -122,6 +122,8 @@
 <meta name="twitter:description" content="ABCandy Cancer -少女癌-Dear Dreamer -梦蚀-EFable Flipper -世界逆行说-GHIJKLost Luna -迷月-MNear Night -短夜-Oxygen Out -厌氧-PQRotten Rose -朽薇-Silent Snow -雪姬-Thirsty Tide -深潮-UVermilion Vat -鱼缸-Witch W~? -巫殇-XYZ">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="†少女癌†" type="application/atom+xml" />
 
@@ -674,7 +676,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">79k</span>
+    <span title="站点总字数">80k</span>
   
 </div>
 
@@ -847,20 +849,31 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'f6s44gBExcM3AJdJscqbg7WW-gzGzoHsz',
+        appKey: '82r7DdhN9ujEi1sQEQdf8m2x',
+        placeholder: '欢迎留言~xd',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 
