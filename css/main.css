@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #834453;
+  background: #baf4ed;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3429,6 +3429,7 @@ ul {
   border-radius: 10px !important;
   background: rgba(255,255,255,0.3);
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  max-height: 500px !important;
 }
 .v * {
   line-height: 1 !important;
@@ -3454,6 +3455,9 @@ ul {
 .vheader.item3 {
   display: flex;
 }
+.v .vwrap .vheader .vinput:focus {
+  border-bottom-color: #f9a972 !important;
+}
 .v .vbtn {
   color: #f9a972 !important;
   background: rgba(255,255,255,0.3) !important;
@@ -3470,7 +3474,8 @@ ul {
   margin-top: 10px !important;
 }
 .v .vlist .vcard .vh .vmeta {
-  margin-right: 10px;
+  margin-right: 15px;
+  border-bottom: 0px !important;
 }
 .v .vlist .vcard .vh .vmeta:hover {
   border-bottom: 1px solid #f9a972;
