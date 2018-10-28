@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2dfffe;
+  background: #834453;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3433,6 +3433,9 @@ ul {
 .v * {
   line-height: 1 !important;
 }
+.v .veditor {
+  opacity: 0.3;
+}
 .v .power,
 .v .power a {
   line-height: 2 !important;
@@ -3462,4 +3465,37 @@ ul {
 .v .vbtn:hover {
   color: #fff !important;
   background: #f9a972 !important;
+}
+.v .vlist .vcard .vhead {
+  margin-top: 10px !important;
+}
+.v .vlist .vcard .vh .vmeta {
+  margin-right: 10px;
+}
+.v .vlist .vcard .vh .vmeta:hover {
+  border-bottom: 1px solid #f9a972;
+}
+.v .vlist .vcard .vhead .vnick {
+  color: #f9a972 !important;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+  text-shadow: 0 0 15px #fff;
+}
+.v .vlist .vcard .vhead .vnick:before {
+  background: transparent !important;
+}
+.v .vlist .vcard .vhead .vsys {
+  background: rgba(255,255,255,0.3) !important;
+  border: 1px solid #aaa !important;
+  color: #aaa !important;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+  color: #f9a972 !important;
+}
+.v .vlist .vcard .vh {
+  padding-left: 15px !important;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
+  border-radius: 10px !important;
+  background: rgba(255,255,255,0.3) !important;
+  border: 1px dotted #eee !important;
 }

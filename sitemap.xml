@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://co5.me/message/index.html</loc>
+    
+    <lastmod>2018-10-28T08:44:01.285Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://co5.me/2018/181028-rozen-s-cage.html</loc>
     
-    <lastmod>2018-10-28T05:34:45.116Z</lastmod>
+    <lastmod>2018-10-28T08:39:26.299Z</lastmod>
     
   </url>
   
@@ -376,13 +383,6 @@
     <loc>http://co5.me/2018/180614-diary.html</loc>
     
     <lastmod>2018-06-14T14:00:10.485Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://co5.me/message/index.html</loc>
-    
-    <lastmod>2018-06-13T20:27:15.395Z</lastmod>
     
   </url>
   
