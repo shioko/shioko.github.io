@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #24ff58;
+  background: #88baa8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3431,14 +3431,18 @@ ul {
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
 }
 .v * {
-  line-height: 1 !important;
+  line-height: 1.8 !important;
+}
+.v .vwrap input,
+.v .vlist .vcard .vhead .vsys {
+  line-height: 1.2 !important;
 }
 ::placeholder {
   opacity: 0.45;
 }
 .v .power,
 .v .power a {
-  line-height: 2 !important;
+  line-height: 1.8 !important;
 }
 .v a {
   border-bottom: 0px !important;
