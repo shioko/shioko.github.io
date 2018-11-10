@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #88baa8;
+  background: #d4c6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3154,7 +3154,6 @@ body {
 .posts-collapse {
   margin: auto;
   margin-bottom: 50px;
-  max-width: 95%;
 }
 .category-all-page .category-list {
   column-count: 2;
@@ -3165,10 +3164,10 @@ body {
   margin: 0 10px;
 }
 .posts-expand .post-body ul li {
-  list-style: square;
+  list-style: circle;
 }
 .category-all-page .category-list-child .category-list-item {
-  list-style: circle;
+  list-style: square;
 }
 .gitment-container {
   font-family: "PingFang SC", "Microsoft YaHei" !important;
@@ -3403,7 +3402,8 @@ ul {
 }
 .sidebar-nav li:hover,
 .sidebar-nav .sidebar-nav-active:hover,
-.post-toc .nav .active-current > a:hover {
+.post-toc .nav .active-current > a:hover,
+.post-toc .nav .active > a {
   color: #f9a972;
   text-shadow: 0 0 15px #fff;
 }
@@ -3467,6 +3467,7 @@ ul {
   border: 2px solid #f9a972 !important;
   border-radius: 10px !important;
   margin-bottom: 10px !important;
+  padding: 5px 20px !important;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
 }
 .v .vbtn:hover {
@@ -3506,4 +3507,16 @@ ul {
   border-radius: 10px !important;
   background: rgba(255,255,255,0.3) !important;
   border: 1px dotted #eee !important;
+}
+.post-block {
+  max-width: 95%;
+  margin: auto;
+}
+.posts-expand .post-body h2,
+.posts-expand .post-body h3,
+.posts-expand .post-body h4,
+.posts-expand .post-body h5,
+.posts-expand .post-body h6 {
+  padding-top: 0px;
+  margin-top: 20px;
 }

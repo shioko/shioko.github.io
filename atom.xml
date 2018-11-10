@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://co5.me/"/>
-  <updated>2018-10-28T08:39:26.299Z</updated>
+  <updated>2018-11-10T15:14:44.404Z</updated>
   <id>http://co5.me/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>整理黑历史 &amp; flex实现小标题右对齐</title>
+    <link href="http://co5.me/2018/181110-diary.html"/>
+    <id>http://co5.me/2018/181110-diary.html</id>
+    <published>2018-11-10T14:16:40.000Z</published>
+    <updated>2018-11-10T15:14:44.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　前半篇是日记。<br>　　需要小标题右对齐参考的话直接进入正文界面后点击左边的目录跳转即可ヾ(*´∀｀*)ﾉ<br><a id="more"></a></p><p><center><br>    .+†+.</center><br>　　昨天晚上在草莓县版聊“16岁的时候你在干嘛”。<br>　　然后就去翻了一圈初高中时期写过的东西，发现移动硬盘里只有15年以后的数据，更早的要在我之前用的小U盘里。<br>　　然后去新浪博客翻了一圈，发现当初写的镜音同人居然被吞了一半……hello？14岁幼女写的R18招你惹你了？</p><p>　　一圈翻下来最大的感觉就是，抑郁症简直毁掉了我作为天才少女的一生……<br>　　其实说抑郁症毁掉我也不确切，精神分裂和强迫症的苗头自小就有，实际上毁掉我自己的还是我自己。就像在炉心融解那篇同人里写的一样，我从小的成长模式几乎就是“让一个新的自我去杀死旧的自我以此完成蜕变”，而这种自我杀戮的模式也正是我创作的源泉。只不过在抑郁症的影响下这种模式出现了断链，先是旧人格在新人格养成之前就自我崩坏，随后终于生成的新人格似乎也对这种原始的自相残杀模式开始抱有怀疑，不再杀死救人格，而是作为一个看护者与幼稚的旧人格共生，只在必要时刻才会出现。<br>　　所以现在打字的我又是哪一个我呢？</p><p>　　以及昨天版聊的时候被烧鸡说像兔子，第一反应果然又是小三郎……<br>　　虽然嘴上说着我是猫系少女，但果然我绝大多数的时间都还是没有猫的桀骜和坦然，还是狡兔三窟的缜密更加符合我的设定吧。<br>　　<del>果然我是注定没法伪装成凡人的啊【闭嘴</del></p><h3 id="flex实现小标题右对齐"><a href="#flex实现小标题右对齐" class="headerlink" title="flex实现小标题右对齐"></a>flex实现小标题右对齐</h3><p>　　在整理旧文的时候想办法捣鼓出了小标题右对齐，是用flex实现的，不过这种方法容易造成其它页面的排版错误，所以我是把css代码单独插在每个页面的上方。<br>　　为了保持页面整洁这篇文章并没有用到小标题右对齐，实现的范例在这里：<br>　　<a href="https://co5.me/2011/111005-witch.html">巫殇·森 - Witch in the Forest</a><br>　　然后是代码↓</p><h4 id="主界面css样式"><a href="#主界面css样式" class="headerlink" title="主界面css样式"></a>主界面css样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.post-block &#123;</span><br><span class="line">max-width: 95%;</span><br><span class="line">margin: auto;</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-body h2,</span><br><span class="line">.posts-expand .post-body h3,</span><br><span class="line">.posts-expand .post-body h4,</span><br><span class="line">.posts-expand .post-body h5,</span><br><span class="line">.posts-expand .post-body h6 &#123;</span><br><span class="line">padding-top: 0px;</span><br><span class="line">margin-top: 20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>　　↑复制以上内容添加到<code>custom.styl</code><br>　　第一段是调整正文宽度，第二段是在小标题上加一行空行，可以按需求修改/删除。但是<code>magin:auto</code>是用来居中元素的，如果删掉这一行可能会出现启用flex之后正文内容偏移的现象，建议保留。</p><h4 id="正文追加css样式"><a href="#正文追加css样式" class="headerlink" title="正文追加css样式"></a>正文追加css样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;.posts-expand .post-body &#123;</span><br><span class="line">display: inline-flex !important;</span><br><span class="line">flex-direction:column;</span><br><span class="line">align-items:flex-end;</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-body p,</span><br><span class="line">.posts-expand .post-body center &#123;</span><br><span class="line">width: 100%</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-body h3 &#123;</span><br><span class="line">font-size: 16px;</span><br><span class="line">display:inline-block;</span><br><span class="line">padding: 3px 10px 3px 20px;</span><br><span class="line">border-radius: 20px 0 0 20px;</span><br><span class="line">background: rgba(255,255,255,.5);</span><br><span class="line">box-shadow: 0 8px 20px -8px rgba(0,0,0,.3);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>　　↑复制以上内容添加到markdown正文中<br>　　注意<code>&lt;style&gt;</code>标签与正文之间不可以有任何其它的html/段落标签，否则会导致样式应用错误，最好是放在<code>&lt;!--more--&gt;</code>标签的后面。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　前半篇是日记。&lt;br&gt;　　需要小标题右对齐参考的话直接进入正文界面后点击左边的目录跳转即可ヾ(*´∀｀*)ﾉ&lt;br&gt;
+    
+    </summary>
+    
+      <category term="维护日志" scheme="http://co5.me/categories/%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="汐理学" scheme="http://co5.me/tags/%E6%B1%90%E7%90%86%E5%AD%A6/"/>
+    
+      <category term="hexo" scheme="http://co5.me/tags/hexo/"/>
+    
+      <category term="日记" scheme="http://co5.me/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="css" scheme="http://co5.me/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>【-|梦蚀°】断章·蔷薇之笼 - 01</title>
@@ -46,7 +74,7 @@
     <link href="http://co5.me/2018/181025-gallery.html"/>
     <id>http://co5.me/2018/181025-gallery.html</id>
     <published>2018-10-25T00:02:57.000Z</published>
-    <updated>2018-10-26T18:21:28.451Z</updated>
+    <updated>2018-11-10T12:14:42.012Z</updated>
     
     <content type="html"><![CDATA[<p>　　半夜摸鱼的时候突然想搞个相册，google了一圈教程，然后发现大概是因为不同版本的hexo next主题layout的原理不同，前前后后试了大概4种方法，没一个能跑的……<br>　　万念俱灰时转念一想，我不就是想做个静态的图集页面吗，研究那么多JS渲染干嘛？？于是有了这个逆练css实现的相册界面_(:з」∠)_<br><a id="more"></a></p><center><br>    .+†+.</center><br>　　首先是实现的效果浏览，为了防止各位照我的方法做完发现不是自己想要的↓<br><center><a href="https://co5.me/gallery/mimawari"><strong>-画廊/见回组-|†少女癌†</strong></a></center><p>　　<strong>已经实现的效果：</strong></p><ul><li>三等分列√</li><li>按图片原长宽比平铺√</li><li>本地保存图片√</li><li>与文章内插图保持格式统一√</li></ul><p>　　<strong>待实现的效果：</strong></p><ul><li>点击查看大图○</li></ul><p>　　我觉得这个效果后续还是挺好实现的，加个超链接新窗口打开图片就OK了，但是今天<del>又通了个宵</del>有点困所以写鸽置一下……<br>　　那么接下来是实现过程XD</p><h1 id="创建相册页面"><a href="#创建相册页面" class="headerlink" title="创建相册页面"></a>创建相册页面</h1><p>　　在hexo根目录下执行：<br>　　<code>hexo new page photos</code><br>　　会自动在<code>hexo\source</code>目录下生成<code>photos</code>文件夹，然后打开对应的主题设置界面设置导航栏的文字内容和图标，跟创建别的页面是一样的。<br>　　然后注意要在标题底下加一行<code>comments: false</code>来关闭评论。</p><h1 id="图片的存放与处理"><a href="#图片的存放与处理" class="headerlink" title="图片的存放与处理"></a>图片的存放与处理</h1><p>　　在刚生成的<code>hexo\source\photos</code>目录下新建一个文件夹存放图片，我是命名为<code>img</code>了。<br>　　然后这种方法是把你的相册图片和blog内容一起推送到git pages的，加载的时候也会一起读取，所以为了读取速度最好把图片缩放一下。<br>　　注意事项：<strong>不需要统一高度，不需要统一宽度，什么都不需要统一，只要文件大小合适就可以了！</strong><br>　　然后就可以开始创建相册内容。</p><h1 id="编辑相册内容"><a href="#编辑相册内容" class="headerlink" title="编辑相册内容"></a>编辑相册内容</h1><p>　　打开刚才生成的<code>photos/index.md</code>，添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;gallery-page&quot;&gt;</span><br><span class="line">&lt;div class=&quot;gallery-list&quot;&gt;</span><br><span class="line">&lt;div class=&quot;gallery-column&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/图片1.xxx&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/图片2.xxx&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/图片3.xxx&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;gallery-column&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/...&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;gallery-column&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/..x&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p><p>　　这个时候在本地浏览中打开相册页面，应该有图片依次出现在页面上了，如果没有请检查图片路径。<br>　　我用的是分三列的代码，如果你只要分两列就去掉一个<code>&lt;div class=&quot;gallery-column&quot;&gt;</code>，分四列就再加一个，以此类推。</p><h1 id="实现图片分栏排列"><a href="#实现图片分栏排列" class="headerlink" title="实现图片分栏排列"></a>实现图片分栏排列</h1><p>　　为了实现分栏+顶端对齐的效果我用的是flex布局，参考了这篇知乎文章：<a href="https://zhuanlan.zhihu.com/p/25303493" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/25303493</a><br>　　在用户自定义css文件<code>custom.styl</code>中添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.gallery-list &#123;</span><br><span class="line">display: flex;</span><br><span class="line">flex-direction: row;</span><br><span class="line">flex-wrap: nowrap;</span><br><span class="line">align-items: flex-start;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>　　然后回本地刷新一下，相册的形状就完成了√<br>　　如果发现有哪一列的图片特别长，调整一下<code>index.md</code>里的html代码把超长图片补到最短的一列即可。</p><h1 id="实现图片倒序显示（可选）"><a href="#实现图片倒序显示（可选）" class="headerlink" title="实现图片倒序显示（可选）"></a>实现图片倒序显示（可选）</h1><p>　　因为正常的书写习惯是从上到下写图片列表，但是相册显示的时候一般还是把最近图片放在顶端比较好。<br>　　用css的flex布局可以直接实现倒序显示，当然你也可以直接倒序写图片列表，就不用看这里了。<br>　　在用户自定义css文件<code>custom.styl</code>中添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.gallery-column &#123;</span><br><span class="line">display: flex;</span><br><span class="line">flex-direction: column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>　　至此就全部完成啦~</p><h1 id="装饰篇（可选）"><a href="#装饰篇（可选）" class="headerlink" title="装饰篇（可选）"></a>装饰篇（可选）</h1><p>　　然后这个相册其实还是一个普通的markdown文件，你还可以在相册的上方和下方写点小作文，比如我的：<br><img src="181025-gallery/A.png" alt=""><br>　　甚至可以加些小插件什么的，正文可以实现的效果都能实现。这个相册大概就算是一个加强版的文章插图吧……<br>　　因为完全不涉及js代码做出来难免非常简陋OTLLL但是这种方法有一个优点，就是可以用相同的方式插入到正文里，稍微拓展一下似乎可以实现相册分类的效果？总之等有空的时候再研究啦~</p>]]></content>
     
@@ -224,7 +252,7 @@
     <link href="http://co5.me/2018/180721-note.html"/>
     <id>http://co5.me/2018/180721-note.html</id>
     <published>2018-07-21T00:45:23.000Z</published>
-    <updated>2018-08-21T05:35:43.154Z</updated>
+    <updated>2018-11-10T12:14:04.107Z</updated>
     
     <content type="html"><![CDATA[<p>　　感谢您的约稿意向！<br>　　在进入沟通阶段之前，为了避免不必要的纠纷，请您花大约2分钟的时间阅读下面的约稿须知：<br><a id="more"></a></p><p><img src="http://imglf3.nosdn.127.net/img/ejhoWmRkdkZ0Vy9OMEhNL2lqTVp0NVR1ODN3NDFMbXk0Szg0M0gwTk51Z2t5RkUwTm4vNUtnPT0.png" alt=""><br><img src="http://imglf5.nosdn.127.net/img/ejhoWmRkdkZ0Vy9OMEhNL2lqTVp0MnpiQ083VkhaY2QrK0pnb2duZ3dnQVdhblllQ0FuNUhBPT0.png" alt=""></p><ul><li><p>【速度】<br>　　纯画画的速度大概1天1~2个人，人物的细节设定和动作设定之类的要看沟通效率<br>　　立绘基本1天能完成，CG看复杂度（人数/pose/背景）2~7天不等</p></li><li><p>【报价】<br>　　立绘：(200)基础稿费+(0~70%)复杂度/额外设计加成（比如要设计那种刻满咒语的武器之类的）<br>*男性角色8折（审美盲区，画不好看）<br>　　CG：(人数×150)基础稿费+(50~300)背景<br>　　纯色背景简单涂个光影duang点特效的不收钱<br>　　普通背景是+50~150<br>　　透视关系比较复杂的背景我会建模调整所以+150↑</p></li><li><p>【修改】</p><ul><li>草稿阶段：人物设定/姿势/透视走向/大概景物/构图</li><li>线稿阶段：人物细节/线稿定型/场景</li><li>配色确认阶段：画面主色调/人物配色/光源</li><li><p>后期调整阶段：表情调整/液化/光源/特效/色调</p><p>4个阶段各确认1次，确认之后才会开始下一个阶段<br>每个阶段上限修改3次，超出部分每次+10%的基础稿费<br><strong>*画手本人（我）的主观改动不计入次数</strong><br><strong>*进入下一个阶段之后请不要再对上一个阶段的工作内容提出修改意见</strong></p></li></ul></li><li><p>【付款】<br>　　为了防止跑单需要在确认草稿之后收定金，定金为基础稿费的40%</p><ul><li>立绘定金=200×40%=80</li><li><p>CG=人数×60</p><p>跑单后定金不退，且约稿图已完成的部分归画手本人（我）所有<br><strong>*因画手主观原因造成的拖延交稿会退回部分定金，最高不超过定金的50%</strong></p></li></ul></li><li><p>【备注】<br>　　工作时间大约每天9点~17点，午饭时间会在电脑前，晚上不确定，一般不过周末<br>　　一次性画很多稿的时候，为了保证效率/保持画风一致性，不会按顺序一张一张画完，而是先打完全部草稿，逐张确认之后再一起画完<br>　　（也就是约了3张立绘的话，我不会1天交1张，而是第3天同时交3张稿）</p></li></ul><p>　　再次感谢您的耐心阅读，希望我们合作愉快030</p><p>-【联系方式】<br>　　约稿专用邮箱：<a href="mailto:shioko@protonmail.com" target="_blank" rel="noopener">shioko@protonmail.com</a></p>]]></content>
     
@@ -239,6 +267,8 @@
     
       <category term="about" scheme="http://co5.me/tags/about/"/>
     
+      <category term="imgtag" scheme="http://co5.me/tags/imgtag/"/>
+    
   </entry>
   
   <entry>
@@ -246,7 +276,7 @@
     <link href="http://co5.me/2018/180716-sbnb.html"/>
     <id>http://co5.me/2018/180716-sbnb.html</id>
     <published>2018-07-16T05:57:50.000Z</published>
-    <updated>2018-07-16T08:53:51.286Z</updated>
+    <updated>2018-11-10T12:13:42.378Z</updated>
     
     <content type="html"><![CDATA[<p>　　避雷提示：<br>　　以下内容涉及部分“恋童癖”的学术讨论以及对空知老师的负面评价，请注意避雷。<br><a id="more"></a><br>　　<del>……tmd我就不该在pawoo的发送框里码字然后手贱用了cut结果新建文档的时候复制了别的东西400多个字白码了！</del></p><p>　　在经历了之前某对张姓夫妇的事件之后对“恋童癖”这个概念有了更加深刻的了解，对佐信CP的某些看法也发生了变化。<br>　　不是说爬墙什么的……<del>信神也很好吃啊这次总是官推了吧1551</del><br>　　而是终于理解了“异三郎的牺牲让信女长大”这种剧情设计的合理性。</p><p>　　异三郎作为一个陪伴者和引导者，在信女的成长过程中扮演着极其重要的角色，几乎成为了信女的人生意义。这样的角色跟张姓夫妇其实很类似，当时的争议点也正是因为二人的师生身份。因为成年人与孩子在体力和心智方面都是不对等的，孩童很容易在成人有意的误导下对师长产生“依赖”或“爱慕”，实际上他们根本都不知道这两个概念的确切定义到底是什么。<br>　　但是在信女和异三郎的场合，两人的体力显然并没有那么大的差距【您好这是您全家的便当请注意查收】；心智方面的话骸酱是受松阳的影响比较大，从她出走奈落的行为来看当时她的觉悟和独立性甚至已经超过了胧，身为一个早熟的孩子与异三郎也是在人格上平等的。但两人的“不对等”确实客观存在，并不是源自体力与心智，而是源自信女的“负罪感”。<br>　　毕竟杀妻夺子之仇不是能说算就算了的。<br>　　所以佐信在一起的契机，于异三郎是“复仇”，于信女是“赎罪”，以及对彼此的怜悯。<br>　　异三郎眼中的信女很单纯，就是个早慧并误入歧途的孩子，杀死他的妻女是天道众的命令，而不是她的本意。所以他收留了她，并且不知不觉地，把自己身边的位置给她，把自己女儿的名字给她，把自己的死亡托付给她，把自己死后的未来也托付给她——就像一个父亲那样。即使嘴上说着“那个女孩只是我留着复仇的工具”，而不知不觉中自己心里所有柔软的部分，都留给了她。<br>　　而信女眼中的异三郎呢？<br>　　说来惭愧，虽然自称信女厨，但这个问题我至今没能给出确切的答案。之前语C的时候也是C起异三郎更加得心应手，因为身为一个上升处女座的狮子，我和他的行事作风实在是太像了，像到能提前猜到信女原本是他给女儿准备的名字。<br>　　而异三郎一直到临死前都不明白信女对自己的感情。<br>　　所以我也不懂。加之中间退坑的好长时间，很多台词和剧情都已经记忆模糊，就更加没法妄加推断。<br>　　但其实大约是能感觉到的，只是不敢确认。<br>　　信女眼中的异三郎，大概是个一无所有却依然温柔的人。她亲手夺走了他的一切，却被他温柔相待。但她却是丝毫不敢懈怠的，异三郎的短信她从来不回，因为她一直心中有愧。<br>　　身为一个夺走对方一切的人，对一个一无所有的人的怜悯与愧疚。这样的情绪时刻提醒着她站在离异三郎近在咫尺却又十足疏离的位置，只有在吃甜甜圈的时候才能光明正大地摆出依恋的姿态。<br>　　真是完美的双向暗恋。<br>　　所以看起来是异三郎在迁就嗜血贪吃的信女，实际上是信女在迁就一心复仇的异三郎——这条路太过漫长也太过艰险，但我愿意与你同行。但异三郎还有一层信女也不知道的小心思，那就是他并不想让信女和他一起在这条路上走下去。</p><p>　　在最后一战开始之前信女问异三郎，坐在那样高高在上的位置上，你就满足了吗？<br>　　当时我其实是没看懂这一段的。现在明白了信女的意思是：拥有能与敌人匹敌的力量，为此不惜牺牲曾经并肩战斗过的同伴，成为和你的敌人一样的存在，这就是你所希望的复仇吗？<br>　　异三郎给了她肯定的答复，于是信女离开了。<br>　　根据蔷薇流氓他把铁之助赶跑到真选组，显然他是有意把自己身边的人都赶走的。一遍又一遍地强调自己是个精英，言下之意其实是：葬送旧时代这种事身为精英的我一个人做就足够了，你们这些凡人就等着在那之后重建新时代吧。<br>　　但全是凡人毕竟不放心，所以他需要更多优秀的人，比如万事屋，比如真选组。可偏偏这些人都是愿意为了朋友两肋插刀的惊天大傻子，想让他们乖乖等着收拾烂摊子是不可能的，唯一让他们看着自己送死的办法只能是与他们反目成仇了。<br>　　还有信女。彼时异三郎对信女的感情大约还很复杂，按理说他当时的计划是先解决真选组激起民愤，再拉着天道众一起陪葬，算是大业未成。他明明还是需要借助信女的力量的，却提前把她气走投奔反贼。等于在最后一刻他还是下了决心，这条复仇的路要自己一个人走完，放信女走。<br>　　这么说起来小三郎也是个十足任性的人。一厢情愿地收留信女，一厢情愿地与全世界为敌，又一厢情愿地牺牲自己。信女大概是他周密的计划之中唯一的变数，因为他自己大约都不清楚自己对信女的感情，是收留在身边的复仇工具，还是寄托对亡女思念的替代品，亦或就只是单纯的那个，留在自己身边不离不弃的女孩呢？</p><p>　　所以回到开头那个问题，为什么异三郎必须死？<br>　　因为异三郎对于信女的意义太过重大，只要佐佐木异三郎还存在，信女就放不下他，只能永远以一个赎罪者的身份留在他身边。只有他死了，信女才能真正长大，放下过去的阴影，拥抱自己的未来。<br>　　用自己的一死换信女一个无拘无束的未来。这个算盘异三郎打得倒是不错。<br>　　所以佐信之间虽然也是东亚特色恶趣味父嫁CP配置，但大人有大人的坚守，孩子也有孩子的倔强，彼此都在对方身上学到了不少，也因为对方成长了不少。异三郎在最后终于放下了个人英雄主义，信女也因为异三郎的死放下了赎罪的坚持。<br>　　也所以，喊了那么多年的空知老贼，我终于能重新审视这段剧情，并对创作出如此情节的空知老师萌生了崇高的敬意。</p><p>　　但是。同一个作者居然又能写出疑似未成年女主跟男主角生了孩子这种情节……其实那后面的漫画我都没看我也不知道是不是真的，但这种东西肯定tm不能是真的吧，就算不是真的拿这个开玩笑溜粉也很恶劣啊！！！<br>　　可能空知也只考虑到未成年抽烟喝酒生小孩这种“踩线”的行为不对，而完全没考虑过即使不踩线只是单纯“相恋”的行为实质上也是一种权力上的侵犯。<br>　　所以说为啥很多太太都是佐信<del>银神</del>一起吃但是我吃不下<del>银神</del>……因为<del>银时和神乐的人格不对等太明显了，</del>银时几乎是全剧人生导师般的存在，能教育他的基本就一个松阳，然后就是几个joy4的同期能偶尔跟他互相嘴炮一下，怎么样都轮不到神乐来教他做人，顶多也就和他一起嘴炮嘴炮别人，比如白痴老哥神威酱【？<br>　　信女在遇到异三郎之前就已经接受过松阳老师的启蒙教育可以背下一长条拗口程度堪比胧语【？？】的台词了，彼时异三郎还是个等着抱女儿的有志青年呢。<del>神乐跟银时比起来完全就是一张白纸，她的三观几乎都是银时灌输给她的，所以如果银时对她有什么超过长辈的情感就真的是不伦了。</del><br>　　当然我也不是说diss银神怎么怎么样，我也很理解这CP的萌点，小女生对人生导师抱有憧憬是再正常不过的事情。但成年人不能利用小女生对自己的憧憬去引导对方发展恋爱关系，这种事真的过界了。<br>　　当然在虚拟的故事里寻找现实感的人脑子一定有问题，我也管不了人家怎么磕cp。实际上恋童可以说是东亚普遍的文化基因了，对女性的审美也是，皮肤要嫩眼睛要大声音要甜姿态要楚楚可怜，反正一律往未发育的幼女形象靠拢。<br>　　如果没有之前的张姓夫妇事件可能我也会是这种恋童文化的忠实拥护者吧……而且我确实是个tmd萝莉控啊！我就是喜欢磕大叔×loli的CP啊！我超喜欢看闷骚大叔被小女生一记直球暴击打到破功这种情节的啊！！！<br>　　但是CP是CP现实是现实，不是每个小姑娘都像文艺作品里的角色一样早熟的，现实里绝大多数都是自以为自己成熟早慧离经叛道结果成为猥琐渣男的猎物的笨女孩。而且这种早熟小天使拯救堕落颓废大叔的作品越多，自以为成熟的笨女孩也会越多。虽说作者应该有创作自由，但是在创作过程中还是要注意一下社会影响，当一个有良心的创作者……<br>　　就……综上所述，为我开过的童车沉痛忏悔。<br>　　<del>但是我还是觉得大叔×loli真好吃啊呜呜呜呜呜呜呜</del><br>　　<del>好想看骸酱日小三郎啊——【住手</del></p>]]></content>
     
@@ -261,11 +291,11 @@
       <category term="Outside" scheme="http://co5.me/categories/%E9%81%A0%E5%A4%8F/Outside/"/>
     
     
+      <category term="随笔" scheme="http://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="佐信" scheme="http://co5.me/tags/%E4%BD%90%E4%BF%A1/"/>
     
       <category term="サブノブ" scheme="http://co5.me/tags/%E3%82%B5%E3%83%96%E3%83%8E%E3%83%96/"/>
-    
-      <category term="随笔" scheme="http://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -274,7 +304,7 @@
     <link href="http://co5.me/2018/180712-diary.html"/>
     <id>http://co5.me/2018/180712-diary.html</id>
     <published>2018-07-11T22:16:09.000Z</published>
-    <updated>2018-07-11T23:53:49.558Z</updated>
+    <updated>2018-11-10T12:13:02.673Z</updated>
     
     <content type="html"><![CDATA[<p>　　又是好久没更新了x上来锄锄草。<br>　　我好像大概可能应该还记得文章怎么只显示概况……吧？<br><a id="more"></a><br>　　托千反田的福，最近又进入修仙模式。虽然我感觉已经日夜颠倒了有一段日子了……<br>　　QQ火花近300天，终于要奔现啦xd超开心！<br>　　虽然听他说到时候可能工作室有任务分配，但是好像已经找了个臭弟弟背锅了x<br>　　一个小插曲，千反田听说宁波是个沿海城市就吵着要来看海。<br>　　我：……你以为沿海城市就真的有海吗？<br>　　千反田：？？？不然呢，沿海城市难道没有海吗？<br>　　我：对不起，真的没有。<br>　　千反田：什么，沿海城市居然没有海！？<br>　　我：真没有，我们这里只有一个挺大的湖，要不你当海凑合看吧？<br>　　千反田：？？？？？<br>　　【注释：宁波虽然是沿海城市，但是城区离海岸线非常远，大市范围内的象山县北仑县等等才是真正的沿海“城市”（小县城），从市中心出发车程大概要两三个小时。</p><p style="margin-bottom:0px;">　　晚上刷微博发现分组TL上也出现了广告，一怒之下从被窝里爬起来写了个屏蔽广告的CSS脚本，放到userstyle上了，链接：</p><ul><li><a href="https://userstyles.org/styles/162416/for-weibo-com" target="_blank" rel="noopener">https://userstyles.org/styles/162416/for-weibo-com</a></li></ul><p></p><p style="margin:20px auto -25px;">　　在测试CSS样式效果的时候刷到一条天王星相关的微博，看见评论里提到天王星的英文名叫“Urarus”，脑内读成罗马音的uranosu，想着啊~真好听啊~于是谷歌之。</p><br>　　结果发现正确的读音是<code>ˈjʊərənəs</code>，瞬间拗口了起来。<br>　　不过日文片假名还真的写作<code>ウラノス</code>，这算是我有了日语思维的证明吗233333<br>　　把中文的天王星wiki读了一遍，太阳系内最冰冷的大气，长达42年的极夜，莫名就感觉，真是浪漫啊……<p></p><p>　　然后顺带着也看了看冥王星，原来冥王星的表面是有一颗小心心的。<br><img src="https://media.cmx.im/media-cmx-im/media_attachments/files/000/825/098/original/68e04b348e195ea1.jpg" alt=""><br>　　而且这颗小心心刚好在它面对卡戎那一面的右下角，想想就更浪漫了。<br>　　<del>因为太可爱了没忍住给cmx小号换了个头像xd</del><br>　　说起来天文（文）学的启蒙还是夏茗悠的《再见，冥王星》吧……虽然当初看的那些书都不知道被我扔到哪儿去了（记忆里应该是被母上藏起来了），但是那些浪漫的联想和比喻还是对我造成了极为深远的影响。不过遗憾的是夏茗悠后期的作品就不像出道时的一样有灵气了……常年挖坑不填也是个莫名其妙的习惯，感觉她根本就是在写自己作品的同人，脑内爽完就不负责了【。<br>　　说起来挖坑不填这个习惯跟我也很像啊……！<br>　　但是这个习惯我自主负责好吧，跟她的影响无关x</p><p>　　顺便改了一下正文图片的行距问题，图片底下带那么多margin不知道是怎么考虑的，看着好烦啊【。<br>　　再顺便更新了一下行内代码框的格式，现在它不太像代码框了【。</p><p>　　最后我这几天为什么这么想吃饺子面条豆腐汤……<br>　　把这几个东西组合一下我觉得我需要味增拉面+蒸饺，请问哪家店能同时点到这两家东西？</p>]]></content>
     
@@ -286,6 +316,8 @@
     
       <category term="汐喵晒鱼" scheme="http://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
     
+    
+      <category term="styletag" scheme="http://co5.me/tags/styletag/"/>
     
       <category term="CSS" scheme="http://co5.me/tags/CSS/"/>
     
@@ -300,9 +332,9 @@
     <link href="http://co5.me/2018/180703-diary.html"/>
     <id>http://co5.me/2018/180703-diary.html</id>
     <published>2018-07-03T15:28:56.000Z</published>
-    <updated>2018-07-03T16:42:44.557Z</updated>
+    <updated>2018-11-10T12:16:04.092Z</updated>
     
-    <content type="html"><![CDATA[<p>　　一开始现充+打游戏果然维持日更就是不可能的事了x<br>　　沉痛反省一下，但是话虽如此以我这个三分钟热度的劲头从此进入随缘更新简直是不可避的事实……<br><a id="more"></a><br>　　我甚至觉得我的文字表达能力都已经下降了OTL</p><p>　　打游戏相关的就不记了吧，反正这种小圈子里的八卦和黑泥都是快餐式的情绪宣泄，日后也没什么可怀念的。<br>　　但是还是要记一笔，千反田打了十个赛季终于在国服留榜啦xd</p><p>　　之前和馒头商量的小说编辑器正式开搞了！目前暂时长这个样子↓<br><img src="https://media.cmx.im/media-cmx-im/media_attachments/files/000/803/800/original/a5c45efe38ac9e0d.png" alt=""><br>　　emmmmmmm<br>　　我设计的界面长这个样子↓<br><img src="https://media.cmx.im/media-cmx-im/media_attachments/files/000/803/987/original/c25825d61003778e.png" alt=""><br><img src="https://media.cmx.im/media-cmx-im/media_attachments/files/000/803/988/original/da1eaea117245a9c.png" alt=""><br>　　能不能实现就是另一码事了，有梦想总是好的x</p><p>　　然后是大概的功能列表：</p><ul><li>【章节列表】<ul><li>支持二级目录</li><li>自定义章节名称</li></ul></li><li>【章节概要】<ul><li>情节表</li><li>编辑章节名</li><li>字数统计</li></ul></li><li>【标签列表】<ul><li>每个标签显示分类+一行概要</li><li>按关键词搜索标签</li><li>分类<ul><li>按分类查看标签</li><li>在分类内搜索标签*</li></ul></li></ul></li><li>【标签详情】<ul><li>设置标签名和分类</li><li>标签详情</li><li>功能按钮<ul><li>编辑：激活后再按一次保存</li><li>复制：以当前标签为模板新建一个标签</li><li>新建：新建空白标签</li><li>删除：删除当前标签，需要添加二次确认提示</li></ul></li></ul></li><li>【主模块】<ul><li>支持自定义字体，字号大小，行距</li><li>支持单独章节导出为txt格式</li><li>tab键自动生成两个全角空格</li><li>首字母缩写快捷输入标签</li></ul></li><li>【全局】<ul><li>支持自定义布局<ul><li>拖动解锁/合并窗口*</li><li>自动吸附到侧边栏*</li><li>可以关闭窗口，再通过菜单打开</li></ul></li></ul></li><li>【菜单】<ul><li>文件<ul><li>打开工程</li><li>导入文本到工程</li><li>保存工程</li><li>导出文本</li><li>批量导出选定章节*</li></ul></li><li>编辑<ul><li>复制粘贴</li><li>撤销重做</li><li>查找替换</li></ul></li><li>格式<ul><li>字体</li><li>字号</li><li>行距</li></ul></li><li>窗口<ul><li>显示/隐藏模块</li></ul></li></ul></li></ul><p>　　以及还有路人提出的要一个情节图形化的功能……感觉设计这个图形化的图形就要花很多心思了，暂时还是算了吧OTL</p>]]></content>
+    <content type="html"><![CDATA[<p>　　一开始现充+打游戏果然维持日更就是不可能的事了x<br>　　沉痛反省一下，但是话虽如此以我这个三分钟热度的劲头从此进入随缘更新简直是不可避的事实……<br><a id="more"></a><br>　　我甚至觉得我的文字表达能力都已经下降了OTL</p><p>　　打游戏相关的就不记了吧，反正这种小圈子里的八卦和黑泥都是快餐式的情绪宣泄，日后也没什么可怀念的。<br>　　但是还是要记一笔，千反田打了十个赛季终于在国服留榜啦xd</p><p>　　之前和馒头商量的小说编辑器正式开搞了！目前暂时长这个样子↓<br><img src="https://cmx.im/system/media_attachments/files/000/803/800/original/a5c45efe38ac9e0d.png" alt=""><br>　　emmmmmmm<br>　　我设计的界面长这个样子↓<br><img src="https://cmx.im/system/media_attachments/files/000/803/987/original/c25825d61003778e.png" alt=""><br><img src="https://cmx.im/system/media_attachments/files/000/803/988/original/da1eaea117245a9c.png" alt=""><br>　　能不能实现就是另一码事了，有梦想总是好的x</p><p>　　然后是大概的功能列表：</p><ul><li>【章节列表】<ul><li>支持二级目录</li><li>自定义章节名称</li></ul></li><li>【章节概要】<ul><li>情节表</li><li>编辑章节名</li><li>字数统计</li></ul></li><li>【标签列表】<ul><li>每个标签显示分类+一行概要</li><li>按关键词搜索标签</li><li>分类<ul><li>按分类查看标签</li><li>在分类内搜索标签*</li></ul></li></ul></li><li>【标签详情】<ul><li>设置标签名和分类</li><li>标签详情</li><li>功能按钮<ul><li>编辑：激活后再按一次保存</li><li>复制：以当前标签为模板新建一个标签</li><li>新建：新建空白标签</li><li>删除：删除当前标签，需要添加二次确认提示</li></ul></li></ul></li><li>【主模块】<ul><li>支持自定义字体，字号大小，行距</li><li>支持单独章节导出为txt格式</li><li>tab键自动生成两个全角空格</li><li>首字母缩写快捷输入标签</li></ul></li><li>【全局】<ul><li>支持自定义布局<ul><li>拖动解锁/合并窗口*</li><li>自动吸附到侧边栏*</li><li>可以关闭窗口，再通过菜单打开</li></ul></li></ul></li><li>【菜单】<ul><li>文件<ul><li>打开工程</li><li>导入文本到工程</li><li>保存工程</li><li>导出文本</li><li>批量导出选定章节*</li></ul></li><li>编辑<ul><li>复制粘贴</li><li>撤销重做</li><li>查找替换</li></ul></li><li>格式<ul><li>字体</li><li>字号</li><li>行距</li></ul></li><li>窗口<ul><li>显示/隐藏模块</li></ul></li></ul></li></ul><p>　　以及还有路人提出的要一个情节图形化的功能……感觉设计这个图形化的图形就要花很多心思了，暂时还是算了吧OTL</p>]]></content>
     
     <summary type="html">
     
@@ -315,6 +347,8 @@
     
       <category term="随笔" scheme="http://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
+      <category term="imgtag" scheme="http://co5.me/tags/imgtag/"/>
+    
   </entry>
   
   <entry>
@@ -322,9 +356,9 @@
     <link href="http://co5.me/2018/180625-waimai.html"/>
     <id>http://co5.me/2018/180625-waimai.html</id>
     <published>2018-06-25T07:27:24.000Z</published>
-    <updated>2018-10-02T23:53:02.727Z</updated>
+    <updated>2018-11-10T12:11:49.758Z</updated>
     
-    <content type="html"><![CDATA[<p>　　叫外卖偶遇一位聋哑人外卖小哥。<br><a id="more"></a></p><p><center><br>    .+†+.</center><br>　　今天拿外卖，按完门铃我开门发现外卖员站在楼梯口玩手机，喊了两句你怎么不进来没理我，有点生气就又把门关上了。<br>　　然后在门口转了10秒钟想想可能是我声音小他没听见吧，我就又出去问：我开了门你怎么不进来啊？<br>　　外卖员在门口啊啊啊地叫了几声，又指指自己的耳朵，我才明白他是聋哑人。他是肯定没法辨别这个楼道的防盗门什么时候开了，那我自己去拿吧。<br>　　拿了外卖他还很负责地指了指外卖单子问是不是我的，我就点点头，然后他才放心地走了。<br>　　拿了外卖回来一看手机，才发现刚才他在楼梯口门外不是在玩手机，而是在给我发短信……<br>　　有点心酸，不知道大家怎么看。</p><p><img src="https://cmx.im/system/media_attachments/files/000/784/807/original/7f25b3b058aed815.jpeg?1529911665" alt=""></p><p>　　我开始是觉得聋哑人就不要做这种需要用到听力和与人交流的工作了……<br>　　但是转念一想他顶着大太阳来送外卖，除了听不见开门之外也没有什么失职的举动，甚至比普通外卖员更尽职一些，至少我之前遇见的外卖员都没有确认有没有送错的。<br>　　其实这种问题只需要在防盗门上加一个指示灯就可以解决的啊，设计的时候只考虑到用声音来指示开关，就没有考虑到听障人士独自出行的情况吗？<br>　　但是，说来惭愧，我在这里住了十几年，也是第一次遇到这样的问题。<br>　　想起那一句话，你觉得中国的残疾人少，是因为他们生存的空间太过狭窄以至于他们只能待在家里被人看护，而外国的配套设施做的好残疾人才可以自由出门。<br>　　想想确实是这样，所以觉得心酸。外卖小哥鼓起勇气走出了家门，不知道这个社会能接纳他多久的坚持呢？</p>]]></content>
+    <content type="html"><![CDATA[<p>　　叫外卖偶遇一位聋哑人外卖小哥。<br><a id="more"></a></p><p><center><br>    .+†+.</center><br>　　今天拿外卖，按完门铃我开门发现外卖员站在楼梯口玩手机，喊了两句你怎么不进来没理我，有点生气就又把门关上了。<br>　　然后在门口转了10秒钟想想可能是我声音小他没听见吧，我就又出去问：我开了门你怎么不进来啊？<br>　　外卖员在门口啊啊啊地叫了几声，又指指自己的耳朵，我才明白他是聋哑人。他是肯定没法辨别这个楼道的防盗门什么时候开了，那我自己去拿吧。<br>　　拿了外卖他还很负责地指了指外卖单子问是不是我的，我就点点头，然后他才放心地走了。<br>　　拿了外卖回来一看手机，才发现刚才他在楼梯口门外不是在玩手机，而是在给我发短信……<br>　　有点心酸，不知道大家怎么看。</p><p><img src="https://cmx.im/system/media_attachments/files/000/784/807/original/7f25b3b058aed815.jpeg?1529911665" alt="">s</p><p>　　我开始是觉得聋哑人就不要做这种需要用到听力和与人交流的工作了……<br>　　但是转念一想他顶着大太阳来送外卖，除了听不见开门之外也没有什么失职的举动，甚至比普通外卖员更尽职一些，至少我之前遇见的外卖员都没有确认有没有送错的。<br>　　其实这种问题只需要在防盗门上加一个指示灯就可以解决的啊，设计的时候只考虑到用声音来指示开关，就没有考虑到听障人士独自出行的情况吗？<br>　　但是，说来惭愧，我在这里住了十几年，也是第一次遇到这样的问题。<br>　　想起那一句话，你觉得中国的残疾人少，是因为他们生存的空间太过狭窄以至于他们只能待在家里被人看护，而外国的配套设施做的好残疾人才可以自由出门。<br>　　想想确实是这样，所以觉得心酸。外卖小哥鼓起勇气走出了家门，不知道这个社会能接纳他多久的坚持呢？</p>]]></content>
     
     <summary type="html">
     
@@ -334,6 +368,8 @@
     
       <category term="汐喵晒鱼" scheme="http://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
     
+    
+      <category term="imgtag" scheme="http://co5.me/tags/imgtag/"/>
     
       <category term="版聊搬运" scheme="http://co5.me/tags/%E7%89%88%E8%81%8A%E6%90%AC%E8%BF%90/"/>
     
@@ -443,30 +479,6 @@
     <summary type="html">
     
       &lt;p&gt;　　【以下内容包含剧透，请谨慎阅读，尤其是删除线部分】&lt;br&gt;　　【这次是真的剧透！不过应该是番外的剧情1551】&lt;br&gt;
-    
-    </summary>
-    
-      <category term="-|梦蚀°" scheme="http://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/"/>
-    
-    
-      <category term="原创" scheme="http://co5.me/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-      <category term="梦蚀·设定" scheme="http://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E8%AE%BE%E5%AE%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【-|梦蚀°】人物设定 - 180616</title>
-    <link href="http://co5.me/2018/180616-DDer-character.html"/>
-    <id>http://co5.me/2018/180616-DDer-character.html</id>
-    <published>2018-06-15T22:25:38.000Z</published>
-    <updated>2018-06-15T23:41:10.464Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　【以下内容包含剧透，请谨慎阅读】<br>　　【但是其实问题不太大，反正谁知道我以后会不会推倒重来呢emmmmm】<br><a id="more"></a></p><p><center><br>    .+†+.</center></p><ul><li>尔雅</li><li>17岁，女主，大一新生，心理学爱好者</li></ul><p>　　因为<del>姐姐的自杀</del>放弃了大好的艺术学院前途报考了以心理学闻名的雪野女子大学。然而雪野的心理学专业分数线高不可及，每年又仅招收不到10人，尔雅只能先考入学前教育专业，再寄希望于校内考转到心理系。<br>　　在选修课上选定了“诱导自杀”这个课题之后，被教授诗织介绍给了休学的心理系学姐婳月，卷入了一系列安检的调查之中。<br>　　中规中矩的乖乖女形象，成绩中上。略微天然呆，喜欢吐槽。看起来平易近人通情达理，实际上<del>姐姐的自杀</del>是她心中挥之不去的阴影。</p><p><center><br>    .+†+.</center></p><ul><li>婳月</li><li>18岁，大二心理系学生，因病休学中</li></ul><p>　　传闻中在父亲去世后不久与家人断绝了关系，孤身一人千里迢迢考入雪野求学拜入诗织教授门下。虽然隔三差五就缺勤旷课，但每逢大小考都是毫无疑问的第一。<br>　　在入学后不久因<del>一起自杀事件</del>感染了Karas病毒，因此休学养病。但实际上是加入了警方的“特别对策小组”协助侦查各种Karas能力者参与的事件。Karas二级感染者，能在其他感染者熟睡时直接进入感染者的意识并搜索对方的记忆。<br>　　在校时就十分特立独行，休学之后性格变得更加孤僻古怪，时不时爆出惊人的失礼言论。</p><p><center><br>    .+†+.</center></p><ul><li>诗织</li><li>22岁，雪野女子大学心理系特聘教授<br>　　6年前<del>十三区叛乱</del>的亲历者，<del>战时军方特种部队“渡鸦”成员</del>。叛乱结束后在雪野大学从事心理学研究，不久后<del>在政府的介入下</del>被特聘为教授。<br>　　另一重身份是警方“特别对策小组”的心理学顾问，Karas一级感染者，能在梦境中与Karas感染者对话。这一级别的能力没有伦理方面的问题，因此是最常使用的。<br>　　Karas方面研究的顶尖专家，在政府拥有不少特权。为数不多能镇住婳月的人之一。</li></ul><p><center><br>    .+†+.</center></p><ul><li>糖砂</li><li>23岁，甜品Miss Donuts的老板<br>　　前<del>特种部队“渡鸦”队长</del>，Karas二级感染者，退役后在第八区开了一家名为Miss Donuts的甜品店，也是特别对策小组的指定民间食堂。<br>　　与婳月的关系似乎不错，常常以地下偶像“Mione”的演唱会门票诓骗婳月出手调查各种危险而棘手的案件。也是将婳月介绍给特别对策小组的中间人。<br>　　一个将“外热内冷”发挥到极致的人，看似充满人情味，实则每一处言行举止都是精心计算的结果。即使不使用Karas的能力，也能从三两句的交谈中了解对方是一个怎样的人。</li></ul><p><center><br>    .+†+.</center></p><ul><li>末茗</li><li>17岁，地下偶像“Mione”<br>　　<del>与诗织同属特种部队“渡鸦”，是当时最年轻的成员，Karas三级感染者，能够直接在对象清醒时入侵意识，是极为可怕的存在。因此在战后遭到政府的追捕，在其他成员的保护下获得了新的身份得以继续生活。</del><br>　　然而<del>同伴的牺牲使她患上了严重的ptsd</del>，加之在战时失去了左腿，无法再回到学校与同龄人一起学习。在糖砂的建议下，她用“Mione”的艺名作为地下偶像出道，拥有空气系的声线，曲风极具感染力。<br>　　<del>作为三级感染者时常出现精神不稳定的症状</del>，因此每周末都会住在糖砂家以便了解她的情况。养了一只身长1米2的缅因猫，名叫Lyra。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　【以下内容包含剧透，请谨慎阅读】&lt;br&gt;　　【但是其实问题不太大，反正谁知道我以后会不会推倒重来呢emmmmm】&lt;br&gt;
     
     </summary>
     
