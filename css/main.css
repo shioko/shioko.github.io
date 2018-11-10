@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4c6ff;
+  background: #7483cb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3156,9 +3156,10 @@ body {
   margin-bottom: 50px;
 }
 .category-all-page .category-list {
-  column-count: 2;
   max-width: 80%;
+  min-width: 300px;
   margin-left: 20%;
+  column-count: 2;
 }
 .category-all-page .category-list-item {
   margin: 0 10px;
