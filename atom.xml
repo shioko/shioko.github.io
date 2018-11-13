@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://co5.me/"/>
-  <updated>2018-11-12T20:52:33.068Z</updated>
+  <updated>2018-11-13T15:08:34.105Z</updated>
   <id>http://co5.me/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo NexT主题下实现点击博主名回到首页</title>
+    <link href="http://co5.me/2018/181113-note.html"/>
+    <id>http://co5.me/2018/181113-note.html</id>
+    <published>2018-11-13T14:23:48.000Z</published>
+    <updated>2018-11-13T15:08:34.105Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　因为之前手贱给博主名duang了一个hover变色发光特效，然而并没有链接跳转只是单纯变色有一种蜜汁难受的感觉，于是花了15分钟研究了一下next主题里的layout文件，给博主名加了个超链接。<br>　　感觉这是我学习JavaScript的开始！那么用JS生成相册界面也指日可待了吧！<del>【做梦</del><br><a id="more"></a></p><p><center><br>    .+†+.</center></p><h1 id="JS部分"><a href="#JS部分" class="headerlink" title="JS部分"></a>JS部分</h1><ul><li>在<code>themes\next\layout\_macro\sidebar.swig</code>找到如下内容：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;section class=&quot;site-overview-wrap sidebar-panel&#123;% if not display_toc or toc(page.content).length &lt;= 1 %&#125; sidebar-panel-active&#123;% endif %&#125;&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;site-overview&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;site-author motion-element&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;http://schema.org/Person&quot;&gt;</span><br><span class="line">      &#123;% if theme.avatar.url %&#125;</span><br><span class="line">        &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot;</span><br><span class="line">        src=&quot;&#123;&#123; url_for( theme.avatar.url | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot;</span><br><span class="line">        alt=&quot;&#123;&#123; author &#125;&#125;&quot; /&gt;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">        &lt;p itemprop=&quot;name&quot;&gt;&#123;&#123; author &#125;&#125;&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;site-description motion-element&quot; itemprop=&quot;description&quot;&gt;&#123;#</span><br><span class="line">        #&#125;&#123;&#123; description &#125;&#125;&#123;#</span><br><span class="line">      #&#125;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br></pre></td></tr></table></figure><ul><li>替换为如下内容：（其实就是在<code>site-author-name</code>外面套了一个a+一个div）</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;section class=&quot;site-overview-wrap sidebar-panel&#123;% if not display_toc or toc(page.content).length &lt;= 1 %&#125; sidebar-panel-active&#123;% endif %&#125;&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;site-overview&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;site-author motion-element&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;http://schema.org/Person&quot;&gt;</span><br><span class="line">      &#123;% if theme.avatar.url %&#125;</span><br><span class="line">        &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot;</span><br><span class="line">        src=&quot;&#123;&#123; url_for( theme.avatar.url | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot;</span><br><span class="line">        alt=&quot;&#123;&#123; author &#125;&#125;&quot; /&gt;</span><br><span class="line">      &#123;% endif %&#125;</span><br><span class="line">        &lt;div class=&quot;site-author-name&quot;&gt;</span><br><span class="line">          &lt;a href=&quot;../&quot;&gt;</span><br><span class="line">            &lt;p itemprop=&quot;name&quot;&gt;&#123;&#123; author &#125;&#125;&lt;/p&gt;</span><br><span class="line">          &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;p class=&quot;site-description motion-element&quot; itemprop=&quot;description&quot;&gt;&#123;#</span><br><span class="line">        #&#125;&#123;&#123; description &#125;&#125;&#123;#</span><br><span class="line">      #&#125;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br></pre></td></tr></table></figure><p>　　然后你的博主名就应该变成一个连接到网站主页的超链接了，本地预览时应该是指向<code>localhoset:4000</code>的，如果出了什么奇怪的问题，把a元素里的<code>../</code>替换成你自己的博客域名即可，<strong>如果设置了https要记得加https噢</strong>。</p><ul><li>例：<code>&lt;a href=&quot;https://co5.me&quot;&gt;</code></li></ul><h1 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h1><p>　　修改了layout文件之后原本的<code>site-author-name</code>已经从一个p元素变成了包含超链接（a）的div元素，但是在next默认的css样式下鼠标移到空白位置也会触发超链接，所以还需要对CSS样式进行一些更改。</p><ul><li>在<code>custom.styl</code>里追加如下内容：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.site-author-name p &#123;</span><br><span class="line">display: inline-block;</span><br><span class="line">margin-bottom: 0;</span><br><span class="line">&#125;</span><br><span class="line">.site-author-name a &#123;</span><br><span class="line">border-bottom: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>Ps. 更改元素构成之后不知道为什么，我原本添加的transition（平滑动画）属性失效了，需要更改到<code>.site-author-name a</code>上才能正确显示</li></ul><h1 id="那么这东西有什么用呢"><a href="#那么这东西有什么用呢" class="headerlink" title="那么这东西有什么用呢"></a>那么这东西有什么用呢</h1><p>　　主要就是（在next主题下）看完一篇文章后可以直接把目录切换到站点概览界面然后返回首页看最近更新。<br>　　<del>其实就是没什么用啦【。</del><br>　　不过电脑端还有个返回顶部按钮，手机端想切页面挺难的，因为导航栏在最上面……之后我想想有没有办法能把这个功能放到手机端UI里【沉思</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　因为之前手贱给博主名duang了一个hover变色发光特效，然而并没有链接跳转只是单纯变色有一种蜜汁难受的感觉，于是花了15分钟研究了一下next主题里的layout文件，给博主名加了个超链接。&lt;br&gt;　　感觉这是我学习JavaScript的开始！那么用JS生成相册界面也指日可待了吧！&lt;del&gt;【做梦&lt;/del&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="维护日志" scheme="http://co5.me/categories/%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="hexo" scheme="http://co5.me/tags/hexo/"/>
+    
+      <category term="next" scheme="http://co5.me/tags/next/"/>
+    
+      <category term="CSS" scheme="http://co5.me/tags/CSS/"/>
+    
+      <category term="JS" scheme="http://co5.me/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>【-|梦蚀°】人物设定·“渡鸦”小队 - 181113</title>
@@ -472,28 +500,6 @@
     
     
       <category term="imgtag" scheme="http://co5.me/tags/imgtag/"/>
-    
-      <category term="版聊搬运" scheme="http://co5.me/tags/%E7%89%88%E8%81%8A%E6%90%AC%E8%BF%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【版聊搬运】生育</title>
-    <link href="http://co5.me/2018/180624-shengyu.html"/>
-    <id>http://co5.me/2018/180624-shengyu.html</id>
-    <published>2018-06-23T05:01:24.000Z</published>
-    <updated>2018-10-02T23:52:56.835Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　单身税新闻引发的一系列生育讨论。<br>　　版聊全文存档：<a href="https://mubu.com/doc/1FqTDUiMd0" target="_blank" rel="noopener">https://mubu.com/doc/1FqTDUiMd0</a><br><a id="more"></a></p><p><center><br>    .+†+.</center><br>　　说起来很矛盾的是，虽然我不想生孩子，但是我想养孩子……<br>　　不想怀胎十月不想分娩不想长妊辰纹，尤其是刚从抑郁症里走出来没两年现在还时不时发作更不敢想以后产后抑郁症会严重成什么样，没准我会给全家人投毒。<br>　　但是另一方面又很想养个孩子，如果是男孩就教会他不和你国男性幼崽同流合污，如果是女孩就教会她自尊自立自强，希望他们能在这个卑劣的国家里能有能力进行有效的反击却同时成为一个高尚的人……<br>　　想想我这个想法也很危险，还不是一样把自己未竟的心愿投射在下一代身上吗。还是孤独终老吧。</p><p>　　还有一点就是，如果我们这些明白婚姻和生育责任的人选择不婚不育，那么这个社会上失格的夫妻和父母也会越来越多，就好像穆斯林用繁殖侵略了发达国家和先进文明一样，这部分来自于低学历低收入人群的人口增长也必然会导致你国的翻车越开越快。<br>　　当然我知道人不该分三六九等，但是这部分人确实没有带动你国发展和进步能力，只是统治阶级种的韭菜而已。<br>　　我也知道思想的传承是不受血缘限制的，但在这样一个连启蒙教育都越来越红专正的国家，真的还能出现挣脱原生家庭的愚昧的幸存者吗？</p><p>　　大约是我老了<code>_(:з」∠)_</code></p><p>　　怎么说呢……可能是因为我从小就当姐姐当班干部这种给人擦屁股的角色，导致我过早萌发了母性情怀。<br>　　还是性格使然。<br>　　另一方面就是我妈在母亲这个角色上是十足失格，想养孩子的想法多半也是出于想补全一个健全的母女关系的缺憾吧……<br>　　这个养育指的不是物质而是精神上的，以为我自己几乎就是在各种磕磕绊绊之中“自我教育”成为现在的样子的，所以时长幻想如果能有一个孩子能避开我走过的一切弯路再理解我今天的想法，那是不是能达到我想都不敢想的高度呢<em>(:з」∠)</em><br>　　但其实对他/她也没有多么严格的期待，只是希望ta能爱自己，爱这个世界，最后用自己的努力去改变它。我觉得能做到这些就是十足优秀而温柔的人了。</p><p>　　浑身散发着母性光辉的我【x</p><p>　　技巧和人格是两个层面，我是属于人格不完整的那种人，所以学习再多的技巧也不能让我有安全感，就好像在盖一栋没有地基的楼一样，你永远不知道它什么时候会倒。<br>　　比较幸运的是我知道我人格的缺陷是什么，也知道它源自何处以及如何去尽力避免它。但是即使如此有的时候这些缺陷也完全不可控……而且在一个三观相对成熟的年龄也很难再做什么改变了。<br>　　所以想养育一个孩子的情怀大概也有自我救赎的因素在里面，我想知道一个人格健全的“我”能达到一个怎样的高度。<br>　　但是我自己也清楚这种想法依然是不健全的，因为我依然没有把孩子当做一个独立的个体，而是自以为是的把自己当成了标杆。我也不知道如果我的孩子变得愚昧叛逆，或者甚至更糟，遗传了我身上所有不可控的缺陷，出现这样的情况我会做出怎样的反应。所以在很长一段时间这种想法也应该只会是一个想法而已……我真的要先解决掉自己的所有问题才有对另一个人的人生负责的勇气。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　单身税新闻引发的一系列生育讨论。&lt;br&gt;　　版聊全文存档：&lt;a href=&quot;https://mubu.com/doc/1FqTDUiMd0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mubu.com/doc/1FqTDUiMd0&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="汐喵晒鱼" scheme="http://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
-    
     
       <category term="版聊搬运" scheme="http://co5.me/tags/%E7%89%88%E8%81%8A%E6%90%AC%E8%BF%90/"/>
     

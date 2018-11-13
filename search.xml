@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo NexT主题下实现点击博主名回到首页]]></title>
+    <url>%2F2018%2F181113-note.html</url>
+    <content type="text"><![CDATA[因为之前手贱给博主名duang了一个hover变色发光特效，然而并没有链接跳转只是单纯变色有一种蜜汁难受的感觉，于是花了15分钟研究了一下next主题里的layout文件，给博主名加了个超链接。 感觉这是我学习JavaScript的开始！那么用JS生成相册界面也指日可待了吧！【做梦 .+†+. JS部分 在themes\next\layout\_macro\sidebar.swig找到如下内容： 12345678910111213&lt;section class=&quot;site-overview-wrap sidebar-panel&#123;% if not display_toc or toc(page.content).length &lt;= 1 %&#125; sidebar-panel-active&#123;% endif %&#125;&quot;&gt; &lt;div class=&quot;site-overview&quot;&gt; &lt;div class=&quot;site-author motion-element&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;http://schema.org/Person&quot;&gt; &#123;% if theme.avatar.url %&#125; &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot; src=&quot;&#123;&#123; url_for( theme.avatar.url | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot; alt=&quot;&#123;&#123; author &#125;&#125;&quot; /&gt; &#123;% endif %&#125; &lt;p itemprop=&quot;name&quot;&gt;&#123;&#123; author &#125;&#125;&lt;/p&gt; &lt;p class=&quot;site-description motion-element&quot; itemprop=&quot;description&quot;&gt;&#123;# #&#125;&#123;&#123; description &#125;&#125;&#123;# #&#125;&lt;/p&gt; &lt;/div&gt; 替换为如下内容：（其实就是在site-author-name外面套了一个a+一个div） 1234567891011121314151617&lt;section class=&quot;site-overview-wrap sidebar-panel&#123;% if not display_toc or toc(page.content).length &lt;= 1 %&#125; sidebar-panel-active&#123;% endif %&#125;&quot;&gt; &lt;div class=&quot;site-overview&quot;&gt; &lt;div class=&quot;site-author motion-element&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;http://schema.org/Person&quot;&gt; &#123;% if theme.avatar.url %&#125; &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot; src=&quot;&#123;&#123; url_for( theme.avatar.url | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot; alt=&quot;&#123;&#123; author &#125;&#125;&quot; /&gt; &#123;% endif %&#125; &lt;div class=&quot;site-author-name&quot;&gt; &lt;a href=&quot;../&quot;&gt; &lt;p itemprop=&quot;name&quot;&gt;&#123;&#123; author &#125;&#125;&lt;/p&gt; &lt;/a&gt; &lt;/div&gt; &lt;p class=&quot;site-description motion-element&quot; itemprop=&quot;description&quot;&gt;&#123;# #&#125;&#123;&#123; description &#125;&#125;&#123;# #&#125;&lt;/p&gt; &lt;/div&gt; 然后你的博主名就应该变成一个连接到网站主页的超链接了，本地预览时应该是指向localhoset:4000的，如果出了什么奇怪的问题，把a元素里的../替换成你自己的博客域名即可，如果设置了https要记得加https噢。 例：&lt;a href=&quot;https://co5.me&quot;&gt; CSS部分 修改了layout文件之后原本的site-author-name已经从一个p元素变成了包含超链接（a）的div元素，但是在next默认的css样式下鼠标移到空白位置也会触发超链接，所以还需要对CSS样式进行一些更改。 在custom.styl里追加如下内容： 1234567.site-author-name p &#123; display: inline-block; margin-bottom: 0;&#125;.site-author-name a &#123; border-bottom: 0px;&#125; Ps. 更改元素构成之后不知道为什么，我原本添加的transition（平滑动画）属性失效了，需要更改到.site-author-name a上才能正确显示 那么这东西有什么用呢 主要就是（在next主题下）看完一篇文章后可以直接把目录切换到站点概览界面然后返回首页看最近更新。 其实就是没什么用啦【。 不过电脑端还有个返回顶部按钮，手机端想切页面挺难的，因为导航栏在最上面……之后我想想有没有办法能把这个功能放到手机端UI里【沉思]]></content>
+      <categories>
+        <category>维护日志</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>CSS</tag>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【-|梦蚀°】人物设定·“渡鸦”小队 - 181113]]></title>
     <url>%2F2018%2F181113-DDer-character.html</url>
     <content type="text"><![CDATA[蔷薇之笼相关设定，没出场的一般来说都会改…… 【以下内容包含剧透，请谨慎阅读，尤其是删除线部分】 .+†+. .posts-expand .post-body h3 { color: #f9a972; text-align: center; } 000.莲 16岁，男 本名姓氏没想好莲/** Ren 010.纯 17岁，男 本名神田纯/Kanda jun 013.衣纯 16岁，女 本名姓氏没想好衣纯/** Izumi 逃亡的杀人犯。 长期受到家暴迫害，梦见自己杀害了父母，醒来时父母已经死了。 警方断定她是梦游杀人，实际上是Karas三级感染者拥有的“现实重构”能力，案发当晚她甚至不在家。 030.澪 12岁，女 姓氏不详，名字读作Mio 渡鸦小队在执行某次任务时解救的孩子，被发现拥有“现实重构”能力，诊断为karas三级感染者，并授予代号，但不参与作战任务。 被大家宠爱的孩子，但与墨关系比较疏远，可能是同为三级感染者的原因，后来由405提议两人减少接触。 306.实 18岁，男 本名安永实/Yasunaga Minoru 军人世家的次男，不被父母抱有厚望因此在较为宽松的环境下长大。 看似大大咧咧实则心思缜密，有时甚至笑里藏刀。 405.汐子 17岁，女 除了约书亚以外没有人知道她的本名，“汐子/Shioko”只是代号405的谐音。 渡鸦小队的幕后参谋（“第13人”），无论是格雷森还是糖都原因听从她的作战计划。 在最终战中牺牲了绝大部分成员来保护自己需要的人。 退役后改名为橘诗织/Tachibana Shiori，仍活跃在Karas研究的第一线。 CAT.夏洛特 14岁，女 本名夏洛特·哈罗斯/Charlotte Hallows 正式队员中最为年幼的女孩，早熟早慧，在文字上天赋过人，有写日记的习惯。 贵族旁系的女儿，家业都由哥哥继承，从小被父母忽视，因此志愿加入了渡鸦小队。退役后与家人关系回暖，还算衣食无忧，但内心的隔阂依然无法消除。 Karas二级感染者（人工），被罗姫称作“爱丽丝”。 CSB.卡耐尔 18岁，男。 卡耐尔/Conchobhar GYS.格雷森 19岁，男 格雷森/Grayson 某位高官的儿子，指定空降的小队队长。 Karas一级感染者（人工），在第一次出任务时就因为个人失误导致精神崩坏，住院6个月后自杀身亡。 IA.糖 18岁，女 今井 糖/Imai Amai 格雷森住院后渡鸦小队名义上的领导人，在格雷森自杀之后正式受勋。 主要负责分配作战任务与鼓舞士气，实际的幕后策划是405。 退役后改名为上梨子糖砂/Kaminashi Amesa，依然在政府从事情报工作。 JSA.约书亚 19岁，男 约书亚/Joshua 405的旧识，唯一知道她本名的人，但两人关系看起来却并不亲近，甚至有些针锋相对。 家人均是梦神教徒，因此与家人断绝了关系，从此没有姓氏。 Karas二级感染者，爱好窥探他人的梦境，是官方认定的Karas最早研究人，曾被罗姫寄生。 战后在第一区的女神湖精神护理院做主治医生，氯胺酮成瘾者 L.利亚姆 16岁，男 利亚姆/Liam NTE.娜塔莉 17岁，女 娜塔莉/Natalie RH.黑羽 18岁，男 黑羽/Kuroha是自己取的假名，真名不详]]></content>
@@ -335,8 +349,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github pages</tag>
         <tag>next</tag>
+        <tag>github pages</tag>
         <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
@@ -352,8 +366,8 @@
         <tag>hexo</tag>
         <tag>next</tag>
         <tag>CSS</tag>
-        <tag>插件</tag>
         <tag>ow</tag>
+        <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
   </entry>
@@ -732,9 +746,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[灰箭鹄的心愿&梦境中的雨霖花]]></title>
-    <url>%2F2012%2F101224-momo.html</url>
-    <content type="text"><![CDATA[莫莫OST填词。 .+†+. [ti:灰箭鹄的心愿][ar:Shioko][al:][by:Shioko] [00:00.57]灰箭鹄的心愿[00:03.71]国产动画《莫莫》插曲[00:06.19]填词 - Shioko[00:09.13][00:12.32]听见么 生命 的歌唱[00:23.48][00:25.15]纷纷落下的 雨点[00:30.87]微微摇曳的 烛光[00:37.44]那又是谁的 声音传来[00:44.09]希望含着 感伤[00:49.20][00:50.12]看那小小的 希望[00:55.87]闪着动人的 光芒[01:01.39]即便那未来 无法预料[01:08.68]只要心存 方向[01:13.31][01:14.77]夜风在吹 天黑了 滴滴哒哒 雨在下[01:20.57]那小小的 萤火啊 照亮的是 未来吗[01:26.57]你是否能 看见呢 那用生命 换来的[01:32.56]那明亮的 希望啊 正指引着 未来呢[01:38.43][01:38.53]因为路途 太漫长 所以才要 朝前方[01:44.65]绝不回头 不迷茫 心无旁骛 向远方[01:50.58]就让那个 悲哀的 美丽的 小小愿望[01:56.56]沉淀心中 永恒铭记 成为力量[02:01.02][02:01.63]你是否听到 生命的歌唱[02:07.45]那小小的心愿 闪耀[02:13.49]不管那未来 有多少泪水欢笑[02:20.94]从脚下走 向远方[02:26.33][02:27.46]你是否听到 生命的绝唱[02:34.43]灰箭鹄的声音 回响[02:40.44]这是用生命 许下未来的愿望[02:47.62]定会永远 闪耀[02:51.96][02:52.22]点点的萤火 闪在天空上[02:57.96]那微小的光 也明亮[03:03.96]即便那未来 谁也无法预料[03:11.41]只要心存 方向[03:15.55][03:17.12]那生命的 绝唱[03:23.08][03:25.76]- The End - [ti:灰箭鹄的心愿][ar:Shioko][al:][by:Shioko] [00:01.59]梦境中的雨霖花[00:07.01]国产动画《莫莫》插曲[00:12.39]填词 - Shioko[00:17.65][00:23.01]夜深 月上树梢[00:33.59]风声 轻轻绕耳旁[00:44.30]月下 梦境中[00:53.55]盛开的是那 雨霖花[01:01.59][01:05.48]希望 轻轻种下[01:13.98]然后 静静等它[01:22.62]发芽 长大[01:29.80]开成幽蓝色的 雨霖花[01:38.47][01:39.72]睡梦 未醒[01:47.76]希望 亦未灭[01:55.67]只是想 醒来时[02:04.38]睁眼看到 那盛开的花[02:12.95][02:16.32]- The End -[02:20.97]]]></content>
+    <title><![CDATA[人间失格[栀子ver.] - 虚像]]></title>
+    <url>%2F2012%2F120531-kuchinashi.html</url>
+    <content type="text"><![CDATA[人间失格的填词。栀子视角。 .+†+. 人间失格·虚像～Lirics By Shioko～人间失格[栀子ver.] - 虚像- 请你听我 唱完这歌 -lalula lalula lalula lalilalulalula lalula lalalalalalula lalula lalula lalilalulalula lalula lalalala30天在黑暗中静悄悄地等待终于登上梦中反复出现的舞台轻轻转身跳出苦练已久的舞蹈lalilu lalalila没有声音没有眼泪也没有悲伤没有灵魂没有意志也没有思想只有骂名日复一日在身后增长lalilu lalalila每日只是站在我虚幻的舞台上不断重复着无限虚无空洞的笑如果存在的意义只有利益的话请你一定告诉我 消失的方法抱歉了 我只是一个没有自由的躯壳无权决定自身的存在或是消亡微笑的弧度或是明亮又欢快的歌谣全都是与我无关的 虚像堆砌成的虚像如果有一种方法能将歉意传达我一定笑着接受你们的所有谩骂如果如果之后的不总全是废话lalilu lalalila所有的如果都是我无谓的愿望连神明都不屑来聆听我的祈祷如果我就此如尘烟般消失的话一切的罪恶都会 就此终结吗？抱歉了 我只是一个没有灵魂的躯壳在谩骂之中诞生了意志和心跳没有权利也不敢奢望你们的原谅因为我只是可笑的 虚像堆砌成的虚像抱歉了 我只是一个没有生命的躯壳连诞生的意义是什么也不知道但所有的罪名还是让我独自背负吧因为我只是无谓的 虚像堆砌成的虚像诞生在这世上 抱歉了呢啊 虚像的虚像- 谢谢你屈尊听完了这首歌 -]]></content>
       <categories>
         <category>杂物箱†</category>
       </categories>
@@ -743,9 +757,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[人间失格[栀子ver.] - 虚像]]></title>
-    <url>%2F2012%2F120531-kuchinashi.html</url>
-    <content type="text"><![CDATA[人间失格的填词。栀子视角。 .+†+. 人间失格·虚像～Lirics By Shioko～人间失格[栀子ver.] - 虚像- 请你听我 唱完这歌 -lalula lalula lalula lalilalulalula lalula lalalalalalula lalula lalula lalilalulalula lalula lalalala30天在黑暗中静悄悄地等待终于登上梦中反复出现的舞台轻轻转身跳出苦练已久的舞蹈lalilu lalalila没有声音没有眼泪也没有悲伤没有灵魂没有意志也没有思想只有骂名日复一日在身后增长lalilu lalalila每日只是站在我虚幻的舞台上不断重复着无限虚无空洞的笑如果存在的意义只有利益的话请你一定告诉我 消失的方法抱歉了 我只是一个没有自由的躯壳无权决定自身的存在或是消亡微笑的弧度或是明亮又欢快的歌谣全都是与我无关的 虚像堆砌成的虚像如果有一种方法能将歉意传达我一定笑着接受你们的所有谩骂如果如果之后的不总全是废话lalilu lalalila所有的如果都是我无谓的愿望连神明都不屑来聆听我的祈祷如果我就此如尘烟般消失的话一切的罪恶都会 就此终结吗？抱歉了 我只是一个没有灵魂的躯壳在谩骂之中诞生了意志和心跳没有权利也不敢奢望你们的原谅因为我只是可笑的 虚像堆砌成的虚像抱歉了 我只是一个没有生命的躯壳连诞生的意义是什么也不知道但所有的罪名还是让我独自背负吧因为我只是无谓的 虚像堆砌成的虚像诞生在这世上 抱歉了呢啊 虚像的虚像- 谢谢你屈尊听完了这首歌 -]]></content>
+    <title><![CDATA[灰箭鹄的心愿&梦境中的雨霖花]]></title>
+    <url>%2F2012%2F101224-momo.html</url>
+    <content type="text"><![CDATA[莫莫OST填词。 .+†+. [ti:灰箭鹄的心愿][ar:Shioko][al:][by:Shioko] [00:00.57]灰箭鹄的心愿[00:03.71]国产动画《莫莫》插曲[00:06.19]填词 - Shioko[00:09.13][00:12.32]听见么 生命 的歌唱[00:23.48][00:25.15]纷纷落下的 雨点[00:30.87]微微摇曳的 烛光[00:37.44]那又是谁的 声音传来[00:44.09]希望含着 感伤[00:49.20][00:50.12]看那小小的 希望[00:55.87]闪着动人的 光芒[01:01.39]即便那未来 无法预料[01:08.68]只要心存 方向[01:13.31][01:14.77]夜风在吹 天黑了 滴滴哒哒 雨在下[01:20.57]那小小的 萤火啊 照亮的是 未来吗[01:26.57]你是否能 看见呢 那用生命 换来的[01:32.56]那明亮的 希望啊 正指引着 未来呢[01:38.43][01:38.53]因为路途 太漫长 所以才要 朝前方[01:44.65]绝不回头 不迷茫 心无旁骛 向远方[01:50.58]就让那个 悲哀的 美丽的 小小愿望[01:56.56]沉淀心中 永恒铭记 成为力量[02:01.02][02:01.63]你是否听到 生命的歌唱[02:07.45]那小小的心愿 闪耀[02:13.49]不管那未来 有多少泪水欢笑[02:20.94]从脚下走 向远方[02:26.33][02:27.46]你是否听到 生命的绝唱[02:34.43]灰箭鹄的声音 回响[02:40.44]这是用生命 许下未来的愿望[02:47.62]定会永远 闪耀[02:51.96][02:52.22]点点的萤火 闪在天空上[02:57.96]那微小的光 也明亮[03:03.96]即便那未来 谁也无法预料[03:11.41]只要心存 方向[03:15.55][03:17.12]那生命的 绝唱[03:23.08][03:25.76]- The End - [ti:灰箭鹄的心愿][ar:Shioko][al:][by:Shioko] [00:01.59]梦境中的雨霖花[00:07.01]国产动画《莫莫》插曲[00:12.39]填词 - Shioko[00:17.65][00:23.01]夜深 月上树梢[00:33.59]风声 轻轻绕耳旁[00:44.30]月下 梦境中[00:53.55]盛开的是那 雨霖花[01:01.59][01:05.48]希望 轻轻种下[01:13.98]然后 静静等它[01:22.62]发芽 长大[01:29.80]开成幽蓝色的 雨霖花[01:38.47][01:39.72]睡梦 未醒[01:47.76]希望 亦未灭[01:55.67]只是想 醒来时[02:04.38]睁眼看到 那盛开的花[02:12.95][02:16.32]- The End -[02:20.97]]]></content>
       <categories>
         <category>杂物箱†</category>
       </categories>
