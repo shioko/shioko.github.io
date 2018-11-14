@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff5462;
+  background: #8663ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3453,6 +3453,9 @@ ul {
 ::placeholder {
   opacity: 0.45;
 }
+.v .veditor {
+  min-height: 4.5rem !important;
+}
 .v .power,
 .v .power a {
   line-height: 1.8 !important;
@@ -3543,4 +3546,7 @@ ul {
 .posts-expand .post-body h6 {
   padding-top: 0px;
   margin-top: 20px;
+}
+.posts-expand .post-body p {
+  font-family: Trebuchet MS, "Microsoft YaHei", sans-serif;
 }
