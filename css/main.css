@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8663ff;
+  background: #5d0806;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3032,8 +3032,10 @@ body {
   border-bottom: 0;
   margin-bottom: 1px;
 }
-.site-author-name a {
+.site-author-name {
   margin-top: 15px;
+}
+.site-author-name a {
   font-size: 18px;
   color: #000;
   text-shadow: 0 0 15px transparent;
@@ -3547,6 +3549,7 @@ ul {
   padding-top: 0px;
   margin-top: 20px;
 }
-.posts-expand .post-body p {
-  font-family: Trebuchet MS, "Microsoft YaHei", sans-serif;
+.posts-expand .post-body p,
+.posts-expand .post-body li {
+  font-family: Cambria, Calibri, "Microsoft YaHei UI", sans-serif;
 }
