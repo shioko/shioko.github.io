@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="†少女癌†">
 <meta property="og:description" content="最近解锁了用wacom数位板的按键输入中文行首缩进的两个全角空格的新技能……简直太爽啦！！！！　　然后就是添加了友链界面，修正了盘古之白在省略号末尾加空格的问题。　　还有一个待解决的问题是分类页面的数字也被加了空格，而且这个数字加的空格没有识别到左右端的括号，导致出现了各种不对称的问题，非常难看……　　三个解决思路：1.修改盘古的js代码屏蔽categories界面；2.修改next主题的渲染">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-23T06:38:42.838Z">
+<meta property="og:updated_time" content="2018-11-23T07:06:49.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最近的各种笔记（友链+盘古之白）">
 <meta name="twitter:description" content="最近解锁了用wacom数位板的按键输入中文行首缩进的两个全角空格的新技能……简直太爽啦！！！！　　然后就是添加了友链界面，修正了盘古之白在省略号末尾加空格的问题。　　还有一个待解决的问题是分类页面的数字也被加了空格，而且这个数字加的空格没有识别到左右端的括号，导致出现了各种不对称的问题，非常难看……　　三个解决思路：1.修改盘古的js代码屏蔽categories界面；2.修改next主题的渲染">
@@ -431,7 +431,7 @@
                 
               
 
-              <time title="创建时间：2018-11-23 12:48:33 / 修改时间：14:38:42" itemprop="dateCreated datePublished" datetime="2018-11-23T12:48:33+08:00">2018-11-23</time>
+              <time title="创建时间：2018-11-23 12:48:33 / 修改时间：15:06:49" itemprop="dateCreated datePublished" datetime="2018-11-23T12:48:33+08:00">2018-11-23</time>
             
 
             
@@ -547,6 +547,7 @@
 <li><a href="https://github.com/vinta/pangu.js/issues/114" target="_blank" rel="noopener">https://github.com/vinta/pangu.js/issues/114</a></li>
 </ul>
 <p>　　在两个js文件里搜索<code>\u2026</code>（省略号的字符编码），两个js.map文件里搜索<code>\\u2026</code>（多一个斜杠），全部删除，问题就解决了。<br>　　所以我那天晚上为什么没有直接去掉呢……好像是因为只改了其中的一个js文件？<br>　　说起来……我好想再开个issue问怎么屏蔽hexo的其中一个界面啊……【都不好意思了呜呜呜呜呜（；ω；）</p>
+<p>　　更新：空格添加只在本地生效了，部署之后依然被加了空格，为什么啊……</p>
 <h1 id="工作计划"><a href="#工作计划" class="headerlink" title="工作计划"></a>工作计划</h1><h2 id="针对hexo中文标点的字体设计"><a href="#针对hexo中文标点的字体设计" class="headerlink" title="针对hexo中文标点的字体设计"></a>针对hexo中文标点的字体设计</h2><p>　　微软雅黑的傻逼标点缩进和傻逼大写I折磨我很久了……<br>　　目前唯一可行的解决标点缩进的方案就是前置一个英文字体。然后尝试替换各种字体的时候又发现，绝大多数非衬线字体的双引号都是两个长条三角形（直的），引号样式符合中文习惯而且能分清I和l的又大多数是衬线字体，取舍了很久才终于确定了现在的字体方案，还是用了一套衬线字体……<br>　　结果今天一看<del>wrnm</del>这个字体的(半)(角)(括)(号)怎么这么丑啊！！！！！(╯‵□′)╯︵┻━┻这tm不仔细看谁分得清你是[方括号]还是(圆括号)啊！！！设计这个括号的人是心理有什么疾病吗！？？<br>　　总结：自己设计一套针对中英文混排+标点优化的字体势在必行。<br>　　如果web字体支持字符缩进的话我也许还能努努力把盘古之白的功能包括进去，在中英文字符之间自动加一个缩进？当然要是搞不出缩进继续配合盘古之白使用也挺好的……<br>　　但是，你要问我这个计划啥时候开始实行……那可能就要等草莓象重构以后再说了哈哈哈哈哈x</p>
 <h2 id="实现盘古之白分页渲染"><a href="#实现盘古之白分页渲染" class="headerlink" title="实现盘古之白分页渲染"></a>实现盘古之白分页渲染</h2><p>　　直觉告诉我这是添加一行代码就能解决的问题。<br>　　但更大的问题是，加在哪，怎么加。<br>　　总结：先鸽着吧。</p>
 
@@ -1447,7 +1448,7 @@
   
   
   
-  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script src="/lib/pangu/dist/pangu.min.js"></script>
   <script type="text/javascript">pangu.spacingPage();</script>
 
 
