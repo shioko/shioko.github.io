@@ -1254,13 +1254,6 @@
   
 
   
-  
-  
-  <script src="/lib/pangu/dist/pangu.min.js"></script>
-  <script type="text/javascript">pangu.spacingPage();</script>
-
-
-  
 
   
 
@@ -1270,7 +1263,9 @@
 
 </body>
 </html>
-turn sliceRight.hits.length - sliceLeft.hits.length;
+Left.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
                     } else {
                       return sliceLeft.start - sliceRight.start;
                     }
@@ -1402,13 +1397,6 @@ turn sliceRight.hits.length - sliceLeft.hits.length;
 
   
   
-
-  
-  
-  
-  <script src="/lib/pangu/dist/pangu.min.js"></script>
-  <script type="text/javascript">pangu.spacingPage();</script>
-
 
   
 
