@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2018-11-21T07:46:53.283Z</updated>
+  <updated>2018-11-23T06:38:42.838Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最近的各种笔记（友链+盘古之白）</title>
+    <link href="https://co5.me/2018/181123-note.html"/>
+    <id>https://co5.me/2018/181123-note.html</id>
+    <published>2018-11-23T04:48:33.000Z</published>
+    <updated>2018-11-23T06:38:42.838Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　最近解锁了用wacom数位板的按键输入中文行首缩进的两个全角空格的新技能……简直太爽啦！！！！<br>　　然后就是添加了友链界面，修正了盘古之白在省略号末尾加空格的问题。<br>　　还有一个待解决的问题是分类页面的数字也被加了空格，而且这个数字加的空格没有识别到左右端的括号，导致出现了各种不对称的问题，非常难看……<br>　　三个解决思路：1.修改盘古的js代码屏蔽categories界面；2.修改next主题的渲染文件让分类界面的括号可以识别并删除数字两边的空格；3.直接把括号去掉用css样式圆角+描边当括号用【这是什么邪道解决方法啊！<br><a id="more"></a></p><p><center><br>    .+†+.</center><br>　　当然，这三个解决思路以我现在的水平<strong>都做不到</strong>【手动二哈<br>　　新买的玩具键盘到啦！买前好几个县民劝告我说圆点键盘手感很奇怪不建议买，但是我实际到手之后感觉手感还挺好的，打字也很流畅，大概是因为我手小所以按圆点没什么压力。又是一个小马过河的故事23333<br>　　当然缺点还是有的，毕竟79包邮送鼠标的无限键盘，品控有点堪忧，比如4个脚贴居然是tm不一样高的……我……<br>　　不过目前键盘是搁在笔记本电脑的touch pad上用的，下面的两个脚贴悬空了，暂时不会晃【对，我终于成功把这个sb touch pad禁用了……<br>　　然后需要提一下的是这个键盘上的*号居然都印成了五角星☆，一时半会还没太反应过来233</p><p>　　写这篇笔记的时候遭遇了一个小插曲，突然接到一个陌生电话说充话费的时候号码写错了给我充了200，让我发个红包还给他。<br>　　我看了一下来电显示：呃，你这号码好像跟我差得有点多啊……<br>　　他：哎呀这不是我的手机，我借别人手机打的。<br>　　最后的协商结果是我把话费充到他借的这个朋友的号码上，然后他的朋友再把话费给他充回去。挂了电话的第一反应是：卧槽这该不会是什么新型骗局吧？？？我给他发了红包他转手再投诉订单申请退款，然后我话费也没了白给他200？<br>　　看了一眼短信提醒又上营业厅确认了一波，确实多了200话费。紧张兮兮地百度了一圈话费充错怎么办，发现似乎只有微信充值有投诉渠道，普遍还是建议打给到账的手机号请人退还。放心了一半去咨询母上，母上表示你既然收到了钱就充回给人家呗，这200话费妈妈转给你。<br>　　最后我还是用微信给他充了200话费。其实还是留了个心眼的，看网上的搜索结果这个话费退还的概率和实效都比较感人，但是如果他能退款成功那我肯定也能退款嘛，最后打不了大家各自把钱拿回去就当无事发生过。<br>　　充完以后对方发了短信表示感谢。我又发现正好移动有个活动，余额大于100可以再领100话费，这么一想我好像还赚了哎233333</p><h1 id="友链笔记"><a href="#友链笔记" class="headerlink" title="友链笔记"></a>友链笔记</h1><p>　　这次尝试了直接在md文件里挂css样式，总体上来说感觉文件整洁了很多，当然这也可能是我个人习惯造成的错觉……<br>　　不过如果把相册也用这种方式实现的话，好像就可以直接打包完整的demo了？<del>你特么不是说sample不更新吗</del> <del>真香</del></p><h2 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;link-list&quot;&gt;</span><br><span class="line">&lt;div class=&quot;link-item&quot;&gt;</span><br><span class="line">&lt;a href=&quot;【友链地址】&quot; title=&quot;【小伙伴的昵称】&quot;&gt;&lt;img src=&quot;【头像url】&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>　　复制上面代码加入到<code>\link\index.md</code>，<del>说起来我突然发现之前的笔记里我是不是把斜杠都敲反了……尴尬</del>然后复制<code>link-item</code>元素修改成需要的内容即可。</p><h2 id="css部分"><a href="#css部分" class="headerlink" title="css部分"></a>css部分</h2><p>　　这次直接把css样式写在了md文件里，管理起来应该会方便一点？<br>　　但是本来想做鼠标移动到图片上显示昵称和网站描述的特效的，无奈百度了一圈都没有找到实现的方法，只能暂时用tittle来实现文字提示了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.link-list &#123;</span><br><span class="line">display: flex;</span><br><span class="line">justify-content: center;</span><br><span class="line">flex-wrap: wrap;</span><br><span class="line">&#125;</span><br><span class="line">.link-item &#123;</span><br><span class="line">flex-basis: 26%;</span><br><span class="line">margin: 0 3%;</span><br><span class="line">&#125;</span><br><span class="line">.link-item img &#123;</span><br><span class="line">width: 500px;</span><br><span class="line">height: auto;</span><br><span class="line">object-fit: cover;</span><br><span class="line">max-width: 100% !important;</span><br><span class="line">margin:0 !important;</span><br><span class="line">border-radius: 50% !important;</span><br><span class="line">transition: all 0.5s ease !important;</span><br><span class="line">&#125;</span><br><span class="line">.link-item img:hover &#123;</span><br><span class="line">border-radius: 10% !important;</span><br><span class="line">&#125;</span><br><span class="line">.link-item a &#123;</span><br><span class="line">display: inline-block;</span><br><span class="line">border-bottom: 0px !important;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p><p>　　复制如上代码加到div标签之前即可。<br>　　用了一堆important是因为主题的css样式优先级要高于md文件里写入的样式，想要生效只能用important覆盖。不过写在md文件里的话只对当前的页面生效，管理起来还是比较方便的。<br>　　一个玄学小贴士：如果css样式不显示的话需要在style和div标签之间加一个空行，如下↓<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;link-list&quot;&gt;</span><br></pre></td></tr></table></figure></p><p>　　不要问我是啥原理，我也不知道啊【扶额</p><h1 id="盘古之白笔记"><a href="#盘古之白笔记" class="headerlink" title="盘古之白笔记"></a>盘古之白笔记</h1><p>　　我依稀记得我好像还跑到github上给作者留了issue的，自己捣鼓了一下才发现原来这么简单……<del>难怪人家不理我</del><br>　　看我自己关的issue，只有一句话：</p><ul><li><a href="https://github.com/vinta/pangu.js/issues/114" target="_blank" rel="noopener">https://github.com/vinta/pangu.js/issues/114</a></li></ul><p>　　在两个js文件里搜索<code>\u2026</code>（省略号的字符编码），两个js.map文件里搜索<code>\\u2026</code>（多一个斜杠），全部删除，问题就解决了。<br>　　所以我那天晚上为什么没有直接去掉呢……好像是因为只改了其中的一个js文件？<br>　　说起来……我好想再开个issue问怎么屏蔽hexo的其中一个界面啊……【都不好意思了呜呜呜呜呜（；ω；）</p><h1 id="工作计划"><a href="#工作计划" class="headerlink" title="工作计划"></a>工作计划</h1><h2 id="针对hexo中文标点的字体设计"><a href="#针对hexo中文标点的字体设计" class="headerlink" title="针对hexo中文标点的字体设计"></a>针对hexo中文标点的字体设计</h2><p>　　微软雅黑的傻逼标点缩进和傻逼大写I折磨我很久了……<br>　　目前唯一可行的解决标点缩进的方案就是前置一个英文字体。然后尝试替换各种字体的时候又发现，绝大多数非衬线字体的双引号都是两个长条三角形（直的），引号样式符合中文习惯而且能分清I和l的又大多数是衬线字体，取舍了很久才终于确定了现在的字体方案，还是用了一套衬线字体……<br>　　结果今天一看<del>wrnm</del>这个字体的(半)(角)(括)(号)怎么这么丑啊！！！！！(╯‵□′)╯︵┻━┻这tm不仔细看谁分得清你是[方括号]还是(圆括号)啊！！！设计这个括号的人是心理有什么疾病吗！？？<br>　　总结：自己设计一套针对中英文混排+标点优化的字体势在必行。<br>　　如果web字体支持字符缩进的话我也许还能努努力把盘古之白的功能包括进去，在中英文字符之间自动加一个缩进？当然要是搞不出缩进继续配合盘古之白使用也挺好的……<br>　　但是，你要问我这个计划啥时候开始实行……那可能就要等草莓象重构以后再说了哈哈哈哈哈x</p><h2 id="实现盘古之白分页渲染"><a href="#实现盘古之白分页渲染" class="headerlink" title="实现盘古之白分页渲染"></a>实现盘古之白分页渲染</h2><p>　　直觉告诉我这是添加一行代码就能解决的问题。<br>　　但更大的问题是，加在哪，怎么加。<br>　　总结：先鸽着吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　最近解锁了用wacom数位板的按键输入中文行首缩进的两个全角空格的新技能……简直太爽啦！！！！&lt;br&gt;　　然后就是添加了友链界面，修正了盘古之白在省略号末尾加空格的问题。&lt;br&gt;　　还有一个待解决的问题是分类页面的数字也被加了空格，而且这个数字加的空格没有识别到左右端的括号，导致出现了各种不对称的问题，非常难看……&lt;br&gt;　　三个解决思路：1.修改盘古的js代码屏蔽categories界面；2.修改next主题的渲染文件让分类界面的括号可以识别并删除数字两边的空格；3.直接把括号去掉用css样式圆角+描边当括号用【这是什么邪道解决方法啊！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="维护日志" scheme="https://co5.me/categories/%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="hexo" scheme="https://co5.me/tags/hexo/"/>
+    
+      <category term="CSS" scheme="https://co5.me/tags/CSS/"/>
+    
+      <category term="插件" scheme="https://co5.me/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>【-|梦蚀°】拉维共和国wiki - 181120</title>
@@ -480,34 +506,6 @@
       <category term="about" scheme="https://co5.me/tags/about/"/>
     
       <category term="imgtag" scheme="https://co5.me/tags/imgtag/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>佐信，叔萝CP，恋童情节</title>
-    <link href="https://co5.me/2018/180716-sbnb.html"/>
-    <id>https://co5.me/2018/180716-sbnb.html</id>
-    <published>2018-07-16T05:57:50.000Z</published>
-    <updated>2018-11-10T12:13:42.378Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　避雷提示：<br>　　以下内容涉及部分“恋童癖”的学术讨论以及对空知老师的负面评价，请注意避雷。<br><a id="more"></a><br>　　<del>……tmd我就不该在pawoo的发送框里码字然后手贱用了cut结果新建文档的时候复制了别的东西400多个字白码了！</del></p><p>　　在经历了之前某对张姓夫妇的事件之后对“恋童癖”这个概念有了更加深刻的了解，对佐信CP的某些看法也发生了变化。<br>　　不是说爬墙什么的……<del>信神也很好吃啊这次总是官推了吧1551</del><br>　　而是终于理解了“异三郎的牺牲让信女长大”这种剧情设计的合理性。</p><p>　　异三郎作为一个陪伴者和引导者，在信女的成长过程中扮演着极其重要的角色，几乎成为了信女的人生意义。这样的角色跟张姓夫妇其实很类似，当时的争议点也正是因为二人的师生身份。因为成年人与孩子在体力和心智方面都是不对等的，孩童很容易在成人有意的误导下对师长产生“依赖”或“爱慕”，实际上他们根本都不知道这两个概念的确切定义到底是什么。<br>　　但是在信女和异三郎的场合，两人的体力显然并没有那么大的差距【您好这是您全家的便当请注意查收】；心智方面的话骸酱是受松阳的影响比较大，从她出走奈落的行为来看当时她的觉悟和独立性甚至已经超过了胧，身为一个早熟的孩子与异三郎也是在人格上平等的。但两人的“不对等”确实客观存在，并不是源自体力与心智，而是源自信女的“负罪感”。<br>　　毕竟杀妻夺子之仇不是能说算就算了的。<br>　　所以佐信在一起的契机，于异三郎是“复仇”，于信女是“赎罪”，以及对彼此的怜悯。<br>　　异三郎眼中的信女很单纯，就是个早慧并误入歧途的孩子，杀死他的妻女是天道众的命令，而不是她的本意。所以他收留了她，并且不知不觉地，把自己身边的位置给她，把自己女儿的名字给她，把自己的死亡托付给她，把自己死后的未来也托付给她——就像一个父亲那样。即使嘴上说着“那个女孩只是我留着复仇的工具”，而不知不觉中自己心里所有柔软的部分，都留给了她。<br>　　而信女眼中的异三郎呢？<br>　　说来惭愧，虽然自称信女厨，但这个问题我至今没能给出确切的答案。之前语C的时候也是C起异三郎更加得心应手，因为身为一个上升处女座的狮子，我和他的行事作风实在是太像了，像到能提前猜到信女原本是他给女儿准备的名字。<br>　　而异三郎一直到临死前都不明白信女对自己的感情。<br>　　所以我也不懂。加之中间退坑的好长时间，很多台词和剧情都已经记忆模糊，就更加没法妄加推断。<br>　　但其实大约是能感觉到的，只是不敢确认。<br>　　信女眼中的异三郎，大概是个一无所有却依然温柔的人。她亲手夺走了他的一切，却被他温柔相待。但她却是丝毫不敢懈怠的，异三郎的短信她从来不回，因为她一直心中有愧。<br>　　身为一个夺走对方一切的人，对一个一无所有的人的怜悯与愧疚。这样的情绪时刻提醒着她站在离异三郎近在咫尺却又十足疏离的位置，只有在吃甜甜圈的时候才能光明正大地摆出依恋的姿态。<br>　　真是完美的双向暗恋。<br>　　所以看起来是异三郎在迁就嗜血贪吃的信女，实际上是信女在迁就一心复仇的异三郎——这条路太过漫长也太过艰险，但我愿意与你同行。但异三郎还有一层信女也不知道的小心思，那就是他并不想让信女和他一起在这条路上走下去。</p><p>　　在最后一战开始之前信女问异三郎，坐在那样高高在上的位置上，你就满足了吗？<br>　　当时我其实是没看懂这一段的。现在明白了信女的意思是：拥有能与敌人匹敌的力量，为此不惜牺牲曾经并肩战斗过的同伴，成为和你的敌人一样的存在，这就是你所希望的复仇吗？<br>　　异三郎给了她肯定的答复，于是信女离开了。<br>　　根据蔷薇流氓他把铁之助赶跑到真选组，显然他是有意把自己身边的人都赶走的。一遍又一遍地强调自己是个精英，言下之意其实是：葬送旧时代这种事身为精英的我一个人做就足够了，你们这些凡人就等着在那之后重建新时代吧。<br>　　但全是凡人毕竟不放心，所以他需要更多优秀的人，比如万事屋，比如真选组。可偏偏这些人都是愿意为了朋友两肋插刀的惊天大傻子，想让他们乖乖等着收拾烂摊子是不可能的，唯一让他们看着自己送死的办法只能是与他们反目成仇了。<br>　　还有信女。彼时异三郎对信女的感情大约还很复杂，按理说他当时的计划是先解决真选组激起民愤，再拉着天道众一起陪葬，算是大业未成。他明明还是需要借助信女的力量的，却提前把她气走投奔反贼。等于在最后一刻他还是下了决心，这条复仇的路要自己一个人走完，放信女走。<br>　　这么说起来小三郎也是个十足任性的人。一厢情愿地收留信女，一厢情愿地与全世界为敌，又一厢情愿地牺牲自己。信女大概是他周密的计划之中唯一的变数，因为他自己大约都不清楚自己对信女的感情，是收留在身边的复仇工具，还是寄托对亡女思念的替代品，亦或就只是单纯的那个，留在自己身边不离不弃的女孩呢？</p><p>　　所以回到开头那个问题，为什么异三郎必须死？<br>　　因为异三郎对于信女的意义太过重大，只要佐佐木异三郎还存在，信女就放不下他，只能永远以一个赎罪者的身份留在他身边。只有他死了，信女才能真正长大，放下过去的阴影，拥抱自己的未来。<br>　　用自己的一死换信女一个无拘无束的未来。这个算盘异三郎打得倒是不错。<br>　　所以佐信之间虽然也是东亚特色恶趣味父嫁CP配置，但大人有大人的坚守，孩子也有孩子的倔强，彼此都在对方身上学到了不少，也因为对方成长了不少。异三郎在最后终于放下了个人英雄主义，信女也因为异三郎的死放下了赎罪的坚持。<br>　　也所以，喊了那么多年的空知老贼，我终于能重新审视这段剧情，并对创作出如此情节的空知老师萌生了崇高的敬意。</p><p>　　但是。同一个作者居然又能写出疑似未成年女主跟男主角生了孩子这种情节……其实那后面的漫画我都没看我也不知道是不是真的，但这种东西肯定tm不能是真的吧，就算不是真的拿这个开玩笑溜粉也很恶劣啊！！！<br>　　可能空知也只考虑到未成年抽烟喝酒生小孩这种“踩线”的行为不对，而完全没考虑过即使不踩线只是单纯“相恋”的行为实质上也是一种权力上的侵犯。<br>　　所以说为啥很多太太都是佐信<del>银神</del>一起吃但是我吃不下<del>银神</del>……因为<del>银时和神乐的人格不对等太明显了，</del>银时几乎是全剧人生导师般的存在，能教育他的基本就一个松阳，然后就是几个joy4的同期能偶尔跟他互相嘴炮一下，怎么样都轮不到神乐来教他做人，顶多也就和他一起嘴炮嘴炮别人，比如白痴老哥神威酱【？<br>　　信女在遇到异三郎之前就已经接受过松阳老师的启蒙教育可以背下一长条拗口程度堪比胧语【？？】的台词了，彼时异三郎还是个等着抱女儿的有志青年呢。<del>神乐跟银时比起来完全就是一张白纸，她的三观几乎都是银时灌输给她的，所以如果银时对她有什么超过长辈的情感就真的是不伦了。</del><br>　　当然我也不是说diss银神怎么怎么样，我也很理解这CP的萌点，小女生对人生导师抱有憧憬是再正常不过的事情。但成年人不能利用小女生对自己的憧憬去引导对方发展恋爱关系，这种事真的过界了。<br>　　当然在虚拟的故事里寻找现实感的人脑子一定有问题，我也管不了人家怎么磕cp。实际上恋童可以说是东亚普遍的文化基因了，对女性的审美也是，皮肤要嫩眼睛要大声音要甜姿态要楚楚可怜，反正一律往未发育的幼女形象靠拢。<br>　　如果没有之前的张姓夫妇事件可能我也会是这种恋童文化的忠实拥护者吧……而且我确实是个tmd萝莉控啊！我就是喜欢磕大叔×loli的CP啊！我超喜欢看闷骚大叔被小女生一记直球暴击打到破功这种情节的啊！！！<br>　　但是CP是CP现实是现实，不是每个小姑娘都像文艺作品里的角色一样早熟的，现实里绝大多数都是自以为自己成熟早慧离经叛道结果成为猥琐渣男的猎物的笨女孩。而且这种早熟小天使拯救堕落颓废大叔的作品越多，自以为成熟的笨女孩也会越多。虽说作者应该有创作自由，但是在创作过程中还是要注意一下社会影响，当一个有良心的创作者……<br>　　就……综上所述，为我开过的童车沉痛忏悔。<br>　　<del>但是我还是觉得大叔×loli真好吃啊呜呜呜呜呜呜呜</del><br>　　<del>好想看骸酱日小三郎啊——【住手</del></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　避雷提示：&lt;br&gt;　　以下内容涉及部分“恋童癖”的学术讨论以及对空知老师的负面评价，请注意避雷。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="遠夏" scheme="https://co5.me/categories/%E9%81%A0%E5%A4%8F/"/>
-    
-      <category term="Outside" scheme="https://co5.me/categories/%E9%81%A0%E5%A4%8F/Outside/"/>
-    
-    
-      <category term="随笔" scheme="https://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="佐信" scheme="https://co5.me/tags/%E4%BD%90%E4%BF%A1/"/>
-    
-      <category term="サブノブ" scheme="https://co5.me/tags/%E3%82%B5%E3%83%96%E3%83%8E%E3%83%96/"/>
     
   </entry>
   
