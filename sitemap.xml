@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://co5.me/gallery/original/index.html</loc>
+    
+    <lastmod>2018-12-13T04:43:04.727Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://co5.me/link/index.html</loc>
     
     <lastmod>2018-12-12T19:11:08.361Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>https://co5.me/gallery/mimawari/index.html</loc>
     
     <lastmod>2018-11-23T12:56:18.486Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://co5.me/gallery/original/index.html</loc>
-    
-    <lastmod>2018-11-23T12:56:09.638Z</lastmod>
     
   </url>
   
