@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【习作向】html5换装小游戏]]></title>
+    <url>%2F2018%2F181227-game.html</url>
+    <content type="text"><![CDATA[说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x 上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【 这次是真的自学JS啦！ 对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊…… 然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！ 发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ 不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。 听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_ .+†+. function changeBody1() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-01.png)"; } function changeBody2() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-02.png)"; } function changeBody3() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-03.png)"; } function changeBody4() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-04.png)"; } function changeEye1() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-01.png)"; } function changeEye2() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-02.png)"; } function changeEye3() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-03.png)"; } function changeEye4() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-04.png)"; } function changeEye5() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-05.png)"; } function changeEye6() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-06.png)"; } function changeEye7() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-07.png)"; } function changeEye8() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-08.png)"; } .game-box { width: 200px; height: 350px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; justify-content: space-around; padding: 5px; border: 2px dashed #f9a972; border-radius: 10px; background-color: rgba(255,255,255,.3); } .game-button-body, .game-button-eye { display: flex; flex-wrap: wrap; justify-content: space-around; } .game-div { width: 120px; height: 134px; background-size:100% 100%; background-repeat:no-repeat; margin-left: auto; margin-right: auto; } #game-body { background: url(181227-game/body-01.png); } #game-eye{ background: url(181227-game/eye-01.png); } .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } 肤色 眼睛]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>styletag</tag>
+        <tag>JS</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【企划】世界逆行说]]></title>
     <url>%2F2018%2F181227-FF-project.html</url>
     <content type="text"><![CDATA[愤怒的少女与秩序破坏者们。 .+†+. 偷懒了，又用的长毛象外链x 这篇不是特别严谨的设定吧，只是一点零碎的脑洞，详细的世界观和人设过几天补足。 校园 名字还没想好 只有女孩子，这是个百合漫画！！！【声嘶力竭 在“魔法”上建立秩序 根据“魔力”强度分为S A B C D E F 7个等级 S级学生拥有绝大多数特权，F级学生基本没有人权，以此类推 但不知为何即使是A级学生，绝大多数时间也是无法使用魔法的 对学生实行严格的管理制度 禁止恋爱 禁止自杀 经常有学生无故消失，也会在所有人的记忆里被抹去 被称作“消失魔法” 反抗军 聚集了许多程序媛的社团“历史社” 试图用旧世界的“科技”来打败现代的“魔法” 反抗军首领 右下角的绿毛 具有“消失魔法”抗性的人，记住了所有消失的学生的名字 在得知B是程序员之后拉对方入伙成立了反抗社团 反抗军成员A 灰色的两个大麻花辫，带着圆框眼镜，有呆毛，紫色眼睛 认识A之后某天突然发现自己是个代码天才，于是加入反抗军成为了程序媛 反抗军成员B 女装dalao，一天换一个发型，金发绿眼 某个中心反政府组织潜入的外援，A的电脑老师 Higan / 绯寒 草稿图里的黑长直，三无属性 名字来源是彼岸花的“彼岸” 反派，S级学生，“消失魔法”的执行人之一 Mike / 未希 草图里最中间的那个 女主角 身为女主角这个设定也太路人了 所以决定给头上加两个三角形团子=猫耳 所以名字就叫三花吧【眼睛也改成黑色的好了 消失的恋人 在开学第一天突然哭泣着冲向未希的少女 巧克力色长卷发，薄荷绿眼睛 魔法 本质是？ 消失的学生都去了哪里？]]></content>
@@ -128,8 +141,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>插件</tag>
         <tag>CSS</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -554,9 +567,9 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-        <tag>插件</tag>
         <tag>CSS</tag>
         <tag>ow</tag>
+        <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
   </entry>
