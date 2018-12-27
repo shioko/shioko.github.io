@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://co5.me/link/index.html</loc>
+    
+    <lastmod>2018-12-27T08:14:27.348Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://co5.me/2018/181227-FF-project.html</loc>
     
-    <lastmod>2018-12-26T18:42:16.162Z</lastmod>
+    <lastmod>2018-12-27T07:40:32.946Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://co5.me/2018/181226-song.html</loc>
     
     <lastmod>2018-12-26T16:11:51.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://co5.me/link/index.html</loc>
-    
-    <lastmod>2018-12-26T16:11:35.125Z</lastmod>
     
   </url>
   
