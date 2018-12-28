@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2fbde4;
+  background: #ff6036;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3552,4 +3552,7 @@ ul {
 .posts-expand .post-body p,
 .posts-expand .post-body li {
   font-family: Cambria, Calibri, "Apple Color Emoji", "Segoe UI Emoji", "Microsoft YaHei UI", sans-serif;
+}
+audio {
+  max-width: 90% !important;
 }

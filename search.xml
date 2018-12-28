@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【编曲练习】不知道怎么细化的作曲稿]]></title>
+    <url>%2F2018%2F181228-songs.html</url>
+    <content type="text"><![CDATA[您的浏览器不支持html5 以上BGM【Shioko - 没取好名字的作曲稿】来自google drive外链，请在翻墙后食用。 鬼使神差地翻了一下work文件夹，突然发现有个写着“music box”的文件夹，点进去一看发现是11月10日随手撸的一条作曲稿，然后就兴致勃勃地加了和弦，再然后……再然后就不知道怎么办了【。 出去煮面之前还觉得这么duang着还挺不错的，煮完面吃的时候在B站随手找了个爵士音乐和弦教程下饭，吃完回来再听就变成了woc这啥玩意儿啊怎么这么蠢啊！！！ 昨天晚上还把5年前写的孩子给填了【=加了个和弦】，说起来我现在学编曲的优势就是我有一堆坑掉的作曲稿可以拿来练习哎……【真的是优势吗？ 昨天的代码改完了吗？前两天说要写的漫画企划写完了吗？没有！那今天要干嘛呢，当然是写曲子啊【手动0230]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>听歌</tag>
+        <tag>编曲</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【习作向】html5换装小游戏]]></title>
     <url>%2F2018%2F181227-game.html</url>
     <content type="text"><![CDATA[说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x 上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【 这次是真的自学JS啦！ 对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊…… 然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！ 发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ 不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。 听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_ .+†+. function changeBody1() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-01.png)"; } function changeBody2() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-02.png)"; } function changeBody3() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-03.png)"; } function changeBody4() { x=document.getElementById("game-body") x.style.background="url(181227-game/body-04.png)"; } function changeEye1() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-01.png)"; } function changeEye2() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-02.png)"; } function changeEye3() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-03.png)"; } function changeEye4() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-04.png)"; } function changeEye5() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-05.png)"; } function changeEye6() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-06.png)"; } function changeEye7() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-07.png)"; } function changeEye8() { x=document.getElementById("game-eye") x.style.background="url(181227-game/eye-08.png)"; } .game-box { width: 200px; height: 350px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; justify-content: space-around; padding: 5px; border: 2px dashed #f9a972; border-radius: 10px; background-color: rgba(255,255,255,.3); } .game-button-body, .game-button-eye { display: flex; flex-wrap: wrap; justify-content: space-around; } .game-div { width: 120px; height: 134px; background-size:100% 100%; background-repeat:no-repeat; margin-left: auto; margin-right: auto; } #game-body { background: url(181227-game/body-01.png); } #game-eye{ background: url(181227-game/eye-01.png); } .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } 肤色 眼睛]]></content>
@@ -153,8 +165,8 @@
         <category>-|梦蚀°</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
         <tag>梦蚀·设定</tag>
       </tags>
   </entry>
@@ -223,8 +235,8 @@
         <category>-|梦蚀°</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
         <tag>梦蚀·设定</tag>
       </tags>
   </entry>
@@ -236,8 +248,8 @@
         <category>-|梦蚀°</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
         <tag>梦蚀·设定</tag>
       </tags>
   </entry>
@@ -499,8 +511,8 @@
         <category>-|梦蚀°</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
         <tag>梦蚀·设定</tag>
       </tags>
   </entry>
@@ -512,8 +524,8 @@
         <category>-|梦蚀°</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
         <tag>梦蚀·设定</tag>
       </tags>
   </entry>
@@ -525,8 +537,8 @@
         <category>汐喵晒鱼</category>
       </categories>
       <tags>
-        <tag>ow</tag>
         <tag>imgtag</tag>
+        <tag>ow</tag>
       </tags>
   </entry>
   <entry>
@@ -568,9 +580,9 @@
         <tag>hexo</tag>
         <tag>next</tag>
         <tag>CSS</tag>
-        <tag>ow</tag>
         <tag>插件</tag>
         <tag>imgtag</tag>
+        <tag>ow</tag>
       </tags>
   </entry>
   <entry>
@@ -996,9 +1008,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
-    <url>%2F2012%2F120512-hana.html</url>
-    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
+    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
+    <url>%2F2012%2F120512-lost-end.html</url>
+    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
@@ -1009,9 +1021,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
-    <url>%2F2012%2F120512-lost-end.html</url>
-    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
+    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
+    <url>%2F2012%2F120512-hana.html</url>
+    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
@@ -1155,8 +1167,8 @@
         <category>三题故事</category>
       </categories>
       <tags>
-        <tag>原创</tag>
         <tag>styletag</tag>
+        <tag>原创</tag>
       </tags>
   </entry>
   <entry>
