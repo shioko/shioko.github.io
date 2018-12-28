@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6036;
+  background: #93ba4b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3555,4 +3555,7 @@ ul {
 }
 audio {
   max-width: 90% !important;
+}
+center {
+  margin-bottom: 1.5em;
 }

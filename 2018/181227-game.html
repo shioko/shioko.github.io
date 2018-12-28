@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="†少女癌†">
 <meta property="og:description" content="说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【　　这次是真的自学JS啦！　　对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-27T12:16:01.917Z">
+<meta property="og:updated_time" content="2018-12-28T18:19:59.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【习作向】html5换装小游戏">
 <meta name="twitter:description" content="说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【　　这次是真的自学JS啦！　　对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，">
@@ -431,12 +431,24 @@
                 
               
 
-              <time title="创建时间：2018-12-27 17:35:23 / 修改时间：20:16:01" itemprop="dateCreated datePublished" datetime="2018-12-27T17:35:23+08:00">2018-12-27</time>
+              <time title="创建时间：2018-12-27 17:35:23" itemprop="dateCreated datePublished" datetime="2018-12-27T17:35:23+08:00">2018-12-27</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-29 02:19:59" itemprop="dateModified" datetime="2018-12-29T02:19:59+08:00">2018-12-29</time>
               
             
           </span>
@@ -499,7 +511,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.7k</span>
+                <span title="本文字数">1.7k</span>
               
 
               
@@ -513,7 +525,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">6 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -536,65 +548,19 @@
         <p>　　说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x<br>　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【<br>　　这次是真的自学JS啦！<br>　　对着<a href="http://www.runoob.com/js/js-tutorial.html" target="_blank" rel="noopener">菜鸟教程的JS简介</a>研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……<br>　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！<br>　　发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ<br>　　不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。<br>　　听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_<br><a id="more"></a></p>
 <p><center><br>    .+†+.</center><br>
 <script>
-function changeBody1()
+function changeBody(bodyPic)
 {
-	x=document.getElementById("game-body")
-	x.style.background="url(181227-game/body-01.png)";
+	var filePath = "181227-game/body-" + bodyPic + ".png";
+	var bodyUrl = "url(" + filePath + ")"
+	var x = document.getElementById("game-body");
+	x.style.backgroundImage = bodyUrl;
 }
-function changeBody2()
+function changeEye(eyePic)
 {
-	x=document.getElementById("game-body")
-	x.style.background="url(181227-game/body-02.png)";
-}
-function changeBody3()
-{
-	x=document.getElementById("game-body")
-	x.style.background="url(181227-game/body-03.png)";
-}
-function changeBody4()
-{
-	x=document.getElementById("game-body")
-	x.style.background="url(181227-game/body-04.png)";
-}
-function changeEye1()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-01.png)";
-}
-function changeEye2()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-02.png)";
-}
-function changeEye3()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-03.png)";
-}
-function changeEye4()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-04.png)";
-}
-function changeEye5()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-05.png)";
-}
-function changeEye6()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-06.png)";
-}
-function changeEye7()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-07.png)";
-}
-function changeEye8()
-{
-	x=document.getElementById("game-eye")
-	x.style.background="url(181227-game/eye-08.png)";
+	var filePath = "181227-game/eye-" + eyePic + ".png";
+	var eyeUrl = "url(" + filePath + ")"
+	var x = document.getElementById("game-eye");
+	x.style.backgroundImage = eyeUrl;
 }
 </script>
 <style type="text/css">
@@ -626,10 +592,10 @@ function changeEye8()
 	margin-right: auto;
 }
 #game-body {
-	background: url(181227-game/body-01.png);
+	background-image: url(181227-game/body-01.png);
 }
 #game-eye{
-	background: url(181227-game/eye-01.png);
+	background-image: url(181227-game/eye-01.png);
 }
 .game-button {
 	color: transparent;
@@ -647,25 +613,26 @@ function changeEye8()
 	<div class="game-button-box">
 		<center>肤色</center>
 		<div class="game-button-body">
-			<button class="game-button" onclick="changeBody1()" style="background-color: #fcfaf2;">
-			</button><button class="game-button" onclick="changeBody2()" style="background-color: #ffeec4;">
-			</button><button class="game-button" onclick="changeBody3()" style="background-color: #fedfe1;">
-			</button><button class="game-button" onclick="changeBody4()" style="background-color: #91b493;">
+			<button class="game-button" onclick="changeBody('01')" style="background-color: #fcfaf2;">
+			</button><button class="game-button" onclick="changeBody('02')" style="background-color: #ffeec4;">
+			</button><button class="game-button" onclick="changeBody('03')" style="background-color: #fedfe1;">
+			</button><button class="game-button" onclick="changeBody('04')" style="background-color: #91b493;">
 		</button></div>
 		<center>眼睛</center>
 		<div class="game-button-eye">
-			<button class="game-button" onclick="changeEye1()" style="background-color: #91b493;">
-			</button><button class="game-button" onclick="changeEye2()" style="background-color: #f6856c;">
-			</button><button class="game-button" onclick="changeEye3()" style="background-color: #faac49;">
-			</button><button class="game-button" onclick="changeEye4()" style="background-color: #fcec6a;">
-			</button><button class="game-button" onclick="changeEye5()" style="background-color: #8ccb68;">
-			</button><button class="game-button" onclick="changeEye6()" style="background-color: #58b2dc;">
-			</button><button class="game-button" onclick="changeEye7()" style="background-color: #b28fce;">
-			</button><button class="game-button" onclick="changeEye8()" style="background-color: #ffafc3;">
+			<button class="game-button" onclick="changeEye('01')" style="background-color: #91b493;">
+			</button><button class="game-button" onclick="changeEye('02')" style="background-color: #f6856c;">
+			</button><button class="game-button" onclick="changeEye('03')" style="background-color: #faac49;">
+			</button><button class="game-button" onclick="changeEye('04')" style="background-color: #fcec6a;">
+			</button><button class="game-button" onclick="changeEye('05')" style="background-color: #8ccb68;">
+			</button><button class="game-button" onclick="changeEye('06')" style="background-color: #58b2dc;">
+			</button><button class="game-button" onclick="changeEye('07')" style="background-color: #b28fce;">
+			</button><button class="game-button" onclick="changeEye('08')" style="background-color: #ffafc3;">
 		</button></div>
 	</div>
 </div>
 </p>
+<p>　　感谢fomm和旋岚，我的JS代码从60行简化到了14行</p>
 
       
     </div>
@@ -1021,7 +988,7 @@ function changeEye8()
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">222k</span>
+    <span title="站点总字数">221k</span>
   
 </div>
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2018-12-28T16:31:07.970Z</updated>
+  <updated>2018-12-28T16:58:53.534Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://co5.me/2018/181228-songs.html"/>
     <id>https://co5.me/2018/181228-songs.html</id>
     <published>2018-12-28T14:54:11.000Z</published>
-    <updated>2018-12-28T16:31:07.970Z</updated>
+    <updated>2018-12-28T16:58:53.534Z</updated>
     
-    <content type="html"><![CDATA[<center><audio width="300" height="32" preload="none" controls="controls" src="http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRdH">您的浏览器不支持html5</audio><br>    <font size="1">以上BGM【Shioko - 没取好名字的作曲稿】来自google drive外链，请在翻墙后食用。</font><br></center><p>　　鬼使神差地翻了一下work文件夹，突然发现有个写着“music box”的文件夹，点进去一看发现是11月10日随手撸的一条作曲稿，然后就兴致勃勃地加了和弦，再然后……再然后就不知道怎么办了【。<br>　　出去煮面之前还觉得这么duang着还挺不错的，煮完面吃的时候在B站随手找了个爵士音乐和弦教程下饭，吃完回来再听就变成了<del>woc</del>这啥玩意儿啊怎么这么蠢啊！！！<br>　　昨天晚上还把5年前写的孩子给填了【=加了个和弦】，说起来我现在学编曲的优势就是我有一堆坑掉的作曲稿可以拿来练习哎……【真的是优势吗？<br>　　昨天的代码改完了吗？前两天说要写的漫画企划写完了吗？没有！那今天要干嘛呢，当然是写曲子啊【手动0230</p>]]></content>
+    <content type="html"><![CDATA[<p><center><audio width="300" height="32" preload="none" controls="controls" src="http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRdH">您的浏览器不支持html5</audio><br>    <font size="1">以上BGM【Shioko - 没取好名字的作曲稿】来自google drive外链，请在翻墙后食用。</font></center></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>　　鬼使神差地翻了一下work文件夹，突然发现有个写着“music box”的文件夹，点进去一看发现是11月10日随手撸的一条作曲稿，然后就兴致勃勃地加了和弦，再然后……再然后就不知道怎么办了【。<br>　　出去煮面之前还觉得这么duang着还挺不错的，煮完面吃的时候在B站随手找了个爵士音乐和弦教程下饭，吃完回来再听就变成了<del>woc</del>这啥玩意儿啊怎么这么蠢啊！！！<br>　　昨天晚上还把5年前写的孩子给填了【=加了个和弦】，说起来我现在学编曲的优势就是我有一堆坑掉的作曲稿可以拿来练习哎……【真的是优势吗？<br>　　昨天的代码改完了吗？前两天说要写的漫画企划写完了吗？没有！那今天要干嘛呢，当然是写曲子啊【手动0230</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;center&gt;&lt;audio width=&quot;300&quot; height=&quot;32&quot; preload=&quot;none&quot; controls=&quot;controls&quot; src=&quot;http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRd
+        &lt;p&gt;&lt;center&gt;&lt;audio width=&quot;300&quot; height=&quot;32&quot; preload=&quot;none&quot; controls=&quot;controls&quot; src=&quot;http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7R
       
     
     </summary>
@@ -48,9 +48,9 @@
     <link href="https://co5.me/2018/181227-game.html"/>
     <id>https://co5.me/2018/181227-game.html</id>
     <published>2018-12-27T09:35:23.000Z</published>
-    <updated>2018-12-27T12:16:01.917Z</updated>
+    <updated>2018-12-28T18:19:59.981Z</updated>
     
-    <content type="html"><![CDATA[<p>　　说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x<br>　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【<br>　　这次是真的自学JS啦！<br>　　对着<a href="http://www.runoob.com/js/js-tutorial.html" target="_blank" rel="noopener">菜鸟教程的JS简介</a>研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……<br>　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！<br>　　发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ<br>　　不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。<br>　　听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_<br><a id="more"></a></p><p><center><br>    .+†+.</center><br><script>function changeBody1(){x=document.getElementById("game-body")x.style.background="url(181227-game/body-01.png)";}function changeBody2(){x=document.getElementById("game-body")x.style.background="url(181227-game/body-02.png)";}function changeBody3(){x=document.getElementById("game-body")x.style.background="url(181227-game/body-03.png)";}function changeBody4(){x=document.getElementById("game-body")x.style.background="url(181227-game/body-04.png)";}function changeEye1(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-01.png)";}function changeEye2(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-02.png)";}function changeEye3(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-03.png)";}function changeEye4(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-04.png)";}function changeEye5(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-05.png)";}function changeEye6(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-06.png)";}function changeEye7(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-07.png)";}function changeEye8(){x=document.getElementById("game-eye")x.style.background="url(181227-game/eye-08.png)";}</script><style type="text/css">.game-box {width: 200px;height: 350px;margin-left: auto;margin-right: auto;display: flex;flex-direction: column;justify-content: space-around;padding: 5px;border: 2px dashed #f9a972;border-radius: 10px;background-color: rgba(255,255,255,.3);}.game-button-body,.game-button-eye {display: flex;flex-wrap: wrap;justify-content: space-around;}.game-div {width: 120px;height: 134px;background-size:100% 100%;background-repeat:no-repeat;margin-left: auto;margin-right: auto;}#game-body {background: url(181227-game/body-01.png);}#game-eye{background: url(181227-game/eye-01.png);}.game-button {color: transparent;border-radius: 50%;width: 2em;height: 2em;border: 2px solid black;margin: 0.5em 0.5em;}</style><div class="game-box"><div class="game-div" id="game-body"><div class="game-div" id="game-eye"></div></div><div class="game-button-box"><center>肤色</center><div class="game-button-body"><button class="game-button" onclick="changeBody1()" style="background-color: #fcfaf2;"></button><button class="game-button" onclick="changeBody2()" style="background-color: #ffeec4;"></button><button class="game-button" onclick="changeBody3()" style="background-color: #fedfe1;"></button><button class="game-button" onclick="changeBody4()" style="background-color: #91b493;"></button></div><center>眼睛</center><div class="game-button-eye"><button class="game-button" onclick="changeEye1()" style="background-color: #91b493;"></button><button class="game-button" onclick="changeEye2()" style="background-color: #f6856c;"></button><button class="game-button" onclick="changeEye3()" style="background-color: #faac49;"></button><button class="game-button" onclick="changeEye4()" style="background-color: #fcec6a;"></button><button class="game-button" onclick="changeEye5()" style="background-color: #8ccb68;"></button><button class="game-button" onclick="changeEye6()" style="background-color: #58b2dc;"></button><button class="game-button" onclick="changeEye7()" style="background-color: #b28fce;"></button><button class="game-button" onclick="changeEye8()" style="background-color: #ffafc3;"></button></div></div></div></p>]]></content>
+    <content type="html"><![CDATA[<p>　　说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x<br>　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【<br>　　这次是真的自学JS啦！<br>　　对着<a href="http://www.runoob.com/js/js-tutorial.html" target="_blank" rel="noopener">菜鸟教程的JS简介</a>研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……<br>　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！<br>　　发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ<br>　　不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。<br>　　听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_<br><a id="more"></a></p><p><center><br>    .+†+.</center><br><script>function changeBody(bodyPic){var filePath = "181227-game/body-" + bodyPic + ".png";var bodyUrl = "url(" + filePath + ")"var x = document.getElementById("game-body");x.style.backgroundImage = bodyUrl;}function changeEye(eyePic){var filePath = "181227-game/eye-" + eyePic + ".png";var eyeUrl = "url(" + filePath + ")"var x = document.getElementById("game-eye");x.style.backgroundImage = eyeUrl;}</script><style type="text/css">.game-box {width: 200px;height: 350px;margin-left: auto;margin-right: auto;display: flex;flex-direction: column;justify-content: space-around;padding: 5px;border: 2px dashed #f9a972;border-radius: 10px;background-color: rgba(255,255,255,.3);}.game-button-body,.game-button-eye {display: flex;flex-wrap: wrap;justify-content: space-around;}.game-div {width: 120px;height: 134px;background-size:100% 100%;background-repeat:no-repeat;margin-left: auto;margin-right: auto;}#game-body {background-image: url(181227-game/body-01.png);}#game-eye{background-image: url(181227-game/eye-01.png);}.game-button {color: transparent;border-radius: 50%;width: 2em;height: 2em;border: 2px solid black;margin: 0.5em 0.5em;}</style><div class="game-box"><div class="game-div" id="game-body"><div class="game-div" id="game-eye"></div></div><div class="game-button-box"><center>肤色</center><div class="game-button-body"><button class="game-button" onclick="changeBody('01')" style="background-color: #fcfaf2;"></button><button class="game-button" onclick="changeBody('02')" style="background-color: #ffeec4;"></button><button class="game-button" onclick="changeBody('03')" style="background-color: #fedfe1;"></button><button class="game-button" onclick="changeBody('04')" style="background-color: #91b493;"></button></div><center>眼睛</center><div class="game-button-eye"><button class="game-button" onclick="changeEye('01')" style="background-color: #91b493;"></button><button class="game-button" onclick="changeEye('02')" style="background-color: #f6856c;"></button><button class="game-button" onclick="changeEye('03')" style="background-color: #faac49;"></button><button class="game-button" onclick="changeEye('04')" style="background-color: #fcec6a;"></button><button class="game-button" onclick="changeEye('05')" style="background-color: #8ccb68;"></button><button class="game-button" onclick="changeEye('06')" style="background-color: #58b2dc;"></button><button class="game-button" onclick="changeEye('07')" style="background-color: #b28fce;"></button><button class="game-button" onclick="changeEye('08')" style="background-color: #ffafc3;"></button></div></div></div></p><p>　　感谢fomm和旋岚，我的JS代码从60行简化到了14行</p>]]></content>
     
     <summary type="html">
     
@@ -98,13 +98,14 @@
     <link href="https://co5.me/2018/181226-song.html"/>
     <id>https://co5.me/2018/181226-song.html</id>
     <published>2018-12-26T14:46:43.000Z</published>
-    <updated>2018-12-26T16:11:51.334Z</updated>
+    <updated>2018-12-28T17:00:51.178Z</updated>
     
     <content type="html"><![CDATA[<center><audio width="300" height="32" preload="none" controls="controls" src="http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRdH">您的浏览器不支持html5</audio><br>    <font size="1">以上BGM【Shioko - 意識remix】来自google drive外链，请在翻墙后食用。</font><br></center><p>　　Chrome的音频标签支持调整音量了哎！【还是说以前就一直支持只是我没发现……<br><a id="more"></a></p><center><br>    .+†+.</center><p>　　12月发生了不少事呢……先是之前的条漫编辑表示平台不喜欢我的画风所以让其他两个主笔继续画了，找了个别的作品给我试稿也没过，那我也OK，开始写新的企划案。<br>　　开始打算写夏洛特和罗姫的故事，毕竟夏洛特·哈罗斯这个名字就是从Sherlock Holmes变体过来的_(:з」∠)_但是写脚本的时候各种头疼，毕竟我也真的没那么热爱本格推理，我只是想画两个脑子很好使的女孩子谈恋爱而已！！！！！<br>　　而且比起推理我明显更擅长犯罪，毕竟我对周围人的所有行为预测都源于我不同人格产生的共情。比起诡计我更喜欢分析人心，但这种情节有多少人会喜欢看呢（又有多少人能看懂呢）？<br>　　很显然比起想画的东西还是吃饱肚子比较重要。另外还有一个很重要的原因就是，找不到合适的作品名……因为我是打算画成和冰菓一样的日常推理模式的，毕竟一个是条漫不适合画太沉重的故事，另一个是定位最好不要和梦蚀主系列重复。如果用《朽薇》的话就太过沉重了，但是其它与蔷薇相关的作品名，基本上我能想出来的都已经被各种言情小说用烂了……好不容易想到一个《梦与蔷薇》，连我自己都想吐槽这溢出屏幕的玛丽苏气息……<br>　　最后决定：夏洛特与罗姫部分放进梦蚀本传，其它日常作为番外另画一组Q版小剧场，加上树理和凯瑟琳，大家只要表演搞姬就行了【……<br>　　所以开始重新写的企划，就是那个因为一件水手服设计而冒出来的坑，《世界逆行说》。这个标题是我高中时就想出来的，最初的构想是“倒立的人也许正在支撑起地球”，寓意不服从主流逆流而上的人才是真正为世界作出贡献的人，嗯，很有我当年的中二风范【。然后具体的剧情填充大概是受了某些时事的驱使，最后因为那件水手服确定了这应该会画成漫画or做成游戏。对，就是那件黑领白一本+胸前的领结扣是个×的水手服。讲道理我还挺满意这个设计的。<br>　　——果然太久没写东西的后果就是行文完全口语化啊！淦！</p><p><img src="https://docs.google.com/uc?id=1B6aQK6n8rKoh5riTvrAr4AgMFjfsu-31" alt=""></p><p>　　翻了下微博，原来这个坑我也只才拖了一年半而已啊，也还不是很久嘛……【？<br>　　后来hexo搭起来之后写那个字母企划，世界逆行说被翻译成fable flipper，再然后就坑在那里了emmmmmm<br>　　条漫企划的事情等会另外开一篇说，先继续吐槽【】工作室。本来想着不画就不画嘛反正我还有两个月工资好领，够我挥霍一下买台苏菲狗过个好年了。结果前两天来了个通告说哎呀我们年底要关账了稿费什么的要顺延要1月10号才发了哦~<br>　　NM$L。要关账就不会提前发吗？？？*此处省略脏话500字。</p><p>　　然后现在又处于大龄待业女青年状态，脚本这东西吧也不是整天坐在电脑前面就能写出来的。正好前两天不知谁在我之前投稿到B站的苹果钢琴谱键位演示视频底下挖了一铲子，我一个不好意思就把老早之前就做好了但是因为软件bug没做视频的ポルターガイスト给填了，还顺便把歌舞伎町的女王的谱子也做了一份。当然，视频还在坑着。<br>　　因为投完ポルターガイスト的第二天瞅了一眼C盘空间只剩9G，大惊失色清理出16G的缓存，AE我<del>脏话</del>【手动0010<br>　　然后，本着再次对音乐事业萌发的三分钟热度，我鬼使神差地一路在B站推荐里找到了一个基础乐理教学视频。再然后……再然后就出现了开头放的这个东西了。<br>　　写完音符发给师父，师父表示：哎你这个听起来像吉他扫弦的声音哎。<br>　　我：啊，是因为柱状和弦太多了吗？<br>　　师父：不是啊，因为你的和弦没调力度，听起来就会像吉他的。钢琴和吉他最大的区别就是钢琴和弦里每个音的力度都是不一样的。<br>　　我：噢噢噢，那就是谱子没问题是吧？<br>　　师父：是的呀，谱子没问题，就是力度要仔细调一下。<br>　　我：嗯好，我打算先把谱子写好再调力度。<br>　　——结果到现在我也没调力度，把钢琴音色换成合成器直接导出了。钢琴？什么钢琴？</p>]]></content>
     
     <summary type="html">
     
       &lt;center&gt;&lt;audio width=&quot;300&quot; height=&quot;32&quot; preload=&quot;none&quot; controls=&quot;controls&quot; src=&quot;http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRdH&quot;&gt;您的浏览器不支持html5&lt;/audio&gt;&lt;br&gt;    &lt;font size=&quot;1&quot;&gt;以上BGM【Shioko - 意識remix】来自google drive外链，请在翻墙后食用。&lt;/font&gt;&lt;br&gt;&lt;/center&gt;
+
 
 &lt;p&gt;　　Chrome的音频标签支持调整音量了哎！【还是说以前就一直支持只是我没发现……&lt;br&gt;
     
@@ -353,9 +354,9 @@
       <category term="-|梦蚀°" scheme="https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/"/>
     
     
-      <category term="styletag" scheme="https://co5.me/tags/styletag/"/>
-    
       <category term="原创" scheme="https://co5.me/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+      <category term="styletag" scheme="https://co5.me/tags/styletag/"/>
     
       <category term="梦蚀·设定" scheme="https://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E8%AE%BE%E5%AE%9A/"/>
     
@@ -501,9 +502,9 @@
       <category term="-|梦蚀°" scheme="https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/"/>
     
     
-      <category term="styletag" scheme="https://co5.me/tags/styletag/"/>
-    
       <category term="原创" scheme="https://co5.me/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+      <category term="styletag" scheme="https://co5.me/tags/styletag/"/>
     
       <category term="梦蚀·设定" scheme="https://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E8%AE%BE%E5%AE%9A/"/>
     
