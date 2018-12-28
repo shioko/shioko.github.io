@@ -115,10 +115,12 @@
 <meta property="og:site_name" content="†少女癌†">
 <meta property="og:description" content="说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【　　这次是真的自学JS啦！　　对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-28T18:19:59.981Z">
+<meta property="og:image" content="https://co5.me/2018/181227-game/fomm.png">
+<meta property="og:updated_time" content="2018-12-28T18:48:29.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【习作向】html5换装小游戏">
 <meta name="twitter:description" content="说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【　　这次是真的自学JS啦！　　对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，">
+<meta name="twitter:image" content="https://co5.me/2018/181227-game/fomm.png">
 
 
 
@@ -448,7 +450,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-29 02:19:59" itemprop="dateModified" datetime="2018-12-29T02:19:59+08:00">2018-12-29</time>
+                <time title="修改时间：2018-12-29 02:48:29" itemprop="dateModified" datetime="2018-12-29T02:48:29+08:00">2018-12-29</time>
               
             
           </span>
@@ -511,7 +513,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.7k</span>
+                <span title="本文字数">2.4k</span>
               
 
               
@@ -525,7 +527,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -551,14 +553,14 @@
 function changeBody(bodyPic)
 {
 	var filePath = "181227-game/body-" + bodyPic + ".png";
-	var bodyUrl = "url(" + filePath + ")"
+	var bodyUrl = `url(${filePath})`
 	var x = document.getElementById("game-body");
 	x.style.backgroundImage = bodyUrl;
 }
 function changeEye(eyePic)
 {
 	var filePath = "181227-game/eye-" + eyePic + ".png";
-	var eyeUrl = "url(" + filePath + ")"
+	var eyeUrl = `url(${filePath})`
 	var x = document.getElementById("game-eye");
 	x.style.backgroundImage = eyeUrl;
 }
@@ -576,6 +578,9 @@ function changeEye(eyePic)
 	border: 2px dashed #f9a972;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,.3);
+}
+.game-button-box center {
+	margin-bottom: 0px;
 }
 .game-button-body,
 .game-button-eye {
@@ -632,7 +637,12 @@ function changeEye(eyePic)
 	</div>
 </div>
 </p>
-<p>　　感谢fomm和旋岚，我的JS代码从60行简化到了14行</p>
+<h1 id="181229-更新"><a href="#181229-更新" class="headerlink" title="181229-更新"></a>181229-更新</h1><p>　　感谢fomm和旋岚，我的JS代码从60行简化到了14行！！！<br>　　因为过程过于玄学导致我一时不知道该怎么记笔记emmmmmmm直接全抄下来吧x<br><img src="181227-game/fomm.png" alt=""></p>
+<p>　　首先直接照搬fomm的代码没成功，提示url没有被定义(url被识别成了变量），按照原来的写法加了引号，直接输出成了<code>background-image: url(filePath)</code>（变量被识别成了文本），最后经过旋岚提醒改成了这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function changeBody(bodyPic)</span><br><span class="line">&#123;</span><br><span class="line">	var filePath = &quot;181227-game/body-&quot; + bodyPic + &quot;.png&quot;;</span><br><span class="line">	var bodyUrl = &quot;url(&quot; + filePath +&quot;)&quot;</span><br><span class="line">	var x = document.getElementById(&quot;game-body&quot;);</span><br><span class="line">	x.style.backgroundImage = bodyUrl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>　　重新定义了一个变量把url和变量拆分开再输入到css样式里，它能跑了！！！<br>　　然后经过一位热心群众bluelovers的指点，更简洁的写法是这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var bodyUrl = `url($&#123;filePath&#125;)`</span><br></pre></td></tr></table></figure>
+<p>　　用【`文本$变量`】这个语法可以省略引号和加号（虽然我觉得引号和加号比较容易看懂QAQ</p>
 
       
     </div>
@@ -741,8 +751,17 @@ function changeEye(eyePic)
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -962,6 +981,22 @@ function changeEye(eyePic)
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#181229-更新"><span class="nav-number">1.</span> <span class="nav-text">181229-更新</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
