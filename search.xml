@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JS更改svg颜色测试]]></title>
+    <url>%2F2018%2F181229-svgtest.html</url>
+    <content type="text"><![CDATA[能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？ .+†+. 001-改 001-改 .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } svg { max-width: 50%; display: block; margin-right: auto; margin-left: auto; } function changeColor(fillColor, strokeColor) { var fillC=`${fillColor}`, strokeC=`${strokeColor}` var x=document.getElementsByClassName("logoback"); var i; for (i = 0; i < x.length; i++) { x[i].style.fill=fillC; x[i].style.stroke=strokeC; } } 还是换装小游戏的测试……一降温打字速度光速下降，我手都快冻得弯不过来了…… 要是稿费没拖我现在估计已经抱着苏菲狗在被窝里敲代码了，此处应有大声辱骂工作室500字(╯‵□′)╯︵┻━┻ 想要实现的效果：点击颜色按钮之后能批量修改所有指定类别的【多个】元素的颜色，getByID只能改一个，getByClassName吧它死活告诉我没定义对象，最后百度了一年，在获取对象和变色中间加了这么两行： 12var i;for (i = 0; i &lt; x.length; i++) 然后就能跑了。 你是啥！你为什么能跑！为什么(ﾟдﾟ)！]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[【编曲练习】不知道怎么细化的作曲稿]]></title>
     <url>%2F2018%2F181228-songs.html</url>
     <content type="text"><![CDATA[您的浏览器不支持html5 以上BGM【Shioko - 没取好名字的作曲稿】来自google drive外链，请在翻墙后食用。 鬼使神差地翻了一下work文件夹，突然发现有个写着“music box”的文件夹，点进去一看发现是11月10日随手撸的一条作曲稿，然后就兴致勃勃地加了和弦，再然后……再然后就不知道怎么办了【。 出去煮面之前还觉得这么duang着还挺不错的，煮完面吃的时候在B站随手找了个爵士音乐和弦教程下饭，吃完回来再听就变成了woc这啥玩意儿啊怎么这么蠢啊！！！ 昨天晚上还把5年前写的孩子给填了【=加了个和弦】，说起来我现在学编曲的优势就是我有一堆坑掉的作曲稿可以拿来练习哎……【真的是优势吗？ 昨天的代码改完了吗？前两天说要写的漫画企划写完了吗？没有！那今天要干嘛呢，当然是写曲子啊【手动0230]]></content>
@@ -153,8 +158,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>CSS</tag>
         <tag>插件</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -549,8 +554,8 @@
         <category>维护日志</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
         <tag>ow</tag>
+        <tag>CSS</tag>
         <tag>日记</tag>
       </tags>
   </entry>
@@ -579,9 +584,9 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-        <tag>CSS</tag>
         <tag>插件</tag>
         <tag>ow</tag>
+        <tag>CSS</tag>
         <tag>imgtag</tag>
       </tags>
   </entry>
@@ -1008,9 +1013,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
-    <url>%2F2012%2F120512-hana.html</url>
-    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
+    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
+    <url>%2F2012%2F120512-lost-end.html</url>
+    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
@@ -1021,9 +1026,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
-    <url>%2F2012%2F120512-lost-end.html</url>
-    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
+    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
+    <url>%2F2012%2F120512-hana.html</url>
+    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>

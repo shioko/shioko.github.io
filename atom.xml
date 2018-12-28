@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2018-12-28T16:58:53.534Z</updated>
+  <updated>2018-12-28T22:08:57.681Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS更改svg颜色测试</title>
+    <link href="https://co5.me/2018/181229-svgtest.html"/>
+    <id>https://co5.me/2018/181229-svgtest.html</id>
+    <published>2018-12-28T20:12:36.000Z</published>
+    <updated>2018-12-28T22:08:57.681Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://co5.me/2018/181229-svgtest/001.svg" alt=""><br>　　能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？<br><a id="more"></a></p><p><center><br>    .+†+.</center><br><svg viewbox="0 0 50.94 50"><title>001-改</title><g id="87a9629d-d0cf-4f23-8e21-48e427d382df" data-name="logo"><path class="logoback" d="M32.12,8.32c1.26,2.63-7.68,21.39-10.36,22.19-3.4,1-18.94-9.91-21.57-8.95s-4,5-3,8.05c2.29,7,10.87,10.33,10.5,11s-11.64-2.39-16.25-11c-3.13-5.82-2.36-8.86-.29-13.33C-5.37,8.89.3-6.13,2.75-5.39,5.54-4.55,31.17,6.31,32.12,8.32Z" transform="translate(11.63 6.42)" style="fill:#3388d2;stroke:#231815;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/><g id="572d1fc0-7b29-4a0a-999a-d49105b87872" data-name="图层 14"><path class="logoback" d="M.19,14.18C3.08,8.44,7.37,4.17,9,4.78c2.59,1-1.15,12.37-.58,12.47s5.95-8.73,9.3-8.53c1.9.81,2.66,5.8.38,12.56" transform="translate(11.63 6.42)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/></g></g></svg><svg viewbox="0 0 50.94 50"><title>001-改</title><g id="87a9629d-d0cf-4f23-8e21-48e427d382df" data-name="logo"><path class="logoback" d="M32.12,8.32c1.26,2.63-7.68,21.39-10.36,22.19-3.4,1-18.94-9.91-21.57-8.95s-4,5-3,8.05c2.29,7,10.87,10.33,10.5,11s-11.64-2.39-16.25-11c-3.13-5.82-2.36-8.86-.29-13.33C-5.37,8.89.3-6.13,2.75-5.39,5.54-4.55,31.17,6.31,32.12,8.32Z" transform="translate(11.63 6.42)" style="fill:#3388d2;stroke:#231815;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/><g id="572d1fc0-7b29-4a0a-999a-d49105b87872" data-name="图层 14"><path class="logoback" d="M.19,14.18C3.08,8.44,7.37,4.17,9,4.78c2.59,1-1.15,12.37-.58,12.47s5.95-8.73,9.3-8.53c1.9.81,2.66,5.8.38,12.56" transform="translate(11.63 6.42)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/></g></g></svg><style type="text/css">.game-button {color: transparent;border-radius: 50%;width: 2em;height: 2em;border: 2px solid black;margin: 0.5em 0.5em;}svg {max-width: 50%;display: block;margin-right: auto;margin-left: auto;}</style><script type="text/javascript">function changeColor(fillColor, strokeColor){var fillC=`${fillColor}`,strokeC=`${strokeColor}`var x=document.getElementsByClassName("logoback");var i;for (i = 0; i < x.length; i++) {x[i].style.fill=fillC;x[i].style.stroke=strokeC;}}</script><button class="game-button" onclick="changeColor('#91b493','#7c5592')" style="background-color: #91b493;"></button><button class="game-button" onclick="changeColor('#f6856c','black')" style="background-color: #f6856c;"></button><button class="game-button" onclick="changeColor('#faac49','white')" style="background-color: #faac49;"></button><button class="game-button" onclick="changeColor('#fcec6a','#231815')" style="background-color: #fcec6a;"></button><button class="game-button" onclick="changeColor('#8ccb68','#231815')" style="background-color: #8ccb68;"></button><button class="game-button" onclick="changeColor('#58b2dc','#231815')" style="background-color: #58b2dc;"></button><button class="game-button" onclick="changeColor('#b28fce','#231815')" style="background-color: #b28fce;"></button><button class="game-button" onclick="changeColor('#ffafc3','#231815')" style="background-color: #ffafc3;"></button></p><p>　　还是换装小游戏的测试……一降温打字速度光速下降，我手都快冻得弯不过来了……<br>　　要是稿费没拖我现在估计已经抱着苏菲狗在被窝里敲代码了，此处应有大声辱骂工作室500字(╯‵□′)╯︵┻━┻<br>　　想要实现的效果：点击颜色按钮之后能批量修改所有指定类别的【多个】元素的颜色，<code>getByID</code>只能改一个，<code>getByClassName</code>吧它死活告诉我没定义对象，最后百度了一年，在获取对象和变色中间加了这么两行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var i;</span><br><span class="line">for (i = 0; i &lt; x.length; i++)</span><br></pre></td></tr></table></figure><p>　　然后就能跑了。<br>　　你是啥！你为什么能跑！为什么(ﾟдﾟ)！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://co5.me/2018/181229-svgtest/001.svg&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>【编曲练习】不知道怎么细化的作曲稿</title>
     <link href="https://co5.me/2018/181228-songs.html"/>
     <id>https://co5.me/2018/181228-songs.html</id>
     <published>2018-12-28T14:54:11.000Z</published>
-    <updated>2018-12-28T16:58:53.534Z</updated>
+    <updated>2018-12-28T19:00:39.553Z</updated>
     
     <content type="html"><![CDATA[<p><center><audio width="300" height="32" preload="none" controls="controls" src="http://docs.google.com/uc?id=1iMakEGkUvU1xKc3pMOvjKnC5lJ7RDRdH">您的浏览器不支持html5</audio><br>    <font size="1">以上BGM【Shioko - 没取好名字的作曲稿】来自google drive外链，请在翻墙后食用。</font></center></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>　　鬼使神差地翻了一下work文件夹，突然发现有个写着“music box”的文件夹，点进去一看发现是11月10日随手撸的一条作曲稿，然后就兴致勃勃地加了和弦，再然后……再然后就不知道怎么办了【。<br>　　出去煮面之前还觉得这么duang着还挺不错的，煮完面吃的时候在B站随手找了个爵士音乐和弦教程下饭，吃完回来再听就变成了<del>woc</del>这啥玩意儿啊怎么这么蠢啊！！！<br>　　昨天晚上还把5年前写的孩子给填了【=加了个和弦】，说起来我现在学编曲的优势就是我有一堆坑掉的作曲稿可以拿来练习哎……【真的是优势吗？<br>　　昨天的代码改完了吗？前两天说要写的漫画企划写完了吗？没有！那今天要干嘛呢，当然是写曲子啊【手动0230</p>]]></content>
     
@@ -48,7 +66,7 @@
     <link href="https://co5.me/2018/181227-game.html"/>
     <id>https://co5.me/2018/181227-game.html</id>
     <published>2018-12-27T09:35:23.000Z</published>
-    <updated>2018-12-28T18:52:11.509Z</updated>
+    <updated>2018-12-28T20:35:20.266Z</updated>
     
     <content type="html"><![CDATA[<p>　　说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x<br>　　上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【<br>　　这次是真的自学JS啦！<br>　　对着<a href="http://www.runoob.com/js/js-tutorial.html" target="_blank" rel="noopener">菜鸟教程的JS简介</a>研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊……<br>　　然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！<br>　　发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ<br>　　不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。<br>　　听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_<br><a id="more"></a></p><p><center><br>    .+†+.</center><br><script>function changeBody(bodyPic){var filePath = "181227-game/body-" + bodyPic + ".png";var bodyUrl = `url(${filePath})`var x = document.getElementById("game-body");x.style.backgroundImage = bodyUrl;}function changeEye(eyePic){var filePath = "181227-game/eye-" + eyePic + ".png";var eyeUrl = `url(${filePath})`var x = document.getElementById("game-eye");x.style.backgroundImage = eyeUrl;}</script><style type="text/css">.game-box {width: 200px;height: 350px;margin-left: auto;margin-right: auto;display: flex;flex-direction: column;justify-content: space-around;padding: 5px;border: 2px dashed #f9a972;border-radius: 10px;background-color: rgba(255,255,255,.3);}.game-button-box center {margin-bottom: 0px;}.game-button-body,.game-button-eye {display: flex;flex-wrap: wrap;justify-content: space-around;}.game-div {width: 120px;height: 134px;background-size:100% 100%;background-repeat:no-repeat;margin-left: auto;margin-right: auto;}#game-body {background-image: url(181227-game/body-01.png);}#game-eye{background-image: url(181227-game/eye-01.png);}.game-button {color: transparent;border-radius: 50%;width: 2em;height: 2em;border: 2px solid black;margin: 0.5em 0.5em;}</style><div class="game-box"><div class="game-div" id="game-body"><div class="game-div" id="game-eye"></div></div><div class="game-button-box"><center>肤色</center><div class="game-button-body"><button class="game-button" onclick="changeBody('01')" style="background-color: #fcfaf2;"></button><button class="game-button" onclick="changeBody('02')" style="background-color: #ffeec4;"></button><button class="game-button" onclick="changeBody('03')" style="background-color: #fedfe1;"></button><button class="game-button" onclick="changeBody('04')" style="background-color: #91b493;"></button></div><center>眼睛</center><div class="game-button-eye"><button class="game-button" onclick="changeEye('01')" style="background-color: #91b493;"></button><button class="game-button" onclick="changeEye('02')" style="background-color: #f6856c;"></button><button class="game-button" onclick="changeEye('03')" style="background-color: #faac49;"></button><button class="game-button" onclick="changeEye('04')" style="background-color: #fcec6a;"></button><button class="game-button" onclick="changeEye('05')" style="background-color: #8ccb68;"></button><button class="game-button" onclick="changeEye('06')" style="background-color: #58b2dc;"></button><button class="game-button" onclick="changeEye('07')" style="background-color: #b28fce;"></button><button class="game-button" onclick="changeEye('08')" style="background-color: #ffafc3;"></button></div></div></div></p><h1 id="181229-更新"><a href="#181229-更新" class="headerlink" title="181229-更新"></a>181229-更新</h1><p>　　感谢<a href="https://cmx.im/web/accounts/22926" target="_blank" rel="noopener">fomm</a>和<a href="https://cmx.im/web/accounts/38157" target="_blank" rel="noopener">旋岚</a>，我的JS代码从60行简化到了14行！！！<br>　　因为过程过于玄学导致我一时不知道该怎么记笔记emmmmmmm直接全抄下来吧x<br><img src="181227-game/fomm.png" alt=""></p><p>　　首先直接照搬fomm的代码没成功，提示url没有被定义(url被识别成了变量），按照原来的写法加了引号，直接输出成了<code>background-image: url(filePath)</code>（变量被识别成了文本），最后经过旋岚提醒改成了这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function changeBody(bodyPic)</span><br><span class="line">&#123;</span><br><span class="line">var filePath = &quot;181227-game/body-&quot; + bodyPic + &quot;.png&quot;;</span><br><span class="line">var bodyUrl = &quot;url(&quot; + filePath +&quot;)&quot;</span><br><span class="line">var x = document.getElementById(&quot;game-body&quot;);</span><br><span class="line">x.style.backgroundImage = bodyUrl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>　　重新定义了一个变量把url和变量拆分开再输入到css样式里，它能跑了！！！<br>　　然后经过一位热心群众<a href="https://cmx.im/web/accounts/53011" target="_blank" rel="noopener">bluelovers</a>的指点，更简洁的写法是这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var bodyUrl = `url($&#123;filePath&#125;)`</span><br></pre></td></tr></table></figure><p>　　用【`文本$变量`】这个语法可以省略引号和加号（虽然我觉得引号和加号比较容易看懂QAQ</p>]]></content>
     
@@ -330,9 +348,9 @@
     
       <category term="hexo" scheme="https://co5.me/tags/hexo/"/>
     
-      <category term="CSS" scheme="https://co5.me/tags/CSS/"/>
-    
       <category term="插件" scheme="https://co5.me/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="CSS" scheme="https://co5.me/tags/CSS/"/>
     
   </entry>
   
@@ -481,32 +499,6 @@
       <category term="JS" scheme="https://co5.me/tags/JS/"/>
     
       <category term="没什么用的小技能" scheme="https://co5.me/tags/%E6%B2%A1%E4%BB%80%E4%B9%88%E7%94%A8%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【-|梦蚀°】人物设定·“渡鸦”小队 - 181113</title>
-    <link href="https://co5.me/2018/181113-DDer-character.html"/>
-    <id>https://co5.me/2018/181113-DDer-character.html</id>
-    <published>2018-11-12T20:03:10.000Z</published>
-    <updated>2018-12-14T05:25:13.779Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　蔷薇之笼相关设定，没出场的一般来说都会改……<br>　　<strong>【以下内容包含剧透，请谨慎阅读，尤其是删除线部分】</strong><br><a id="more"></a></p><p><center><br>    .+†+.</center></p><style>.posts-expand .post-body h3 {    color: #f9a972;    text-align: center;}</style><ul><li>以下角色年龄以共和国26年（潜入13区）为基准统计</li></ul><h3 id="000-莲"><a href="#000-莲" class="headerlink" title="000.莲"></a>000.莲</h3><ul><li>16岁，男</li><li>本名角森莲/Tsunomori Ren</li></ul><h3 id="010-纯"><a href="#010-纯" class="headerlink" title="010.纯"></a>010.纯</h3><ul><li>17岁，男</li><li>本名神田纯/Kanda jun</li></ul><h3 id="013-依澄"><a href="#013-依澄" class="headerlink" title="013.依澄"></a>013.依澄</h3><ul><li>16岁，女</li><li>本名椋代依澄/Kurashiro Izumi</li><li><del>逃亡的杀人犯。</del></li><li><del>长期受到家暴迫害，梦见自己杀害了父母，醒来时父母已经死了。</del></li><li><del>警方断定她是梦游杀人，实际上是Karas三级感染者拥有的“现实重构”能力，案发当晚她甚至不在家。</del></li></ul><h3 id="030-澪"><a href="#030-澪" class="headerlink" title="030.澪"></a>030.澪</h3><ul><li>12岁，女</li><li>姓氏不详，名字读作Mio</li><li><del>渡鸦小队在执行某次任务时解救的孩子，被发现拥有“现实重构”能力，诊断为karas三级感染者，并授予代号，但不参与作战任务。</del></li><li><del>被大家宠爱的孩子，但与墨关系比较疏远，可能是同为三级感染者的原因，后来由405提议两人减少接触。</del></li></ul><h3 id="306-实"><a href="#306-实" class="headerlink" title="306.实"></a>306.实</h3><ul><li>18岁，男</li><li>本名安永实/Yasunaga Minoru</li><li>军人世家的次男，不被父母抱有厚望因此在较为宽松的环境下长大，爱好是读书。</li><li>看似大大咧咧<del>实则心思缜密，有时甚至笑里藏刀。</del></li><li>爱好用Lottie/Lotta/Tottie/Lotte等一系列昵称来称呼夏洛特。</li></ul><h3 id="405-汐子"><a href="#405-汐子" class="headerlink" title="405.汐子"></a>405.汐子</h3><ul><li>17岁，女</li><li>除了约书亚以外没有人知道她的本名，“汐子/Shioko”只是代号405的谐音。</li><li><del>渡鸦小队的幕后参谋（“第13人”），无论是格雷森还是糖都原因听从她的作战计划。</del></li><li><del>在最终战中牺牲了绝大部分成员来保护自己需要的人。</del></li><li>退役后改名为橘诗织/Tachibana Shiori，仍活跃在Karas研究的第一线。</li></ul><h3 id="CAT-夏洛特"><a href="#CAT-夏洛特" class="headerlink" title="CAT.夏洛特"></a>CAT.夏洛特</h3><ul><li>13岁，女</li><li>本名夏洛特·哈罗斯/Charlotte Hallows</li><li>正式队员中最为年幼的女孩，早熟早慧，在文字上天赋过人，有写日记的习惯。</li><li>贵族旁系的女儿，<del>家业都由哥哥继承，从小被父母忽视，因此志愿加入了渡鸦小队。退役后与家人关系回暖，还算衣食无忧，但内心的隔阂依然无法消除。</del></li><li><del>Karas二级感染者（人工），被罗姫称作“爱丽丝”。</del></li></ul><h3 id="CNR-卡耐尔"><a href="#CNR-卡耐尔" class="headerlink" title="CNR.卡耐尔"></a>CNR.卡耐尔</h3><ul><li>18岁，男。</li><li>本名卡耐尔·罗斯科/Conor Roscoe</li></ul><h3 id="GYS-格雷森"><a href="#GYS-格雷森" class="headerlink" title="GYS.格雷森"></a>GYS.格雷森</h3><ul><li>19岁，男</li><li>本名格雷森·艾略特/Grayson Elliot</li><li>某位高官的儿子，指定空降的小队队长。</li><li><del>Karas一级感染者（人工），在第一次出任务时就因为个人失误导致精神崩坏，住院6个月后自杀身亡。</del></li></ul><h3 id="IA-糖"><a href="#IA-糖" class="headerlink" title="IA.糖"></a>IA.糖</h3><ul><li>18岁，女</li><li>本名今井 糖/Imai Amai</li><li><del>格雷森住院后渡鸦小队名义上的领导人，在格雷森自杀之后正式受勋。</del></li><li><del>主要负责分配作战任务与鼓舞士气，实际的幕后策划是405。</del></li><li>退役后改名为上梨子糖砂/Kaminashi Amesa，依然在政府从事情报工作。</li></ul><h3 id="JSA-约书亚"><a href="#JSA-约书亚" class="headerlink" title="JSA.约书亚"></a>JSA.约书亚</h3><ul><li>19岁，男</li><li>本名约书亚·艾莫斯/Joshua Amos</li><li>405的旧识，唯一知道她本名的人，<del>但两人关系看起来却并不亲近，甚至有些针锋相对。</del></li><li><del>家人均是梦神教徒，因此与家人断绝了关系，从此没有姓氏。</del></li><li>Karas二级感染者，<del>爱好窥探他人的梦境，是官方认定的Karas最早研究人，曾被罗姫寄生。</del></li><li>战后改名为约书亚·克劳迪/Joshua Cloudy在第一区的女神湖精神护理院做主治医生，<del>氯胺酮成瘾者</del></li></ul><h3 id="L-利亚姆"><a href="#L-利亚姆" class="headerlink" title="L.利亚姆"></a>L.利亚姆</h3><ul><li>16岁，男</li><li>本名利亚姆·诺亚/Liam Noah</li></ul><h3 id="NTE-娜塔莉"><a href="#NTE-娜塔莉" class="headerlink" title="NTE.娜塔莉"></a>NTE.娜塔莉</h3><ul><li>17岁，女</li><li>本名娜塔莉·安塞尔/Natalie Ancell</li></ul><h3 id="RH-黑羽"><a href="#RH-黑羽" class="headerlink" title="RH.黑羽"></a>RH.黑羽</h3><ul><li>18岁，男</li><li>黑羽/Kuroha是自己取的假名，真名不详</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　蔷薇之笼相关设定，没出场的一般来说都会改……&lt;br&gt;　　&lt;strong&gt;【以下内容包含剧透，请谨慎阅读，尤其是删除线部分】&lt;/strong&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="-|梦蚀°" scheme="https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/"/>
-    
-    
-      <category term="原创" scheme="https://co5.me/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-      <category term="styletag" scheme="https://co5.me/tags/styletag/"/>
-    
-      <category term="梦蚀·设定" scheme="https://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E8%AE%BE%E5%AE%9A/"/>
     
   </entry>
   
