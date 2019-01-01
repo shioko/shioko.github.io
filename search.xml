@@ -13,14 +13,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[181230-svgtest2]]></title>
+    <title><![CDATA[JS绘制复杂svg图形测试]]></title>
     <url>%2F2018%2F181230-svgtest2.html</url>
-    <content type="text"><![CDATA[var svgD1 = "M262.5,157.2c-71.1-37.3-151,27-179.2,90.4c-8.1,18.3-13,38.2-11.9,58.3c0.1,1.9,3.1,1.9,3,0c-2.1-35.8,14.8-71,37.2-98.1 c22.9-27.8,54.8-51.2,91-57.2c20-3.3,40.4-0.3,58.4,9.2C262.7,160.7,264.2,158.1,262.5,157.2L262.5,157.2z"; var svgD2 = "M75,321.5c3.2,27.5,10.9,55.1,28,77.3c15.7,20.4,38.1,33.8,62.7,40.9c16.4,4.7,33.6,6.8,50.6,7.4c1.9,0.1,1.9-2.9,0-3 c-27.5-1-55.6-5.8-79.7-19.8c-21.7-12.6-37.8-32.3-47.2-55.5c-6.1-15.1-9.5-31.2-11.4-47.3C77.8,319.6,74.8,319.6,75,321.5 L75,321.5z" var svgD3 = "M249.7,445.6c29.2,6.8,60.3,4.3,87.3-9.2c25-12.5,44.8-34.1,54.3-60.5c5.8-16.1,7.4-33.3,5.7-50.2c-0.2-1.9-3.2-1.9-3,0 c2.9,28.6-4.4,57.4-22.8,79.8c-17.5,21.3-42.8,34.9-69.8,39.3c-16.9,2.8-34.2,1.8-50.9-2.1C248.6,442.2,247.8,445.1,249.7,445.6 L249.7,445.6z" var svgD4 = "M391.2,310.2c-8.3-24.7-25.9-46.5-44.8-64.1c-20.4-19-45.8-35.8-73.9-39.8c-14-2-28-0.2-40.8,6c-1.7,0.8-0.2,3.4,1.5,2.6 c24.2-11.8,51.6-5.5,74.3,6.7c24.2,13,45.4,32.5,61.7,54.6c7.8,10.7,14.8,22.3,19,34.8C389,312.8,391.9,312,391.2,310.2 L391.2,310.2z" var svgD5 = "M200.6,225c-21.9,7-41.1,22.4-56.6,39.1c-16.7,18-31.3,40.1-36.2,64.5c-4.2,20.8,0.5,43.7,15.2,59.5 c13.7,14.7,33.9,20.3,53.3,22.5c25.2,2.8,50.7,0.2,75.9-1.4c1.9-0.1,1.9-3.1,0-3c-20.8,1.3-41.6,3.2-62.4,2.3 c-19.6-0.8-40.6-3.8-56.9-15.6c-17.1-12.5-25.3-34.6-23.4-55.4c2.2-24,15.4-46.5,30.6-64.6c16.1-19.1,37-37.3,61.2-45.1 C203.2,227.3,202.5,224.4,200.6,225L200.6,225z" var svgD6 = "M270.3,404c38.3,10.1,52-38.9,53.5-67.3c1.7-32.4-7.6-83-45.9-90.7c-27.7-5.5-54.8,14.1-74.4,31c-1.5,1.3,0.7,3.4,2.1,2.1 c17.7-15.3,40.8-32.3,65.5-31c16.9,0.9,29.9,12.2,37.7,26.6c8.8,16.3,12.1,35.5,12.1,53.8c0.1,17.7-2.7,36.4-11.1,52.2 c-7.9,14.8-21.5,24.9-38.8,20.3C269.2,400.6,268.4,403.5,270.3,404L270.3,404z" var svgD7 = "M195.2,306.4c-13.1,10.4-26.7,28.3-15,44.8c10.1,14.2,30.6,17.5,46.7,14.9c11.7-1.9,22.2-7.3,31.9-14 c6.1-4.2,12.8-9.3,16.1-16.2c4.3-9.1-2.4-16.2-10.8-19c-5-1.6-20.9-3.9-19.5,5.6c0.3,1.9,3.2,1.1,2.9-0.8 c-0.8-5.3,13.1-2.7,15.3-2c7.5,2.3,13.3,8.1,8.9,16c-3.4,6.2-9.9,10.8-15.6,14.7c-8.2,5.5-16.9,10.1-26.5,12.2 c-14.6,3.2-32.6,1.3-43.7-9.5c-15.4-15.1-1.8-33.9,11.6-44.5C198.9,307.3,196.7,305.2,195.2,306.4L195.2,306.4z" function drawSVG1(){ var a = document.getElementById("test") var x = document.getElementsByClassName("testd"); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } var node = document.createElementNS("http://www.w3.org/2000/svg", "path"); node.setAttribute("class","testd"); node.setAttribute("d",svgD1); a.appendChild(node); }; function drawSVG2(){ var a = document.getElementById("test") var x = document.getElementsByClassName("testd"); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } var node1 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node1.setAttribute("class","testd"); node1.setAttribute("d",svgD1); a.appendChild(node1); var node2 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node2.setAttribute("class","testd"); node2.setAttribute("d",svgD2); a.appendChild(node2); var node3 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node3.setAttribute("class","testd"); node3.setAttribute("d",svgD3); a.appendChild(node3); var node4 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node4.setAttribute("class","testd"); node4.setAttribute("d",svgD4); a.appendChild(node4); var node5 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node5.setAttribute("class","testd"); node5.setAttribute("d",svgD5); a.appendChild(node5); var node6 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node6.setAttribute("class","testd"); node6.setAttribute("d",svgD6); a.appendChild(node6); var node7 = document.createElementNS("http://www.w3.org/2000/svg", "path"); node7.setAttribute("class","testd"); node7.setAttribute("d",svgD7); a.appendChild(node7); } 变换为单路径 变换为蚊香]]></content>
+    <content type="text"><![CDATA[一个巨tmsb的svg绘制测试。 折腾了我整整3天，脑壳疼【手动pop子中指 .+†+. var svgD1 = ""; var svgD2 = "" function drawSVG(gName, dName){ var getG = `${gName}`, getD = `${dName}`, getClass = "`${gName}`d", a = document.getElementById(getG), x = document.getElementsByClassName(getClass); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } a.innerHTML=getD } 变换为单路径（D1） 变换为蚊香（D2） innerHTML是好文明！！！！！！！去nmd createElementNS！！！！！！！！]]></content>
   </entry>
   <entry>
     <title><![CDATA[JS更改svg颜色测试]]></title>
     <url>%2F2018%2F181229-svgtest.html</url>
-    <content type="text"><![CDATA[001-改 能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？ .+†+. 001-改 001-改 .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } svg { max-width: 50%; display: block; margin-right: auto; margin-left: auto; } function changeColor(fillColor, strokeColor) { var fillC=`${fillColor}`, strokeC=`${strokeColor}` var x=document.getElementsByClassName("logoback"); var i; for (i = 0; i < x.length; i++) { x[i].style.fill=fillC; x[i].style.stroke=strokeC; } } 还是换装小游戏的测试……一降温打字速度光速下降，我手都快冻得弯不过来了…… 要是稿费没拖我现在估计已经抱着苏菲狗在被窝里敲代码了，此处应有大声辱骂工作室500字(╯‵□′)╯︵┻━┻ 想要实现的效果：点击颜色按钮之后能批量修改所有指定类别的【多个】元素的颜色，getByID只能改一个，getByClassName吧它死活告诉我没定义对象，最后百度了一年，在获取对象和变色中间加了这么两行： 12var i;for (i = 0; i &lt; x.length; i++) 然后就能跑了。 你是啥！你为什么能跑！为什么(ﾟдﾟ)！ 后续更新的笔记 还是感谢blueloversdalao的不吝赐教，终于明白这两行是干嘛用的了…… 按class获取多个对象之后会形成一个列表，从0开始排列，i就是用来指向每一个对象的编号，i=0=是从0开始，i&lt;x.length=只要i小于x定义的列表的长度，i++=将现有编号+1。 所以本质问题是：原来JS一次只能处理一个对象啊！(╯‵□′)╯︵┻━┻]]></content>
+    <content type="text"><![CDATA[001-改 能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？ .+†+. 001-改 001-改 .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } svg { max-width: 50%; display: block; margin-right: auto; margin-left: auto; } function changeColor(fillColor, strokeColor) { var fillC=`${fillColor}`, strokeC=`${strokeColor}` var x=document.getElementsByClassName("logoback"); var i; for (i = 0; i < x.length; i++) { x[i].style.fill=fillC; x[i].style.stroke=strokeC; } } 还是换装小游戏的测试……一降温打字速度光速下降，我手都快冻得弯不过来了…… 要是稿费没拖我现在估计已经抱着苏菲狗在被窝里敲代码了，此处应有大声辱骂工作室500字(╯‵□′)╯︵┻━┻ 想要实现的效果：点击颜色按钮之后能批量修改所有指定类别的【多个】元素的颜色，getByID只能改一个，getByClassName吧它死活告诉我没定义对象，最后百度了一年，在获取对象和变色中间加了这么两行： 12var i;for (i = 0; i &lt; x.length; i++) 然后就能跑了。 你是啥！你为什么能跑！为什么(ﾟдﾟ)！ 后续更新的笔记 还是感谢bluelovers dalao的不吝赐教，终于明白这两行是干嘛用的了…… 按class获取多个对象之后会形成一个列表，从0开始排列，i就是用来指向每一个对象的编号，i=0=是从0开始，i&lt;x.length=只要i小于x定义的列表的长度，i++=将现有编号+1。 所以本质问题是：原来JS一次只能处理一个对象啊！(╯‵□′)╯︵┻━┻]]></content>
   </entry>
   <entry>
     <title><![CDATA[【编曲练习】不知道怎么细化的作曲稿]]></title>
@@ -37,7 +37,7 @@
   <entry>
     <title><![CDATA[【习作向】html5换装小游戏]]></title>
     <url>%2F2018%2F181227-game.html</url>
-    <content type="text"><![CDATA[说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x 上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【 这次是真的自学JS啦！ 对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊…… 然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！ 发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ 不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。 听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_ .+†+. function changeBody(bodyPic) { var filePath = "181227-game/body-" + bodyPic + ".png"; var bodyUrl = `url(${filePath})` var x = document.getElementById("game-body"); x.style.backgroundImage = bodyUrl; } function changeEye(eyePic) { var filePath = "181227-game/eye-" + eyePic + ".png"; var eyeUrl = `url(${filePath})` var x = document.getElementById("game-eye"); x.style.backgroundImage = eyeUrl; } .game-box { width: 200px; height: 350px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; justify-content: space-around; padding: 5px; border: 2px dashed #f9a972; border-radius: 10px; background-color: rgba(255,255,255,.3); } .game-button-box center { margin-bottom: 0px; } .game-button-body, .game-button-eye { display: flex; flex-wrap: wrap; justify-content: space-around; } .game-div { width: 120px; height: 134px; background-size:100% 100%; background-repeat:no-repeat; margin-left: auto; margin-right: auto; } #game-body { background-image: url(181227-game/body-01.png); } #game-eye{ background-image: url(181227-game/eye-01.png); } .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } 肤色 眼睛 181229-更新 感谢fomm和旋岚，我的JS代码从60行简化到了14行！！！ 因为过程过于玄学导致我一时不知道该怎么记笔记emmmmmmm直接全抄下来吧x 首先直接照搬fomm的代码没成功，提示url没有被定义(url被识别成了变量），按照原来的写法加了引号，直接输出成了background-image: url(filePath)（变量被识别成了文本），最后经过旋岚提醒改成了这样： 1234567function changeBody(bodyPic)&#123; var filePath = &quot;181227-game/body-&quot; + bodyPic + &quot;.png&quot;; var bodyUrl = &quot;url(&quot; + filePath +&quot;)&quot; var x = document.getElementById(&quot;game-body&quot;); x.style.backgroundImage = bodyUrl;&#125; 重新定义了一个变量把url和变量拆分开再输入到css样式里，它能跑了！！！ 然后经过一位热心群众bluelovers的指点，更简洁的写法是这样： 1var bodyUrl = `url($&#123;filePath&#125;)` 用【`文本$变量`】这个语法可以省略引号和加号（虽然我觉得引号和加号比较容易看懂QAQ]]></content>
+    <content type="text"><![CDATA[说是换装小游戏其实只能换美瞳和粉底液【其它素材还没画x 上次的“自学JS的开始”经过我一番百度，发现我改的文件叫swig，跟JS完全两个东西，丢人【 这次是真的自学JS啦！ 对着菜鸟教程的JS简介研究了5分钟（就是只看了那个小灯泡的案例……）我就开始画模型了，因为懒得插板子所以是鼠绘的像素图，说起来这个脸怎么越看越像面包啊…… 然后因为只看了5分钟教程的原因，每个按钮我都写了5行代码，虽然看起来很沙雕但是……它能跑哎！能跑就已经很了不起了！【←太吾精神，启动！ 发到草莓县给大家围观的时候fomm给我发了个很简洁的写法，等我吃完晚饭再回来研究一下ヾ(*´∀｀*)ﾉ 不过比起按钮换颜色我觉得我还是做一个只有线稿的换装小游戏吧，导出线稿之后拿别的软件自己上色也挺方便的，当然如果我能研究出如何用JS给svg路径上色，那用软件直接导出彩图也是指日可待。 听起来这个小游戏已经可以开放氪金了哎【？前提是我得先做出来再说_(:з」∠)_ .+†+. function changeBody(bodyPic) { var filePath = "181227-game/body-" + bodyPic + ".png"; var bodyUrl = `url(${filePath})` var x = document.getElementById("game-body"); x.style.backgroundImage = bodyUrl; } function changeEye(eyePic) { var filePath = "181227-game/eye-" + eyePic + ".png"; var eyeUrl = `url(${filePath})` var x = document.getElementById("game-eye"); x.style.backgroundImage = eyeUrl; } .game-box { width: 200px; height: 350px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; justify-content: space-around; padding: 5px; border: 2px dashed #f9a972; border-radius: 10px; background-color: rgba(255,255,255,.3); } .game-button-box center { margin-bottom: 0px; } .game-button-body, .game-button-eye { display: flex; flex-wrap: wrap; justify-content: space-around; } .game-div { width: 120px; height: 134px; background-size:100% 100%; background-repeat:no-repeat; margin-left: auto; margin-right: auto; } #game-body { background-image: url(181227-game/body-01.png); } #game-eye{ background-image: url(181227-game/eye-01.png); } .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } 肤色 眼睛 181229-更新 感谢fomm和 旋岚，我的JS代码从60行简化到了14行！！！ 因为过程过于玄学导致我一时不知道该怎么记笔记emmmmmmm直接全抄下来吧x 首先直接照搬fomm的代码没成功，提示url没有被定义(url被识别成了变量），按照原来的写法加了引号，直接输出成了background-image: url(filePath)（变量被识别成了文本），最后经过旋岚提醒改成了这样： 1234567function changeBody(bodyPic)&#123; var filePath = &quot;181227-game/body-&quot; + bodyPic + &quot;.png&quot;; var bodyUrl = &quot;url(&quot; + filePath +&quot;)&quot; var x = document.getElementById(&quot;game-body&quot;); x.style.backgroundImage = bodyUrl;&#125; 重新定义了一个变量把url和变量拆分开再输入到css样式里，它能跑了！！！ 然后经过一位热心群众bluelovers的指点，更简洁的写法是这样： 1var bodyUrl = `url($&#123;filePath&#125;)` 用【`文本$变量`】这个语法可以省略引号和加号（虽然我觉得引号和加号比较容易看懂QAQ]]></content>
       <categories>
         <category>汐喵晒鱼</category>
       </categories>
@@ -559,8 +559,8 @@
         <category>汐喵晒鱼</category>
       </categories>
       <tags>
-        <tag>imgtag</tag>
         <tag>ow</tag>
+        <tag>imgtag</tag>
       </tags>
   </entry>
   <entry>
@@ -585,8 +585,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github pages</tag>
         <tag>next</tag>
+        <tag>github pages</tag>
         <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
@@ -603,8 +603,8 @@
         <tag>next</tag>
         <tag>CSS</tag>
         <tag>插件</tag>
-        <tag>imgtag</tag>
         <tag>ow</tag>
+        <tag>imgtag</tag>
       </tags>
   </entry>
   <entry>
@@ -1030,9 +1030,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
-    <url>%2F2012%2F120512-lost-end.html</url>
-    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
+    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
+    <url>%2F2012%2F120512-hana.html</url>
+    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
@@ -1043,9 +1043,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
-    <url>%2F2012%2F120512-hana.html</url>
-    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
+    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
+    <url>%2F2012%2F120512-lost-end.html</url>
+    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
