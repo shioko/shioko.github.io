@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【习作向】换装小游戏SVG版]]></title>
+    <url>%2F2019%2F190102-game.html</url>
+    <content type="text"><![CDATA[终于完成了！！！！历时一周从无到有，代价是我的颈椎病又加重了【 接下来的目标是实现按钮分栏，最好是能把按钮也用JS生成……这一大串写得头都大了OTL 以及发现一个很无语的问题，资源文件夹里的js文件也会被渲染成文章，目前的解决方式是保存的时候去掉后缀名，在正文引用时注明type=&quot;text/javascript&quot;，也能够正确读取。 本来打算用CSS弄个渐变动画的，结果发现这个东西微妙地……太占资源了，渲染大色块有0.5s左右的延迟，以后再试试用别的办法实现吧_(:з」∠)_ .+†+. .colorbutton { border-radius: 50%; border: 1.5px solid black; width: 20px; height: 20px; } .drawbutton { border-radius: 5px; width: 2em; height: 2em; background: } .game-img{ min-width: 60%; } .game-body { display: flex; } .fill-color { stroke:transparent; } .line { stroke:transparent; fill:#000; } .highlight { stroke:transparent; fill:#fff; } 流海 0 1 鬓角 0 1 发尾 0 1 脸型(肤色) 眉毛 0 1 眼睛 嘴 0 1 上衣 下装 function drawPath(gName,pathName){ var a = document.getElementById(`${gName}`), x = document.getElementsByClassName("`${gName}`d"); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } a.innerHTML=`${pathName}` } function changeColor(itemId,fillColor) { var a = document.getElementById(itemId); a.style.fill=fillColor } function changeSkin(skinColor) { var a = document.getElementsByClassName("skin"); var i; for (i = 0; i < a.length; i++) { a[i].style.fill=skinColor } } function changeEye(eyeC1,eyeC2,eyeC3) { document.getElementById("eyecolorR").style.fill=eyeC2; document.getElementById("eyecolorL").style.fill=eyeC2; document.getElementById("eyeshadowR").style.fill=eyeC1; document.getElementById("eyeshadowL").style.fill=eyeC1; document.getElementById("eyelightR").style.fill=eyeC3; document.getElementById("eyelightL").style.fill=eyeC3; }]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>styletag</tag>
+        <tag>JS</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018一百条]]></title>
     <url>%2F2018%2F181231-2018.html</url>
     <content type="text"><![CDATA[01 翻了一下2017写的一百条，简直恍若隔世 减肥到7月就失败了！！！跟千反田奔现以后被喂成猪(╯‵□′)╯︵┻━┻ 不怎么打ow了，跟ow圈的小团体也闹翻了 也不怎么上微博了，住在草莓县也挺好的 跟去年比起来今年真是不安稳的一年啊…… .+†+. 02 从家里搬出来和千反田同居了 我负责做饭他负责吃，我做菜还挺有天赋的哼 他带我会老家那几天网吧二连坐，我在144机子上拿大号单排安娜，一晚上上了300分，看着千反田在我旁边玩个安娜在黄金局被打得屁滚尿流，笑爆 “用不到的瞄准镜请捐给有需要的人，谢谢” 然后现在千反田终于会玩安娜了哈哈哈哈哈哈 03 搬出来的时候接了个连载主笔，月入4000+ 然而画了半年之后编辑表示平台更喜欢另外两个主笔的画风噢，11月的稿费目前还没有结 我还打算拿这个月的稿费买苏菲狗的啊！！！(╯‵□′)╯︵┻━┻ 所以还是要努力认识比自己优秀的人，不能老是像在学校的时候一样，什么都不用做就能躺着变成第一 如果什么都得到得太容易的话，就要忘记努力是什么样了 04 今年没买什么裙子，都是包包 鲸落家和morning glory的各种包，名字都记不住了，果然比起挥霍爸妈的钱挥霍自己赚的钱简直是毫无心理负担…… 裙子其实也买了不少，但是搬出来和千反田同居之后都不怎么出门，天气冷了更不想动了，挂在衣柜里没什么机会穿 入了珠宝盒双色。你们家的码怎么回事啊，36掉跟35挤脚，是我后跟太短脚趾太长吗？？ 跟千反田搬出来以后也不怎么化妆了……只买了大创美白护理套装，美白倒是感觉不出来【毕竟我本来就白】但是补水挺棒哎 05 写了草莓象主题，创办了草莓县新闻社统计每日的版聊话题，目前还在坚持中 写了mastodon长图拓展插件 搭了自己的hexo博客，把旧文整理了上去 用html+CSS做了一个hexo相册模板 目前正在研究JS，试图搞一个换装小游戏出来 06 然后终极目标就是用html+CSS+JS实现我之前构想的小说编辑器 emmmmmm好像跟换装小游戏没什么关系啊！ 帮cmx上的一个妹子解决了搭hexo遇到的各种问题，算是体验了一把当程序媛的快感23333 不然我也去淘宝开个网店帮人搭hexo好了【盘算 不知道为啥突然觉得比起画画还是这种程序化的东西比较适合我？ 07 2018的最后一个月，突发奇想地开始看乐理，刷刷刷填了好几个坑 等我回家把麦克风和声卡搬过来，我是不是可以指望一下明年出个专辑啊 今年在网易云里摇到的宝藏歌手：aimer，reol，sawako醉花（是个国人唱见） 另外的宝藏歌手：NakamuraEmi（超喜欢的rap），小南泰葉（爆发力超强），还有好多，详见歌单 但是最喜欢的歌是【水曜日のカンパネラ - お七】，现在也在听着这首歌写年终总结 08 开始填DDer的坑…… hexo当搭好的时候写的正篇第一章，至今没有后续【 断章进度：蔷薇之笼，写了3个part，坑了 断章进度：最后一课，写完了。这好像是我整年唯一一个填完的坑？？？ 然后就是各种坑掉的游戏和漫画企划，比如鱼缸，比如《最近的魔法少女到底都经历了些什么》 09 一个是记忆力不像以前一样好了，脑中一闪而过的灵感在写出来之前就已经被忘却 另一个是不知道为什么总是瞻前顾后，写出什么东西的时候总要考虑读者喜不喜欢，不知道是哪里来的毛病 然后就是创作冲动很难持续，咸个两天回头一看就觉得卧槽这什么鬼啊 梦与蔷薇，退出连载之后的第一个企划，开始写脚本了发现风格和世界观都和梦蚀本章重合，打算砍了直接把主线写进梦蚀本传 世界逆行说，废（keng）物利用的第二个条漫企划，因为题材太敏感打算变成科幻背景，结果写世界观的时候突然开始理解空知老师，于是目前又在搁置中…… 10 我也真的很想老老实实把梦蚀先写下去的 但是我得先画点读者爱看的东西养活自己啊【扶额 其实我觉得世界逆行说这个设定还挺靠谱的，人设出起来也快（都是制服），但是就是世界观需要好好打磨一下，不能太科幻也不能太隐射现实 不然一不小心就变成第二个国家队x【不过讲道理我还挺喜欢国家队的啊！ 要么直接拉到拉维岛上去？？？说不好也不太好，不过这确实是最省时的办法了emmmmmm 11 50条了……我已经不知道写些什么了 去年我到底是怎么凑到100条的？？？ 所以去年能记住那么多人和事大概是因为生活环境完全没什么变化吧 今年已经……完全不记得搬出来之前我在和谁一起干什么了 也没什么社交活动。比起去年的热衷于交际，今年似乎是专注于自我（自闭）的一年呢…… 12 一个意外的惊喜：和之前玩语C的节操组的朋友们重聚了 虞哲来找我的时候我完全是失忆的，完全分不清节操组里的都是哪些人了，和之前呆过的某个不太愉快的组搞混了 明明还和猫太睡过同一张床的啊！！！ 果然抑郁症会严重影响记忆力，还好我一直没有中断写日记，即使是最痛苦的时候也是 沉迷游戏那会儿不还有每天的练枪记录嘛233333 13 说是自闭的一年还是发生了些事情的 比如因为碳酸跟广广闹翻了。其实我对广广真的没什么意见，即使她后来在微博上攻击我抑郁症我也OK。毕竟她除了几句人身攻击之外也确实没做过什么实质对不起我的事情，气话而已，人之常情。 当然我也没有对不起她。希望大家各自安好互不相干吧。 不过另外两位就不一样了。我真的超讨厌智商比我少一位数还在自以为是地在我眼皮子底下搞小动作的小蛆蛆的，不打人纯粹是因为我懒，不要再消费我了谢谢。 自己照镜子看看你俩跟碳酸是一个物种的颜值吗？ 14 其实跟姐妹团产生隔阂的契机也不是碳酸而是熙儿，第一次退群也是这个原因。 一个是我真的挺反感当面一套背后一套的做法，另一个是我也开始忍不住怀疑，你在背后是不是也这么说我呢？ 更何况我觉得熙儿压根没啥问题，人家未成年的小姑娘哪有我们这群老油条这么懂人情世故啊，人家也没想着害你，一两句不愉快翻过去不就得了，至于这么斤斤计较的吗【摊手 甚至还挺喜欢她的。 一个能在看到我的丧气动态之后特地小窗发歌来安慰我的女孩子，你让我怎么相信她和你说的一样傲慢自私？ 15 经过这件事也算明白了一个道理。 人真的是很容易在集体之中迷失自我的人，即使自闭如我也是一样。 但不会有人是集体的领导，所有人都是集体的奴隶。我们都在被名为“集体”的空气左右着思考和言行，没有人例外。 除了那些一开始就没有投入任何感情只考虑着谋取个人利益的人。 但我不是。再给我一次机会让我遇到一样的“集体”，我也不会。 16 其实说起来今年的抑郁症总体来说症状似乎是加重了的，虽然没加重到需要重新回医院开始治疗的程度，但是能很明显地感觉到情绪异常波动变多了。 后半年尤其严重。大概跟生活环境的变动有关，我可能还处在搬家应激期吧2333 打算一月底回家……不知道买完机票还有无钱买电脑，流泪猫猫头.jpg 再次辱骂sb工作室，1月26号快递都停运了你10号发工资，妈不要了？ 听说我搬出来之后家里的豆豆被喂得很好，每天还有专门的小灶开【感慨一下母上无处安放的母爱好了 17 可恶好想吃火锅啊【 今年最喜欢的食材是番茄——在淘宝买了5斤最后因为千反田老是叫外卖还是坏了两个，不过大部分都吃完了【自豪 长沙番茄真的贵，7块钱一斤【脏话 番茄牛肉丸超级好吃www可乐鸡翅终于不会煎糊了x 自己琢磨了一个食谱菇菇鸡汤，在草莓县大受欢迎，开心 18 不知不觉似乎快要扯到100条了哎 那在接近尾声的部分特别提一下tiki，很难得能遇到跟我心平气和（其实也不太平和2333）地聊一聊时事的旧识，以此为契机可以说是解放了全身心投入在柴米油盐上的我的精神世界【停一停旁友吹过头了 没有跟tiki的聊天大概也不会有我今年唯一填上的那个坑了【指最后一课 以及亦秋。 我还是很想你。 19 以及比较奇遇的相识大概是我椰，虽然跟cly关系比较好，但是没有XXXX同学的那几句坏话大概我还真的不会对异性友人的女朋友过多关注的……【毕竟需要避嫌 只能说贵圈真小 相识之后发现意外地聊得来，【而且现在大家都是养肥宅的美少女了 我椰盛世美颜！吹爆！ 最后祝cly早日晋升美肥宅233333333 20 因为今年发生的变故太多的原因，2017的100条讲实话没法心平气和地重温完毕，开始思考写这个东西的意义何在 大概和草莓日报一样属于“没什么意义的坚持”吧，说是坚持其实也只坚持了两年？ 希望快乐的事情能被保存下来，不愉快的事情也都封存在此 好像没什么位置写新年展望了—— 那就不需要什么展望了，明年的事等到明年再说吧_(:з」∠)_]]></content>
@@ -15,12 +28,24 @@
   <entry>
     <title><![CDATA[JS绘制复杂svg图形测试]]></title>
     <url>%2F2018%2F181230-svgtest2.html</url>
-    <content type="text"><![CDATA[一个巨tmsb的svg绘制测试。 折腾了我整整3天，脑壳疼【手动pop子中指 .+†+. var svgD1 = ""; var svgD2 = "" function drawSVG(gName, dName){ var getG = `${gName}`, getD = `${dName}`, getClass = "`${gName}`d", a = document.getElementById(getG), x = document.getElementsByClassName(getClass); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } a.innerHTML=getD } 变换为单路径（D1） 变换为蚊香（D2） innerHTML是好文明！！！！！！！去nmd createElementNS！！！！！！！！]]></content>
+    <content type="text"><![CDATA[一个巨tmsb的svg绘制测试。 折腾了我整整3天，脑壳疼【手动pop子中指 .+†+. var svgD1 = ""; var svgD2 = "" function drawSVG(gName, dName){ var getG = `${gName}`, getD = `${dName}`, getClass = "`${gName}`d"; var a = document.getElementById(getG), x = document.getElementsByClassName(getClass); var i; for (i = x.length-1; i >= 0; i--) { a.removeChild(x[i]); } a.innerHTML=getD } 变换为单路径（D1） 变换为蚊香（D2） innerHTML是好文明！！！！！！！去nmd createElementNS！！！！！！！！]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[JS更改svg颜色测试]]></title>
     <url>%2F2018%2F181229-svgtest.html</url>
     <content type="text"><![CDATA[001-改 能跑了。但是我没看懂这是怎么跑的，i++是个啥玩意儿？？？ .+†+. 001-改 001-改 .game-button { color: transparent; border-radius: 50%; width: 2em; height: 2em; border: 2px solid black; margin: 0.5em 0.5em; } svg { max-width: 50%; display: block; margin-right: auto; margin-left: auto; } function changeColor(fillColor, strokeColor) { var fillC=`${fillColor}`, strokeC=`${strokeColor}` var x=document.getElementsByClassName("logoback"); var i; for (i = 0; i < x.length; i++) { x[i].style.fill=fillC; x[i].style.stroke=strokeC; } } 还是换装小游戏的测试……一降温打字速度光速下降，我手都快冻得弯不过来了…… 要是稿费没拖我现在估计已经抱着苏菲狗在被窝里敲代码了，此处应有大声辱骂工作室500字(╯‵□′)╯︵┻━┻ 想要实现的效果：点击颜色按钮之后能批量修改所有指定类别的【多个】元素的颜色，getByID只能改一个，getByClassName吧它死活告诉我没定义对象，最后百度了一年，在获取对象和变色中间加了这么两行： 12var i;for (i = 0; i &lt; x.length; i++) 然后就能跑了。 你是啥！你为什么能跑！为什么(ﾟдﾟ)！ 后续更新的笔记 还是感谢bluelovers dalao的不吝赐教，终于明白这两行是干嘛用的了…… 按class获取多个对象之后会形成一个列表，从0开始排列，i就是用来指向每一个对象的编号，i=0=是从0开始，i&lt;x.length=只要i小于x定义的列表的长度，i++=将现有编号+1。 所以本质问题是：原来JS一次只能处理一个对象啊！(╯‵□′)╯︵┻━┻]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[【编曲练习】不知道怎么细化的作曲稿]]></title>
@@ -309,8 +334,8 @@
       <tags>
         <tag>汐理学</tag>
         <tag>hexo</tag>
+        <tag>CSS</tag>
         <tag>日记</tag>
-        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -571,8 +596,8 @@
         <category>维护日志</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
         <tag>ow</tag>
+        <tag>CSS</tag>
         <tag>日记</tag>
       </tags>
   </entry>
@@ -585,8 +610,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>github pages</tag>
+        <tag>next</tag>
         <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
@@ -601,9 +626,9 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+        <tag>ow</tag>
         <tag>CSS</tag>
         <tag>插件</tag>
-        <tag>ow</tag>
         <tag>imgtag</tag>
       </tags>
   </entry>
@@ -1030,9 +1055,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
-    <url>%2F2012%2F120512-hana.html</url>
-    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
+    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
+    <url>%2F2012%2F120512-lost-end.html</url>
+    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
@@ -1043,9 +1068,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【流年】Shioko - Lost Ending]]></title>
-    <url>%2F2012%2F120512-lost-end.html</url>
-    <content type="text"><![CDATA[看了下story，所以我居然把编好曲子的成品给丢了？？？？？？ 原曲的标题是《lost end》，感觉好像哪里不太对改成ending了，但是为了方便我搜索原来的稿子，后台的文件名就不改了OTL .+†+. Lost EndingSong By Shioko休止符 轻轻写下 放下笔开口歌唱时才发现 满纸的歌 都已被寂静填满了被尘埃 沾染的琴弦被暗夜 吞没的光芒谁能听到 我最后的歌唱放声唱 最后的歌 即使声音已然沙哑恍然中 昨日的花 纷飞在无光的深夜被绝望 侵蚀的歌声被世俗 扭曲的信仰谁能听到 我最后的歌唱 /- Story -/原曲的名字叫《绝唱》、后来改成《The Last Song》、也就是用水果编曲练习的第一首歌……可惜……原稿不知道扔哪去了T T好不容易有一首歌老老实实写完谱子的……居然不见了T T初二艺术节的时候在琴谱后面写的曲子……好怀念呢、昨日的花那一句是前天刚加上去的OTL因为实在记不起来了……T T回忆一下……那个时候一起以排练为借口的我、11、还有会长呐、]]></content>
+    <title><![CDATA[【歌祭】Shioko - 花焚]]></title>
+    <url>%2F2012%2F120512-hana.html</url>
+    <content type="text"><![CDATA[古风狗屎。 .+†+. 花焚Song By Shioko七月流火时 正是炎炎夏却在烛光中 霜染了光华残烛 明灭 点燃花颜渐渐 扬起 尘烟执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦执伊人之手 是谁的心愿与倾心偕老 又是谁曾言焚花 裂锦 顾影自怜烟尘 无言 摇曳又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩烛光绵延时 荒野尽焚燃尽了谁的泪痕看一生 锦绣织成 又散落成灰檀烟起 梦催人沉沦又是一年夏 花香醉人旷野上尽染香痕忆旧时 浅笑嫣然 晕开了流年看今夜 花作蝶翩翩 /- Story -/额……应该也是初二、上课走神的时候哼出来的旋律……嗯、是副歌部分的旋律、然后自己觉得“嗷嗷好古风好美”就赶紧把谱子记了下来、最后……事实证明、我跟古风八字不合T T魂淡、不管是主歌的旋律还是歌词都绞死了我无数的脑细胞……还好……最后的样子、是出来了T T但愿大家不要觉得这歌词好破好装13吧……T T]]></content>
       <categories>
         <category>杂物箱†</category>
         <category>流年·歌祭</category>
