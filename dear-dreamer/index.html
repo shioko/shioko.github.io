@@ -115,12 +115,12 @@
 <meta property="og:site_name" content="†少女癌†">
 <meta property="og:description" content="！施工中！  档案浏览区 	  	档案更新时间：共和30年9月 	*如与其它资料记录冲突，以此系统为准 	 		 			 		 		 			姓名： 			生日/年龄： 			职业：??? 		 		 			拼写： 			性别： 			地址：??? 		 	 	     function fillDoc(ereaIn,nameIn){ 	var crname = eval(&quot;_&quot;+ereaIn+na">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://co5.me/dear-dreamer/img/00Name.jpg">
-<meta property="og:updated_time" content="2019-01-04T02:34:05.434Z">
+<meta property="og:image" content="https://co5.me/dear-dreamer/img/00Name.gif">
+<meta property="og:updated_time" content="2019-01-04T23:20:28.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="-|梦蚀°">
 <meta name="twitter:description" content="！施工中！  档案浏览区 	  	档案更新时间：共和30年9月 	*如与其它资料记录冲突，以此系统为准 	 		 			 		 		 			姓名： 			生日/年龄： 			职业：??? 		 		 			拼写： 			性别： 			地址：??? 		 	 	     function fillDoc(ereaIn,nameIn){ 	var crname = eval(&quot;_&quot;+ereaIn+na">
-<meta name="twitter:image" content="https://co5.me/dear-dreamer/img/00Name.jpg">
+<meta name="twitter:image" content="https://co5.me/dear-dreamer/img/00Name.gif">
 
 
 
@@ -449,7 +449,7 @@
 	*如与其它资料记录冲突，以此系统为准</p>
 	<div class="character-file-up">
 		<div class="file-column0">
-			<img src="img/00Name.jpg">
+			<img id="cr-img" src="img/00Name.gif">
 		</div>
 		<div class="file-column1">
 			姓名：<p id="cr-name" class="fill-in"></p>
@@ -475,6 +475,8 @@ function fillDoc(ereaIn,nameIn){
 	document.getElementById("cr-age").innerHTML=crname.birth+" ("+crname.age+")";
 	document.getElementById("cr-adr").innerHTML=ereaIn+" 区 - "+crname.adr;
 	document.getElementById("cr-pro").innerHTML=crname.pro;
+	var imgSrc = "img/"+ereaIn+nameIn+".gif";
+	document.getElementById("cr-img").setAttribute("src",imgSrc)
 }
 fillDoc('00','Name')
 
