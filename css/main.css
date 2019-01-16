@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffa5b;
+  background: #f7ff57;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2977,7 +2977,6 @@ body {
 }
 .site-title {
   color: #f9a972;
-  font-weight: 500;
   text-shadow: 0 1px 10px #fff;
 }
 .site-subtitle {
@@ -3549,9 +3548,27 @@ ul {
   padding-top: 0px;
   margin-top: 20px;
 }
-.posts-expand .post-body p,
-.posts-expand .post-body li {
-  font-family: Cambria, Calibri, "Apple Color Emoji", "Segoe UI Emoji", "Microsoft YaHei UI", sans-serif;
+.post-body {
+  font-family: Cambria, Calibri, "Apple Color Emoji", "Segoe UI Emoji", "Noto Serif CJK SC", "Noto Serif CJK JP", "Microsoft YaHei UI", sans-serif;
+  font-weight: 300;
+}
+body {
+  font-family: Cambria, Calibri, "Apple Color Emoji", "Segoe UI Emoji", "Noto Serif CJK SC", "Noto Serif CJK JP", "Microsoft YaHei UI", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.site-title {
+  font-family: 'Noto Sans CJK SC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.footer,
+.posts-expand .post-meta {
+  font-family: Cambria, Calibri, 'Noto Sans CJK SC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 audio {
   max-width: 90% !important;
