@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fef;
+  background: #8c21ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2950,12 +2950,17 @@ ul.breadcrumb li+li:last-child {
     text-align: justify;
   }
 }
-body {
-  background: url("bk.jpg");
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  background: url("bk.jpg") no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 .headband {
   height: 0px;
