@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff12f9;
+  background: #c932b8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3293,7 +3293,7 @@ a.gitment-editor-login-link {
   padding: 2px;
 }
 .posts-expand .post-body img {
-  margin: 5px auto -15px;
+  margin: 5px auto 0;
   border-radius: 20px;
   max-width: 90%;
   opacity: 0.8;
