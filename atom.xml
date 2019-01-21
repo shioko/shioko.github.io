@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2019-01-20T05:47:03.716Z</updated>
+  <updated>2019-01-21T00:45:26.270Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>鬼才方法实现hexo自定义emoji+自定义插件</title>
+    <link href="https://co5.me/2019/190121-emoji.html"/>
+    <id>https://co5.me/2019/190121-emoji.html</id>
+    <published>2019-01-20T19:02:07.000Z</published>
+    <updated>2019-01-21T00:45:26.270Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　:-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:<br>　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x<br>　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：<br>　　<strong>别人的什么都不会：</strong><br>　　JS基本不了解，但是熟悉×××与○○○的连接，会基本的△△△，简单接触过□□□。<br>　　<strong>我的什么都不会：</strong><br>　　json是JavaScript的儿子吗？:-cmx-05-:</p><a id="more"></a><center><br>.+†+.</center><p>　　JS和css文件右键审查都能看到，输入emoji的方式和长毛象不太一样，因为用空格+冒号的方式很容易和其它html代码以及盘古之白冲突……【我就直说了吧，主要是和盘古之白冲突=-=，所以暂时决定为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:-emoji-:</span><br></pre></td></tr></table></figure><p>　　这么去掉空格之后还可以实现emoji连发……当然问题也很多就是了……</p><h2 id="已知bug"><a href="#已知bug" class="headerlink" title="已知bug"></a>已知bug</h2><p>　　首先和next主题用的swig标签一样，<strong>不可以在行内元素中使用</strong>，包括<code>: -</code>和<code>- :</code>都不行，会被识别成emoji标签，如果要用的话需要在中间加一个空格，但是不至于导致整个渲染程序崩溃，顶多是渲染出一堆奇怪的字符和空格而已。<br>　　另外为了浏览美观我在生成的span前后都加了空格，而span的内容是空的，复制的时候连续的emoji就会变成一大串连续的空格，这个我暂时也没有什么好办法【<br>　　但是你开了盘古之白的话连续emoji之间的空格似乎会被精简到一个，具体原理我也不太清楚 :-cmx-05-:<br>　　还有就是emoji目前只能应用在p元素，列表和center这些元素尚不支持，等性能稳定之后再考虑扩展应用范围吧。</p><h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><p>　　真的很鬼才【<br>　　本来是试图用JS截取分隔符之内的字符串，然后逐个生成span，最后将span的文本内容转化为span的id，再根据ID修改span的背景图片。<br>　　结果第一步就卡住了……不是对象未定义就是函数不存在，然后我怀疑谷歌出来的那几个正则可能也有点问题。一怒之下我直接把标签开头用正则替换成<code>&lt;span class=&quot;co5emoji&quot; id=&quot;</code>，标签结尾替换成<code>&quot;&gt;&lt;/span&gt;</code>，试图让标签之间输入的内容直接被识别成html元素的ID……<br>　　然后它居然成功了！！！:-cmx-05-: 我一时竟不知道用什么词语来形容我的心情，只能我说可真nm是个前端鬼才啊【贬义<br>　　然而怎么完成的不重要，能跑就行，能跑就行，能跑就行。<br>　　然后就是用id逐个设定背景图片，这个很简单啦【应该可以用JS实现自动化一下？</p><h2 id="优化方案（咕咕中"><a href="#优化方案（咕咕中" class="headerlink" title="优化方案（咕咕中"></a>优化方案（咕咕中</h2><h3 id="使用JS完成自动化css样式设定"><a href="#使用JS完成自动化css样式设定" class="headerlink" title="使用JS完成自动化css样式设定"></a>使用JS完成自动化css样式设定</h3><p>　　因为id是直接手动写入的，在json里写emoji list似乎没什么意义了……不知道有没有能直接获得元素的id然后把id写入到文件名里的方法。<br>　　emmmm，先用classname批量获取元素，然后再把url设置成x.Id+.png，最后用x.style设定背景图片【或者直接新写一个img进去？<br>　　听起来似乎可行，等我明天努力一下好了x</p><h3 id="使用中文标点解决识别错误的问题"><a href="#使用中文标点解决识别错误的问题" class="headerlink" title="使用中文标点解决识别错误的问题"></a>使用中文标点解决识别错误的问题</h3><p>　　行内代码块里一般不会出现中文标点，如果用中文标点来作为特征标签的话应该可以解决大部分识别错误的问题，但是源码写出来可能就不太好看了？<br>　　兼顾美观与输入便利，暂定为<code>【 -</code>和<code>- 】</code>吧。【希望盘古之白不要自己给我的标签中间加上空格emmmmmmmmm</p><h3 id="写一套彩色字体"><a href="#写一套彩色字体" class="headerlink" title="写一套彩色字体"></a>写一套彩色字体</h3><p>　　想来想去这似乎是最简单的方法了。不用考虑JS代码，只需要在font-family前面加上我自定义的字体就行，貌似font awsome用的也是这种方案？不过更新emoji库可能会有些麻烦的样子。<br>　　还有自定义字体插入的符号应该要用svg吧，<strong>AI真的好难用啊——</strong></p><h3 id="支持大号表情"><a href="#支持大号表情" class="headerlink" title="支持大号表情"></a>支持大号表情</h3><p>　　想把小白人表情也引进一下，1.5em的大小好像就不太够用了，另外就是目前emoji span的尺寸都是<br>1.5em×1.5em的正方形。计划新设计一种标签来写入大号和特殊尺寸的表情，应该就需要用JS进一步识别span的内容然后写入img标签了。<br>　　那么这个功能……等我实现了css自动化再说吧:-cmx-doge-:</p><h2 id="自定义插件"><a href="#自定义插件" class="headerlink" title="自定义插件"></a>自定义插件</h2><p>　　<strong>写代码真的好可怕啊我现在一边打字一边往键盘上掉头发……</strong><br>　　讲真我现在有点后悔拉黑了微博上那个找我来卖护颈仪的……</p><p>　　在<code>主题/source/lib</code>下新建一个文件夹，我的是<code>co5emoji</code>，然后再新建一个<code>dist</code>文件夹，把你的JS代码和css文件扔进去。如果需要引用图片的话需要在dist文件夹里再新建一个<code>img</code>文件夹。<br>　　好嘛这个其实没什么好说的……主要是next的layout比较看不懂OTL</p><h3 id="Next-layout"><a href="#Next-layout" class="headerlink" title="Next layout"></a>Next layout</h3><p>　　layout部分参考了自带的盘古之白，生效的位置也是一样的。<br>　　在<code>layout/_custom</code>文件夹里新建<code>co5emoji.swig</code>文件，然后写入以下内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.co5emoji %&#125;//设置变量名</span><br><span class="line">  &#123;% set co5emoji_js = url_for(theme.vendors._internal + &apos;/co5emoji/dist/co5emoji.js&apos;)%&#125;//设置js文件的引用地址</span><br><span class="line">  &#123;% set co5emoji_css = url_for(theme.vendors._internal + &apos;/co5emoji/dist/styl.css&apos;)%&#125;//设置css文件的引用地址</span><br><span class="line">  &lt;script src=&quot;&#123;&#123; co5emoji_js &#125;&#125;&quot;&gt;&lt;/script&gt;//引用JS文件</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&#123;&#123; co5emoji_css &#125;&#125;&quot;&gt;//引用css文件</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure><p>　　如果你的自定义插件也和我一样是JS+css的形式的话，只要把<code>co5emoji</code>和<code>styl.css</code>替换成你自己的文件名就好。<br>　　还有记得去掉注释……swig的注释貌似不是这个格式，肯定会报错【</p><p>　　然后在主layout的底部加上：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include &apos;_custom/co5emoji.swig&apos; %&#125;</span><br></pre></td></tr></table></figure><p>　　或者你只需要在博客正文和主页中生效的话，把include标签插入到<code>post.swig</code>和<code>index.swig</code>里就好了，不清楚具体位置的话，<a href="https://co5.me/2018/181123-pangu.html#限定盘古之白的生效范围">可以参考我之前写的盘古之白调教日记【</a>。</p><p>　　最后在<code>next/_config.yml</code>里加上一行<code>co5emoji: true</code>即可（改成你刚才自己在swig里写的变量名），如果不知道加在哪儿，还是直接搜索盘古之白在底下另起一行就好。不过要注意的是应该加在第一个搜索结果的前面，后面的几个似乎是自定义变量还是别的什么，注释里写了不要乱动，所以还是不要加在底下了_(:3」∠)_<br>　　设置完毕之后应该是需要hexo clean重新生成一下才会显示，但是JS文件和css文件是可以即时生成的，只要刷新浏览器即可。</p><p>　　总觉得看的代码多了以后笔记这种东西似乎越写越简单了【希望我某天爬坑回来还能看得懂我写了什么 :-cmx-05-:</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　:-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:&lt;br&gt;　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x&lt;br&gt;　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：&lt;br&gt;　　&lt;strong&gt;别人的什么都不会：&lt;/strong&gt;&lt;br&gt;　　JS基本不了解，但是熟悉×××与○○○的连接，会基本的△△△，简单接触过□□□。&lt;br&gt;　　&lt;strong&gt;我的什么都不会：&lt;/strong&gt;&lt;br&gt;　　json是JavaScript的儿子吗？:-cmx-05-:&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="汐喵晒鱼" scheme="https://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
+    
+    
+      <category term="hexo" scheme="https://co5.me/tags/hexo/"/>
+    
+      <category term="插件" scheme="https://co5.me/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="JS" scheme="https://co5.me/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【-|梦蚀°】断章·杀手的决意-01</title>
     <link href="https://co5.me/2019/190120-kiiler.html"/>
     <id>https://co5.me/2019/190120-kiiler.html</id>
     <published>2019-01-20T01:50:30.000Z</published>
-    <updated>2019-01-20T05:47:03.716Z</updated>
+    <updated>2019-01-20T18:56:07.036Z</updated>
     
     <content type="html"><![CDATA[<p>　　“在下课之前，有两件事情要告诉大家。”<br>　　“第一件事是，下周一第三区的凯瑟琳公学将会派师生团体到我校进行为期两周的交流学习，并且开设公开课。凯瑟琳公学是国内顶尖的心理学院校，感兴趣的同学请务必不要错过这次机会。”<br>　　“还有一件事是，从下周一开始我也要进行为期两周的休假，这两周的选修课请大家听从教务处的安排。那么……”</p><a id="more"></a><center><br>.+†+.</center><p>　　一头红发的橘诗织教授随着下课铃走出了教室，留下同学们一边整理东西一边议论纷纷。<br>　　“国内顶尖的心理学院校来雪野交流学习？但是诗织老师不在的话要交流些什么啊……”<br>　　“你这话说的，心理部其他的老师也都很有名气啊，比如神田老师……”<br>　　“话虽这么说，但绝对还是诗织老师最厉害吧。听说她在高中时期就在国家级别的心理学杂志上发了好几篇论文了呢！”<br>　　“真的假的？高中？”<br>　　“真不愧是诗织老师……”</p><p>　　尔雅一头黑线地穿过诗织教授的粉丝团，拿着这周的Karas症状检测报告敲开了办公室的门。正在教室里被热烈讨论的明星老师此刻摘下了眼镜，略显憔悴地揉着额角。<br>　　“那个……诗织老师？”<br>　　诗织眯了眯眼抬起头：“啊，是尔雅。抱歉，最近有点忙……报告你先放在这吧，我周末给你答复。”<br>　　“好的。”尔雅小心翼翼地把报告放在桌上，忍不住又补了一句，“……还有一件事，我能问个问题吗？”<br>　　“什么？”<br>　　“为什么刚好是两星期？好像是刻意避开凯瑟琳公学的交流访问一样。”<br>　　诗织闻言愣了愣，随即低头发出一声轻笑：“被你发现了……确实是刻意避开的呢。”<br>　　“诶、诶？为什么啊？”尔雅茫然地炸了眨眼。<br>　　“因为……有不想遇到的人。”<br>　　与嘴上说出的简单语句相反，诗织脸上的表情却是十分复杂的。眼神凝重地望着电脑屏幕，嘴上却露出带着几分释然的笑容。</p><p>　　尔雅没看懂那个表情，却在一周后遇见了诗织不想遇见的那个人。<br>　　——一名与诗织一样有着红色头发，戴着圆框眼镜的凯瑟琳公学学生，几乎每天都会出现在心理学选修课的教室门口，似乎在等待着什么，但是又从来不进去听课。等到星期五尔雅自己去上选修课的时候，终于发现她坐在了教室里，而且还早早占据了靠近后门的位置，仿佛是随时准备逃跑一样。<br>　　抱着满心的好奇，尔雅走过到了红发女生的旁边，刚放下东西准备坐下来开口问些什么，对方却抢先开口了：“那个……不好意思请问一下，这节是橘诗织老师的课没错吧？”<br>　　尔雅迟疑地摇了摇头：“……不是，诗织老师这两个星期休假了，要等凯瑟琳公学访问结束才回来上课。”<br>　　“啊……”红发女生闻言一愣，僵了两秒长长地叹了一口气，顺势趴在了课桌上，发出了几个哭笑不得的语气词。<br>　　这是什么情况？<br>　　尔雅小心翼翼地在红发女生的旁边坐下，开口问道：“那个……你这几天一直在教室门口打转，就是为了等诗织老师的课吗？”<br>　　女生“噌”地一下把埋在课桌上的脸抬了起来，脸上是小学生看了都觉得心虚的笑容：“啊……也不算是吧，只是听说雪野大有个特别厉害的心理学……教授？想来见识一下而已，没想到她休假啊……”<br>　　这是STK行为吧，绝对是吧。<br>　　尔雅心里默默吐槽着，还是开口做了自我介绍：“你是凯瑟琳公学的学生吧？我叫尔雅，你呢？”<br>　　红发女生尬笑着开口，短短的红色马尾在脑后晃了一下，像兔子的尾巴：“我啊，我叫……”</p><p>　　“Aria。”<br>　　一周前的第八区特对组会议室，糖砂带着一脸恶意的笑容念出这个名字：“这次梦神教徒袭击的目标，有什么想法吗？”<br>　　“没有。”诗织冷漠地盯着笔记本电脑的屏幕，手里的笔不耐烦地敲击着桌面。<br>　　“我倒是有个很有趣的猜想噢……朱森亚里亚，这个名字有没有很熟悉啊？”糖砂的笑容更加恶劣了。<br>　　“没，有。”诗织“啪”的一声把笔拍在桌上。<br>　　昔日的“渡鸦”小队队友，今日的第三区治安长官安永实一头冷汗地夹在两个女人中间，实在搞不懂她们是在打些什么哑谜。自从前些日子里截获了梦神教残党的恐怖袭击企划，这两个人之间的气氛就一直这么诡异，简直要让人怀疑平时相亲相爱的姐妹情是不是塑料做的了。<br>　　“那么就由我来解说吧。朱森亚里亚，凯瑟琳公学来访的成员之一。普通在校学生的档案如果没有什么重大事件发生，是一学期更新一次的，而她的档案却几乎是实时更新，而且平均隔一周就会被访问一次……”<br>　　实忍不住插嘴：“这不是STK吗？”<br>　　糖砂嗤笑出声：“我也是这么想的。但是呢，又有一个奇怪的地方就是，几乎所有的访问都来自于最高权限账号，无法访问具体ID，但是显示的访问地址却来自……第八区特对组办公室，以及雪野女子大学心理系。”<br>　　“能同时出入这两个地方并且有最高权限ID的人，好像只有一个噢~”<br>　　糖砂扬起眉毛歪头看向诗织，实感觉头上的冷汗冒得更厉害了。他刚才是不是说了STK？<br>　　“我给你系统后台的访问权限不是让你用来干这种无聊的事的。”<br>　　诗织做了个深呼吸，重新拿起笔在桌子上敲了起来。<br>　　糖砂却完全没有一点就此打住的意思，继续搞事道：“你难道不打算解释一下这个STK的问题吗？”<br>　　“……你还真是完全不知道什么叫适可而止啊。”诗织又做了个深呼吸，把手里的笔扔到桌子上，起身打开了投影屏幕。<br>　　“这个女孩……朱森亚里亚，是未登记过的Karas感染者，感染等级III，和Mio一样。”<br>　　“……诶？”糖砂脸上的笑容渐渐消失，“这剧本跟我想象的好像不太一样……”<br>　　“以及……她也是我的病人。曾经是。”<br>　　诗织转过身去看着屏幕上的少女，乖巧的脸上戴着一副大大的圆框眼镜，红色卷发在脑后扎成短短的马尾，像兔子的尾巴。</p>]]></content>
     
@@ -471,32 +497,6 @@
       <category term="随笔" scheme="https://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="版聊搬运" scheme="https://co5.me/tags/%E7%89%88%E8%81%8A%E6%90%AC%E8%BF%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>招牌菜：菇菇鸡汤</title>
-    <link href="https://co5.me/2018/181210-diary.html"/>
-    <id>https://co5.me/2018/181210-diary.html</id>
-    <published>2018-12-09T23:08:33.000Z</published>
-    <updated>2018-12-09T23:31:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　凌晨4点多因为睡不着，爬起来洗了点菇炖鸡汤，现在整个房间都是香菇炖鸡的香味……可恶好饿！<br><a id="more"></a></p><p><center><br>.+†+.</center><br><img src="https://cmx.im/system/media_attachments/files/001/240/924/original/e46d3aada185db3a.jpeg" alt=""><br>　　↑鸡汤长这样（长毛象外链）<br>　　发出去之后居然惊动了FTL上的国际友人给我留言：looks so yummy!<br>　　还有县民私信问我要食谱哈哈哈哈哈哈x<br>　　其实做起来还挺简单的：</p><ul><li>鸡腿→洗干净血水</li><li>香菇→泡软</li><li>茶树菇→洗干净，去掉根，剪成一指长</li><li>虫草花→剪掉根</li></ul><p>　　全部处理好以后扔进电饭煲，倒水没过食材，调到炖汤模式，就可以开始等了ww<br>　　出锅以后加盐和调味料，推荐蔬之鲜，不建议放酱油（之前放过不知道为什么吃起来略腥），然后就可以喝啦！<br>　　泡米饭幸福感爆棚！【但是因为这汤是用电饭煲炖的，所以每次把汤盛出来煮饭的时候就很煎熬……x</p><p>　　啊困了，去喝碗汤睡觉x这大概要成为我史上最短的一篇blog了_(:з」∠)_</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　凌晨4点多因为睡不着，爬起来洗了点菇炖鸡汤，现在整个房间都是香菇炖鸡的香味……可恶好饿！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="汐喵晒鱼" scheme="https://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
-    
-    
-      <category term="imgtag" scheme="https://co5.me/tags/imgtag/"/>
-    
-      <category term="日记" scheme="https://co5.me/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-      <category term="食谱" scheme="https://co5.me/tags/%E9%A3%9F%E8%B0%B1/"/>
     
   </entry>
   

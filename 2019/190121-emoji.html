@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.png?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content=":-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：　　别人的什么都不会：　　JS基本不了解，但是熟悉×××">
+<meta name="keywords" content="hexo,插件,JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鬼才方法实现hexo自定义emoji+自定义插件">
+<meta property="og:url" content="https://co5.me/2019/190121-emoji.html">
+<meta property="og:site_name" content="†少女癌†">
+<meta property="og:description" content=":-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：　　别人的什么都不会：　　JS基本不了解，但是熟悉×××">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-21T00:45:26.270Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="鬼才方法实现hexo自定义emoji+自定义插件">
+<meta name="twitter:description" content=":-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：　　别人的什么都不会：　　JS基本不了解，但是熟悉×××">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="†少女癌†" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="https://co5.me/2019/190121-emoji.html">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>鬼才方法实现hexo自定义emoji+自定义插件 | †少女癌†</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">†少女癌†</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">-Candy Cancer-</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>-首页 °| Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-music"></i> <br>-关于 °| About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>-标签 °| Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>-分类 °| Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>-归档 °| Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-gallery">
+    <a href="/gallery/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-paint-brush"></i> <br>-画廊 °| Gallery</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-to-natsu">
+    <a href="/categories/遠夏/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-paper-plane"></i> <br>【-遠・夏-】</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-dear-dreamer">
+    <a href="/dear-dreamer/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cloud"></i> <br>【-|梦蚀°-】</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-a-z">
+    <a href="/a-z/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sticky-note"></i> <br>【-Project Letters-】</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-message">
+    <a href="/message/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-object-group"></i> <br>-留言 °| Message</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-link">
+    <a href="/link/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-link"></i> <br>-友链 °| Link</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>_(•̀ω•́ 」∠)_.......【搜索！】</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://co5.me/2019/190121-emoji.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="co5=Shioko">
+      <meta itemprop="description" content="大声BB，小声填坑。">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="†少女癌†">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">鬼才方法实现hexo自定义emoji+自定义插件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-21 03:02:07 / 修改时间：08:45:26" itemprop="dateCreated datePublished" datetime="2019-01-21T03:02:07+08:00">2019-01-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/汐喵晒鱼/" itemprop="url" rel="index"><span itemprop="name">汐喵晒鱼</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/190121-emoji.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/190121-emoji.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">7 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>　　:-cmx-01-::-cmx-00-::-cmx-pop-::-cmx-pipi-::-cmx-elpt-::-cmx-stbr-:<br>　　如你所见，现在我的blog已经可以插入站娘表情包了:-cmx-doge-:虽然实现方法非常鬼才……但是以我现在的水平实在找不到更好的办法了x<br>　　以及半夜回访了一下留言板里的几个新面孔忍不住发出如下吐槽：<br>　　<strong>别人的什么都不会：</strong><br>　　JS基本不了解，但是熟悉×××与○○○的连接，会基本的△△△，简单接触过□□□。<br>　　<strong>我的什么都不会：</strong><br>　　json是JavaScript的儿子吗？:-cmx-05-:</p>
+<a id="more"></a>
+<center><br>.+†+.</center>
+
+<p>　　JS和css文件右键审查都能看到，输入emoji的方式和长毛象不太一样，因为用空格+冒号的方式很容易和其它html代码以及盘古之白冲突……【我就直说了吧，主要是和盘古之白冲突=-=，所以暂时决定为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:-emoji-:</span><br></pre></td></tr></table></figure>
+<p>　　这么去掉空格之后还可以实现emoji连发……当然问题也很多就是了……</p>
+<h2 id="已知bug"><a href="#已知bug" class="headerlink" title="已知bug"></a>已知bug</h2><p>　　首先和next主题用的swig标签一样，<strong>不可以在行内元素中使用</strong>，包括<code>: -</code>和<code>- :</code>都不行，会被识别成emoji标签，如果要用的话需要在中间加一个空格，但是不至于导致整个渲染程序崩溃，顶多是渲染出一堆奇怪的字符和空格而已。<br>　　另外为了浏览美观我在生成的span前后都加了空格，而span的内容是空的，复制的时候连续的emoji就会变成一大串连续的空格，这个我暂时也没有什么好办法【<br>　　但是你开了盘古之白的话连续emoji之间的空格似乎会被精简到一个，具体原理我也不太清楚 :-cmx-05-:<br>　　还有就是emoji目前只能应用在p元素，列表和center这些元素尚不支持，等性能稳定之后再考虑扩展应用范围吧。</p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><p>　　真的很鬼才【<br>　　本来是试图用JS截取分隔符之内的字符串，然后逐个生成span，最后将span的文本内容转化为span的id，再根据ID修改span的背景图片。<br>　　结果第一步就卡住了……不是对象未定义就是函数不存在，然后我怀疑谷歌出来的那几个正则可能也有点问题。一怒之下我直接把标签开头用正则替换成<code>&lt;span class=&quot;co5emoji&quot; id=&quot;</code>，标签结尾替换成<code>&quot;&gt;&lt;/span&gt;</code>，试图让标签之间输入的内容直接被识别成html元素的ID……<br>　　然后它居然成功了！！！:-cmx-05-: 我一时竟不知道用什么词语来形容我的心情，只能我说可真nm是个前端鬼才啊【贬义<br>　　然而怎么完成的不重要，能跑就行，能跑就行，能跑就行。<br>　　然后就是用id逐个设定背景图片，这个很简单啦【应该可以用JS实现自动化一下？</p>
+<h2 id="优化方案（咕咕中"><a href="#优化方案（咕咕中" class="headerlink" title="优化方案（咕咕中"></a>优化方案（咕咕中</h2><h3 id="使用JS完成自动化css样式设定"><a href="#使用JS完成自动化css样式设定" class="headerlink" title="使用JS完成自动化css样式设定"></a>使用JS完成自动化css样式设定</h3><p>　　因为id是直接手动写入的，在json里写emoji list似乎没什么意义了……不知道有没有能直接获得元素的id然后把id写入到文件名里的方法。<br>　　emmmm，先用classname批量获取元素，然后再把url设置成x.Id+.png，最后用x.style设定背景图片【或者直接新写一个img进去？<br>　　听起来似乎可行，等我明天努力一下好了x</p>
+<h3 id="使用中文标点解决识别错误的问题"><a href="#使用中文标点解决识别错误的问题" class="headerlink" title="使用中文标点解决识别错误的问题"></a>使用中文标点解决识别错误的问题</h3><p>　　行内代码块里一般不会出现中文标点，如果用中文标点来作为特征标签的话应该可以解决大部分识别错误的问题，但是源码写出来可能就不太好看了？<br>　　兼顾美观与输入便利，暂定为<code>【 -</code>和<code>- 】</code>吧。【希望盘古之白不要自己给我的标签中间加上空格emmmmmmmmm</p>
+<h3 id="写一套彩色字体"><a href="#写一套彩色字体" class="headerlink" title="写一套彩色字体"></a>写一套彩色字体</h3><p>　　想来想去这似乎是最简单的方法了。不用考虑JS代码，只需要在font-family前面加上我自定义的字体就行，貌似font awsome用的也是这种方案？不过更新emoji库可能会有些麻烦的样子。<br>　　还有自定义字体插入的符号应该要用svg吧，<strong>AI真的好难用啊——</strong></p>
+<h3 id="支持大号表情"><a href="#支持大号表情" class="headerlink" title="支持大号表情"></a>支持大号表情</h3><p>　　想把小白人表情也引进一下，1.5em的大小好像就不太够用了，另外就是目前emoji span的尺寸都是<br>1.5em×1.5em的正方形。计划新设计一种标签来写入大号和特殊尺寸的表情，应该就需要用JS进一步识别span的内容然后写入img标签了。<br>　　那么这个功能……等我实现了css自动化再说吧:-cmx-doge-:</p>
+<h2 id="自定义插件"><a href="#自定义插件" class="headerlink" title="自定义插件"></a>自定义插件</h2><p>　　<strong>写代码真的好可怕啊我现在一边打字一边往键盘上掉头发……</strong><br>　　讲真我现在有点后悔拉黑了微博上那个找我来卖护颈仪的……</p>
+<p>　　在<code>主题/source/lib</code>下新建一个文件夹，我的是<code>co5emoji</code>，然后再新建一个<code>dist</code>文件夹，把你的JS代码和css文件扔进去。如果需要引用图片的话需要在dist文件夹里再新建一个<code>img</code>文件夹。<br>　　好嘛这个其实没什么好说的……主要是next的layout比较看不懂OTL</p>
+<h3 id="Next-layout"><a href="#Next-layout" class="headerlink" title="Next layout"></a>Next layout</h3><p>　　layout部分参考了自带的盘古之白，生效的位置也是一样的。<br>　　在<code>layout/_custom</code>文件夹里新建<code>co5emoji.swig</code>文件，然后写入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.co5emoji %&#125;	//设置变量名</span><br><span class="line">  &#123;% set co5emoji_js = url_for(theme.vendors._internal + &apos;/co5emoji/dist/co5emoji.js&apos;)%&#125;	//设置js文件的引用地址</span><br><span class="line">  &#123;% set co5emoji_css = url_for(theme.vendors._internal + &apos;/co5emoji/dist/styl.css&apos;)%&#125;	//设置css文件的引用地址</span><br><span class="line">  &lt;script src=&quot;&#123;&#123; co5emoji_js &#125;&#125;&quot;&gt;&lt;/script&gt;	//引用JS文件</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&#123;&#123; co5emoji_css &#125;&#125;&quot;&gt;	//引用css文件</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>　　如果你的自定义插件也和我一样是JS+css的形式的话，只要把<code>co5emoji</code>和<code>styl.css</code>替换成你自己的文件名就好。<br>　　还有记得去掉注释……swig的注释貌似不是这个格式，肯定会报错【</p>
+<p>　　然后在主layout的底部加上：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include &apos;_custom/co5emoji.swig&apos; %&#125;</span><br></pre></td></tr></table></figure>
+<p>　　或者你只需要在博客正文和主页中生效的话，把include标签插入到<code>post.swig</code>和<code>index.swig</code>里就好了，不清楚具体位置的话，<a href="https://co5.me/2018/181123-pangu.html#限定盘古之白的生效范围">可以参考我之前写的盘古之白调教日记【</a>。</p>
+<p>　　最后在<code>next/_config.yml</code>里加上一行<code>co5emoji: true</code>即可（改成你刚才自己在swig里写的变量名），如果不知道加在哪儿，还是直接搜索盘古之白在底下另起一行就好。不过要注意的是应该加在第一个搜索结果的前面，后面的几个似乎是自定义变量还是别的什么，注释里写了不要乱动，所以还是不要加在底下了_(:3」∠)_<br>　　设置完毕之后应该是需要hexo clean重新生成一下才会显示，但是JS文件和css文件是可以即时生成的，只要刷新浏览器即可。</p>
+<p>　　总觉得看的代码多了以后笔记这种东西似乎越写越简单了【希望我某天爬坑回来还能看得懂我写了什么 :-cmx-05-:</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/插件/" rel="tag"># 插件</a>
+          
+            <a href="/tags/JS/" rel="tag"># JS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/190120-kiiler.html" rel="next" title="【-|梦蚀°】断章·杀手的决意-01">
+                <i class="fa fa-chevron-left"></i> 【-|梦蚀°】断章·杀手的决意-01
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+      
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js"></script>
+  <script type="text/javascript">pangu.spacingPage();</script>
+
+
+      
+  
+  
+  <script src="/lib/co5emoji/dist/co5emoji.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/co5emoji/dist/styl.css">
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="co5=Shioko">
+            
+              <div class="site-author-name">
+                <a href="../">
+                  <p itemprop="name">co5=Shioko</p>
+                </a>
+              </div>
+              <p class="site-description motion-element" itemprop="description">大声BB，小声填坑。</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">148</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">45</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/shioko" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://cmx.im/@shioko" target="_blank" title="Mastodon"><i class="fa fa-fw fa-comments"></i>Mastodon</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:shioko@protonmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://shioko.lofter.com" target="_blank" title="Lofter"><i class="fa fa-fw fa-book"></i>Lofter</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#已知bug"><span class="nav-number">1.</span> <span class="nav-text">已知bug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现方法"><span class="nav-number">2.</span> <span class="nav-text">实现方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化方案（咕咕中"><span class="nav-number">3.</span> <span class="nav-text">优化方案（咕咕中</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用JS完成自动化css样式设定"><span class="nav-number">3.1.</span> <span class="nav-text">使用JS完成自动化css样式设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用中文标点解决识别错误的问题"><span class="nav-number">3.2.</span> <span class="nav-text">使用中文标点解决识别错误的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一套彩色字体"><span class="nav-number">3.3.</span> <span class="nav-text">写一套彩色字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持大号表情"><span class="nav-number">3.4.</span> <span class="nav-text">支持大号表情</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义插件"><span class="nav-number">4.</span> <span class="nav-text">自定义插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Next-layout"><span class="nav-number">4.1.</span> <span class="nav-text">Next layout</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a rel="me" href="https://cmx.im/@shioko">co5=Shioko</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">380k</span>
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user-secret"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'f6s44gBExcM3AJdJscqbg7WW-gzGzoHsz',
+        appKey: '82r7DdhN9ujEi1sQEQdf8m2x',
+        placeholder: '欢迎留言~xd',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
