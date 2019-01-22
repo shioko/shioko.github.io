@@ -2,9 +2,11 @@
 	display: inline-block;
 	width: 1.5em;
 	height: 1.5em;
-	vertical-align:top;
-	background-size: contain;
+	vertical-align: text-bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
+
 .co5emoji#cmx-00 {
 	background-image: url(img/cmx-00.png) }
 .co5emoji#cmx-01 {

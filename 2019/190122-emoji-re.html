@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="又翻到了低龄触讨论。　　我在微博上说过这个话题，对于低龄触的焦虑来自于年龄越大就越容易发现自己努力多少多少年都甚至还够不到人家的起点。　　这还不够让人绝望的吗。">
-<meta name="keywords" content="版聊搬运">
+  <meta name="description" content="我终于做出了一个能看的插件——！整理一下发到github！:-cmx-01-:　　 :-cmx-elpt-: 本日更新 :-cmx-elpt-:   重构了标签替换逻辑，现在只有emojilist里的内容会被替换成表情，可以用行内代码框来演示标签了 :-cmx-elpt-: 举例：:-emojitag-: :-cmx-01-:，如果代码框里的内容是emojilist上的内容则依然会被转换成表情">
+<meta name="keywords" content="hexo,插件,JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【版聊搬运】181018 - 低龄触">
-<meta property="og:url" content="https://co5.me/2018/181017-cmx2.html">
+<meta property="og:title" content="emoji插件重构笔记！">
+<meta property="og:url" content="https://co5.me/2019/190122-emoji-re.html">
 <meta property="og:site_name" content="†少女癌†">
-<meta property="og:description" content="又翻到了低龄触讨论。　　我在微博上说过这个话题，对于低龄触的焦虑来自于年龄越大就越容易发现自己努力多少多少年都甚至还够不到人家的起点。　　这还不够让人绝望的吗。">
+<meta property="og:description" content="我终于做出了一个能看的插件——！整理一下发到github！:-cmx-01-:　　 :-cmx-elpt-: 本日更新 :-cmx-elpt-:   重构了标签替换逻辑，现在只有emojilist里的内容会被替换成表情，可以用行内代码框来演示标签了 :-cmx-elpt-: 举例：:-emojitag-: :-cmx-01-:，如果代码框里的内容是emojilist上的内容则依然会被转换成表情">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-14T21:09:48.000Z">
+<meta property="og:updated_time" content="2019-01-22T06:21:17.318Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【版聊搬运】181018 - 低龄触">
-<meta name="twitter:description" content="又翻到了低龄触讨论。　　我在微博上说过这个话题，对于低龄触的焦虑来自于年龄越大就越容易发现自己努力多少多少年都甚至还够不到人家的起点。　　这还不够让人绝望的吗。">
+<meta name="twitter:title" content="emoji插件重构笔记！">
+<meta name="twitter:description" content="我终于做出了一个能看的插件——！整理一下发到github！:-cmx-01-:　　 :-cmx-elpt-: 本日更新 :-cmx-elpt-:   重构了标签替换逻辑，现在只有emojilist里的内容会被替换成表情，可以用行内代码框来演示标签了 :-cmx-elpt-: 举例：:-emojitag-: :-cmx-01-:，如果代码框里的内容是emojilist上的内容则依然会被转换成表情">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://co5.me/2018/181017-cmx2.html">
+  <link rel="canonical" href="https://co5.me/2019/190122-emoji-re.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>【版聊搬运】181018 - 低龄触 | †少女癌†</title>
+  <title>emoji插件重构笔记！ | †少女癌†</title>
   
 
 
@@ -387,7 +387,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://co5.me/2018/181017-cmx2.html">
+    <link itemprop="mainEntityOfPage" href="https://co5.me/2019/190122-emoji-re.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="co5=Shioko">
@@ -404,7 +404,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【版聊搬运】181018 - 低龄触
+          <h1 class="post-title" itemprop="name headline">emoji插件重构笔记！
               
             
           </h1>
@@ -429,24 +429,12 @@
                 
               
 
-              <time title="创建时间：2018-10-18 01:00:24" itemprop="dateCreated datePublished" datetime="2018-10-18T01:00:24+08:00">2018-10-18</time>
+              <time title="创建时间：2019-01-22 09:43:03 / 修改时间：14:21:17" itemprop="dateCreated datePublished" datetime="2019-01-22T09:43:03+08:00">2019-01-22</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-15 05:09:48" itemprop="dateModified" datetime="2018-11-15T05:09:48+08:00">2018-11-15</time>
               
             
           </span>
@@ -478,8 +466,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/181017-cmx2.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/181017-cmx2.html" itemprop="commentCount"></span>
+                <a href="/2019/190122-emoji-re.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/190122-emoji-re.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -508,7 +496,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">560</span>
+                <span title="本文字数">1.4k</span>
               
 
               
@@ -522,7 +510,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -542,13 +530,30 @@
       
 
       
-        <p>　　又翻到了低龄触讨论。<br>　　我在微博上说过这个话题，对于低龄触的焦虑来自于年龄越大就越容易发现自己努力多少多少年都甚至还够不到人家的起点。<br>　　这还不够让人绝望的吗。<br><a id="more"></a></p>
-<center><br>    .+†+.</center>
+        <p>　　我终于做出了一个能看的插件——！整理一下发到github！:-cmx-01-:<br>　　<center> :-cmx-elpt-: <strong>本日更新</strong> :-cmx-elpt-: </center></p>
+<ul>
+<li>重构了标签替换逻辑，现在只有emojilist里的内容会被替换成表情，可以用行内代码框来演示标签了 :-cmx-elpt-: 举例：<code>:-emojitag-:</code> <code>:-cmx-01-:</code>，如果代码框里的内容是emojilist上的内容则依然会被转换成表情对象</li>
+<li>将emoji生效的范围从<code>tagname=P</code>变更为<code>id=&quot;posts&quot;</code>，现在可以在<code>&lt;li&gt;</code>和<code>&lt;center&gt;</code>中使用emoji了 :-cmx-01-:</li>
+<li>删掉了生成的emoji span中的空格，可以自行选择emoji拼合效果或者手动输入空格进行间隔 :-cmx-05-:</li>
+<li>更改表情元素的对齐方式为<code>text-bottom</code>，我终于不用和行距斗智斗勇了【</li>
+</ul>
+<a id="more"></a>
+<center><br>.+†+.</center>
 
-<p>　　说白了确实是一种嫉妒啊。<br>　　生下来以为自己是动画片的主角地球围着劳资转，长大以后却发现自己只是主角的背景板。<br>　　这种认知落差很打击人的。</p>
-<p>　　怎么说呢，其实也不是刻意比较。<br>　　只是儿时大家都或多或少幻想过自己是像达芬奇一样的天才，梦想长大以后当什么作家画家宇航员，而这些梦想长大以后会被现实磨钝渐渐遗忘，变成为了温饱奔波没有棱角的卵石。<br>　　但是这样的卵石还是会被偶尔路过的类似低龄触一样耀眼的存在刺痛一下，开始幻想如果自己小的时候再努力一点会不会变得更好。<br>　　但是水还是会继续流，低龄触很快就会往更远的地方游走，卵石还是会呆在原地，变得越来越圆。</p>
-<p>　　是这样，卵石偶尔也能追上水流往前动一动，但还是会在不知道什么地方卡住无法前进，终究是比不上那些天赋异禀甚至生来就是鱼的人的。<br>　　不过反过来想也成立，虽然比不上那些天赋异禀的人，偶尔能追上水流往前动一动也是挺好的吧_(:з」∠)_</p>
-<p>　　而且有句话叫“痛苦是艺术之源”。<br>　　【如果没人说过那就当是我今天说的x<br>　　用低劣的创造水准痛苦地追寻神圣的审美就是艺术求道者穷其一生的宿命。</p>
+<h2 id="仍然存在的问题"><a href="#仍然存在的问题" class="headerlink" title="仍然存在的问题"></a>仍然存在的问题</h2><ul>
+<li>首先是页面加载速度显著变慢，这个我也没什么好办法……不过暂时还在可以忍受的范围之内吧</li>
+<li>评论区依然不能使用自定义emoji，使用id=comments获取元素时报错，当然也可能是valine的评论区是用JS导入的，两个脚本的先后顺序不对所以无法获取评论框</li>
+<li>在标题元素（包括markdown正文内的标题）中使用emoji的时候会出现不可预料的错误……包括但不限于不生成内容 or 生成奇怪的链接，暂时解决不了，所以标题就严肃一点不要加表情了吧【</li>
+<li>使用JS更改background-image失败，因为现在的emoji span每个ID对应的是复数的元素，所以用JS处理背景的时候无论如何都会报错……挨个遍历的话整个程序的循环时间大概会增加20倍，还是一行一行写CSS吧【</li>
+</ul>
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><p>　　fomm搬家之后都无人回答我的JS脑残问题了 :-cmx-02-: 还好馒头也会JS！！！感恩的心感谢有你【</p>
+<h3 id="JS数组"><a href="#JS数组" class="headerlink" title="JS数组"></a>JS数组</h3><p>　　被馒头吐槽了一波……原来我以前写的json都是JS啊  :-cmx-05-:<br>　　所以直接把emojilist放进主JS文件了，但是不知道为什么在浏览器里查看source的时候还是会有一个emojilist.json存在，不管怎么取消引用或者hexo clean都没用，我惊呆了。<br>　　格式如下↓</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">emojilist = [</span><br><span class="line">	&quot;cmx-00&quot;,</span><br><span class="line">	&quot;cmx-01&quot;,</span><br><span class="line">	&quot;cmx-02&quot;,</span><br><span class="line">	...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>　　直接使用<code>emojilist[0]</code>等编号就可以返回emoji名称。我把这个列表直接放进json里然后读取出来全是空白的……以为是编码出了问题我还折腾了好久，心好累 :-cmx-knee-: </p>
+<h3 id="带变量的正则"><a href="#带变量的正则" class="headerlink" title="带变量的正则"></a>带变量的正则</h3><p>　　格式跟js的对象创建【？】差不多↓</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var emojiRE = new RegExp(&apos;:-&apos; + emojilist[num] + &apos;-:&apos;, &apos;gi&apos;);</span><br></pre></td></tr></table></figure>
+<p>　　逗号后面的<code>g</code>是全局替换，<code>i</code>是忽略大小写。<br>　　果然能看懂代码之后我的笔记就越写越简单了_(:з」∠)_</p>
+<p>　　那么接下来的目标是把hexo的归档页面做成日历形状一格一格的！这么翻效率太低下了【醒醒是你话太多好吗<br>　　还有更改一下分类界面的生成逻辑，现在的这个看着太难受了，在手机上无论如何都会飞出去一块(╯°Д°)╯︵┴┴</p>
 
       
     </div>
@@ -569,7 +574,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/版聊搬运/" rel="tag"># 版聊搬运</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/插件/" rel="tag"># 插件</a>
+          
+            <a href="/tags/JS/" rel="tag"># JS</a>
           
         </div>
       
@@ -582,8 +591,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/181017-cmx.html" rel="next" title="【版聊搬运】181017 - 休学">
-                <i class="fa fa-chevron-left"></i> 【版聊搬运】181017 - 休学
+              <a href="/2019/190121-killer.html" rel="next" title="【-| 梦蚀 °】断章 · 杀手的决意 - 02">
+                <i class="fa fa-chevron-left"></i> 【-| 梦蚀 °】断章 · 杀手的决意 - 02
               </a>
             
           </div>
@@ -591,10 +600,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/181025-gallery.html" rel="prev" title="可能是史上最简单的hexo相册实现方法">
-                可能是史上最简单的hexo相册实现方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -659,8 +664,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -890,6 +904,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#仍然存在的问题"><span class="nav-number">1.</span> <span class="nav-text">仍然存在的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#笔记"><span class="nav-number">2.</span> <span class="nav-text">笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JS数组"><span class="nav-number">2.1.</span> <span class="nav-text">JS数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带变量的正则"><span class="nav-number">2.2.</span> <span class="nav-text">带变量的正则</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
