@@ -1,0 +1,49 @@
+.co5emoji {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: text-bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.co5emoji#cmx-00 {
+	background-image: url(img/cmx-00.png) }
+.co5emoji#cmx-01 {
+	background-image: url(img/cmx-01.png) }
+.co5emoji#cmx-02 {
+	background-image: url(img/cmx-02.png) }
+.co5emoji#cmx-03 {
+	background-image: url(img/cmx-03.png) }
+.co5emoji#cmx-04 {
+	background-image: url(img/cmx-04.png) }
+.co5emoji#cmx-05 {
+	background-image: url(img/cmx-05.png) }
+.co5emoji#cmx-06 {
+	background-image: url(img/cmx-06.png) }
+.co5emoji#cmx-07 {
+	background-image: url(img/cmx-07.png) }
+.co5emoji#cmx-08 {
+	background-image: url(img/cmx-08.png) }
+.co5emoji#cmx-09 {
+	background-image: url(img/cmx-09.png) }
+.co5emoji#cmx-10 {
+	background-image: url(img/cmx-10.png) }
+.co5emoji#cmx-11 {
+	background-image: url(img/cmx-11.png) }
+.co5emoji#cmx-12 {
+	background-image: url(img/cmx-12.png) }
+.co5emoji#cmx-cdl {
+	background-image: url(img/cmx-cdl.png) }
+.co5emoji#cmx-doge {
+	background-image: url(img/cmx-doge.png) }
+.co5emoji#cmx-elpt {
+	background-image: url(img/cmx-elpt.png) }
+.co5emoji#cmx-knee {
+	background-image: url(img/cmx-knee.png) }
+.co5emoji#cmx-pipi {
+	background-image: url(img/cmx-pipi.png) }
+.co5emoji#cmx-pop {
+	background-image: url(img/cmx-pop.png) }
+.co5emoji#cmx-stbr {
+	background-image: url(img/cmx-stbr.png) }
