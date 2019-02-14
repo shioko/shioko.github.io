@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2019-01-22T06:21:17.318Z</updated>
+  <updated>2019-02-14T20:35:26.563Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【和弦练习】It rains around.</title>
+    <link href="https://co5.me/2019/190215-it-rains-around.html"/>
+    <id>https://co5.me/2019/190215-it-rains-around.html</id>
+    <published>2019-02-14T18:29:19.000Z</published>
+    <updated>2019-02-14T20:35:26.563Z</updated>
+    
+    <content type="html"><![CDATA[<center><audio width="300" height="32" preload="none" controls="controls" src="http://docs.google.com/uc?id=1gWmHPIdSfLUqAgL4Nbz7HLOQUMdCeKUj">您的浏览器不支持html5</audio><br>    <font size="1">以上BGM【Shioko - It rains around.】来自google drive外链，请在翻墙后食用。</font><br></center><p>　　飞机上写的作曲稿【其实是在候机室，因为这次回来的飞机不准开大型电子设备，写了两行就关了。<br>　　我从老家过年回来了……！ :-cmx-02-:<br><a id="more"></a></p><center><br>    .+†+.</center><p>　　这首曲子最早在电脑里的名字是“Echo”，因为开头是连着两个67<span style="-webkit-text-emphasis: filled;">1</span>的变奏，很像反复的回声。但是想想这个名字好像过于普通了，最后听了很久才命名为现在的 It rains around.<br>　　取名的时候想着的是两个少女撑着伞在雨中相遇最后天各一方的故事。<del>所以泠泺呢？</del></p><p>　　写五线谱的时候发现记了过多的还原符号，提心吊胆地想着我是不是写错调号了啊，后来发现那个一直被还原的音是#5，也只有#5，统计了一下音阶就是多出来了这么一个音，也就是音阶是<span style="-webkit-text-emphasis: filled;-webkit-text-emphasis-position: under right;">6 7</span> 1 2 3 4 5 #5 6，在小调的音阶结尾又加了一个半音。<br>　　说起来这个#5我还一直都挺爱用的？小时候写的小调曲子里也经常能找到这个音，但是现在不知是不是老了听觉退化了，对调外音的敏感度大不如前，经常哼着哼着#5就变成了5或者6，尤其是下行的时候 :-cmx-02-: 希望用五线谱记作曲稿之后能有所改善？</p><p>　　最近在B站花10分钟完全了解了五线谱，发现这玩意比我之前想象得要简单得多。<br>　　首先五线谱上每一个位置对应的都是钢琴白键的绝对音高，加了升降号的就是黑键，至于五线谱的调号呢就是把所有黑键的升降号全部写到每一行的开头去。<br>　　然后就没了。<br>　　<strong>这不是超简单吗！！！这比简谱还简单好吗(╯°Д°)╯︵┴┴</strong></p><p>　　学五线谱的契机是，本来打算用苏菲狗跑FL的，结果发现这个小玩具平板单开一个chrome+网易云就7 80内存占用了，想跑FL简直天方夜谭，而且我也没指望这个小破本能搞完整的编曲，我只是想要找个东西记我的作曲稿而已……<br>　　于是谷歌搜了一圈DAW，要么巨大，要么要钱【当然FL我用的也是破解版x，要么巨大还要钱……<br>　　还看到一个特别有意思的开源DAW，名字我不记得了，反正官网的说明差不多是这么一个意思：虽然我们是开源软件，但是我们只共享源代码噢，如果想要白嫖的话就去github上下载源码自己打包，如果看不懂，那不好意思，乖乖付订阅费买我们官方出的打包吧(๑•̀ㅂ•́)ﻭ✧<br>　　我惊呆了，这什么商业鬼才。我要是既会编曲又会编程，我的工资还会买不起工作站和大牌DAW吗，我还来折腾你们的软件干嘛 :-cmx-03-: ？<br>　　当然气话这么说，白嫖总归还是可耻的，盗版更是上不了台面的 _(-ω-`_)⌒)_ <strong>于是我想到了陪伴我录了好几个苹果谱子的免费五线谱软件musescore，能写音符，能响，能导出，又轻量免费，就决定是你了！</strong><br>　　上官网一看发现这货更新了3.0，但是中文手册并没有同步更新【甚至直接找不到了，但是解决了D.S. al coda的时候会忽略反复记号的问题，喜大普奔。<br>　　不过我还是比较喜欢2.0的白色图标……怎么说呢，白色看起来比较像苹果蓝色看起来比较像田厂吧，蓝色图标（微软出品）一看就给人一种特别臃肿的感觉，真的x</p><p>　　因为之前在B站也零零散散看了几个乐理视频玩，乐感似乎又找回来了一些，随手夏姬八写几个音就能凑出一个听起来不错的和弦。<strong>感觉B站上的那些什么编曲教程啊多半就是针对什么都不知道而且没有半点乐感甚至是音痴写曲子的教程啊……</strong>就好像我报了个电脑绘画班，老师先花5节课告诉我们各大数位板的技术参数，又花5节课介绍各大绘图软件的区别和历史，再花5节课分析P站上热门画师的用色构图，最后扔给我们一张彩图说：“描吧。”救救孩子，我只是想知道怎么把纸上画的东西复制到电脑上再进一步细化好吗！！！<br>　　真的奇了怪了，和声编曲教程不教人怎么先把自己的旋律记在五线谱上，搞一堆复杂得要命的什么乱七八糟的和弦命名，还全部放在C大调上讲。你们是自己也知道认识五线谱之后就没人想看你们的教程了吗……</p><p>　　计划一下我也出个作曲教学视频吧，就从五线谱记谱开始，介绍一下拍号调号，然后是和声编配以及和弦的常见分解写法（这个我自己也还要研究研究）。说实话这些压根都是AI就可以做得很好的事情了，不知道为啥出个教程还要各种藏着掖着的，果然是艺术生都人傻钱多吗，<strong>为了梦想付出的金钱怎么能叫智商税……！</strong><del>可事实上你花的就是智商税啊(´-ι_-｀)</del><br>　　当然也可能是我天生乐感好因此有幸存者偏差的因素在里面吧？大概这世界上也确实是有要从认清板子型号开始学习电脑画画的人的……？</p><p>　　最后放个五线谱（google drive外链）↓</p><p><img src="https://docs.google.com/uc?id=1m25j_SUkJUe9Q5S-QRw_5J_FhkXTxbBk" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;center&gt;&lt;audio width=&quot;300&quot; height=&quot;32&quot; preload=&quot;none&quot; controls=&quot;controls&quot; src=&quot;http://docs.google.com/uc?id=1gWmHPIdSfLUqAgL4Nbz7HLOQUMdCeKUj&quot;&gt;您的浏览器不支持html5&lt;/audio&gt;&lt;br&gt;    &lt;font size=&quot;1&quot;&gt;以上BGM【Shioko - It rains around.】来自google drive外链，请在翻墙后食用。&lt;/font&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;　　飞机上写的作曲稿【其实是在候机室，因为这次回来的飞机不准开大型电子设备，写了两行就关了。&lt;br&gt;　　我从老家过年回来了……！ :-cmx-02-:&lt;br&gt;
+    
+    </summary>
+    
+      <category term="汐喵晒鱼" scheme="https://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/"/>
+    
+    
+      <category term="随笔" scheme="https://co5.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="听歌" scheme="https://co5.me/tags/%E5%90%AC%E6%AD%8C/"/>
+    
+      <category term="编曲" scheme="https://co5.me/tags/%E7%BC%96%E6%9B%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>emoji插件重构笔记！</title>
@@ -484,30 +512,6 @@
       <category term="JS" scheme="https://co5.me/tags/JS/"/>
     
       <category term="游戏" scheme="https://co5.me/tags/%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【企划】世界逆行说</title>
-    <link href="https://co5.me/2018/181227-FF-project.html"/>
-    <id>https://co5.me/2018/181227-FF-project.html</id>
-    <published>2018-12-26T16:19:54.000Z</published>
-    <updated>2018-12-27T07:40:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　愤怒的少女与秩序破坏者们。<br><a id="more"></a></p><center><br>    .+†+.</center><p><img src="https://cmx.im/system/media_attachments/files/001/290/129/original/b2afaeba9194980f.png?1545652017" alt=""></p><p>　　偷懒了，又用的长毛象外链x<br>　　这篇不是特别严谨的设定吧，只是一点零碎的脑洞，详细的世界观和人设过几天补足。</p><h1 id="校园"><a href="#校园" class="headerlink" title="校园"></a>校园</h1><ul><li>名字还没想好</li><li>只有女孩子，这是个百合漫画！！！【声嘶力竭</li><li>在“魔法”上建立秩序</li><li>根据“魔力”强度分为S A B C D E F 7个等级<ul><li>S级学生拥有绝大多数特权，F级学生基本没有人权，以此类推</li><li>但不知为何即使是A级学生，绝大多数时间也是无法使用魔法的</li></ul></li><li>对学生实行严格的管理制度<ul><li>禁止恋爱</li><li>禁止自杀</li></ul></li><li>经常有学生无故消失，也会在所有人的记忆里被抹去<ul><li>被称作“消失魔法”</li></ul></li></ul><h1 id="反抗军"><a href="#反抗军" class="headerlink" title="反抗军"></a>反抗军</h1><ul><li>聚集了许多程序媛的社团“历史社”</li><li>试图用旧世界的“科技”来打败现代的“魔法”</li></ul><h2 id="反抗军首领"><a href="#反抗军首领" class="headerlink" title="反抗军首领"></a>反抗军首领</h2><ul><li>右下角的绿毛</li><li>具有“消失魔法”抗性的人，记住了所有消失的学生的名字</li><li>在得知B是程序员之后拉对方入伙成立了反抗社团</li></ul><h2 id="反抗军成员A"><a href="#反抗军成员A" class="headerlink" title="反抗军成员A"></a>反抗军成员A</h2><ul><li>灰色的两个大麻花辫，带着圆框眼镜，有呆毛，紫色眼睛</li><li>认识A之后某天突然发现自己是个代码天才，于是加入反抗军成为了程序媛</li></ul><h2 id="反抗军成员B"><a href="#反抗军成员B" class="headerlink" title="反抗军成员B"></a>反抗军成员B</h2><ul><li>女装dalao，一天换一个发型，金发绿眼</li><li>某个中心反政府组织潜入的外援，A的电脑老师</li></ul><h1 id="Higan-绯寒"><a href="#Higan-绯寒" class="headerlink" title="Higan / 绯寒"></a>Higan / 绯寒</h1><ul><li>草稿图里的黑长直，三无属性</li><li>名字来源是彼岸花的“彼岸”</li><li>反派，S级学生，“消失魔法”的执行人之一</li></ul><h1 id="Mike-未希"><a href="#Mike-未希" class="headerlink" title="Mike / 未希"></a>Mike / 未希</h1><ul><li>草图里最中间的那个</li><li>女主角</li><li>身为女主角这个设定也太路人了<ul><li>所以决定给头上加两个三角形团子=猫耳</li></ul></li><li>所以名字就叫三花吧【眼睛也改成黑色的好了</li></ul><h1 id="消失的恋人"><a href="#消失的恋人" class="headerlink" title="消失的恋人"></a>消失的恋人</h1><ul><li>在开学第一天突然哭泣着冲向未希的少女</li><li>巧克力色长卷发，薄荷绿眼睛</li></ul><h1 id="魔法"><a href="#魔法" class="headerlink" title="魔法"></a>魔法</h1><ul><li>本质是？</li><li>消失的学生都去了哪里？</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　愤怒的少女与秩序破坏者们。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Fable Flipper!" scheme="https://co5.me/categories/Fable-Flipper/"/>
-    
-    
-      <category term="原创" scheme="https://co5.me/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-      <category term="脑洞" scheme="https://co5.me/tags/%E8%84%91%E6%B4%9E/"/>
     
   </entry>
   
