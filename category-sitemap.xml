@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/</loc>
+        <lastmod>2020-08-31T21:19:15.663Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://co5.me/categories/%E6%B1%90%E5%96%B5%E6%99%92%E9%B1%BC/</loc>
-        <lastmod>2020-08-31T09:38:24.592Z</lastmod>
+        <lastmod>2020-08-31T09:59:21.264Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -23,13 +30,6 @@
 
     <url>
         <loc>https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/%E7%A9%BA%E9%9B%86/</loc>
-        <lastmod>2020-01-06T14:48:18.287Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/categories/%E6%A2%A6%E8%9A%80%C2%B0/</loc>
         <lastmod>2020-01-06T14:48:18.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
