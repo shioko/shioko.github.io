@@ -1,0 +1,45 @@
+
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8"> 
+</head>
+<body>
+
+<style type="text/css">
+	.game-box {
+		position: relative;
+		width: 120px;
+		height: 134px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.game-item {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+</style>
+
+<div class="game-box">
+	<canvas class="game-item" id="g-body" width="120px" height="134px"></canvas>
+	<canvas class="game-item" id="g-eye" width="120px" height="134px"></canvas>
+</div>
+
+<center><br>我总觉得这么写问题很大但是能跑就行而且我也不打算这么跑了总之画出来了我一上午没白折腾 QAQ</center>
+
+<script type="text/javascript">
+	var geye = document.getElementById('g-eye'),
+	gbody = document.getElementById('g-body');
+	var ctxEye = geye.getContext('2d'),
+	ctxBody = gbody.getContext('2d');
+	var eyeImg = new Image(),
+	bodyImg = new Image();
+	eyeImg.src = 'img/eye-01.png';
+	bodyImg.src = 'img/body-01.png';
+	window.onload = function () {
+		ctxEye.drawImage(eyeImg, 0, 0);
+		ctxBody.drawImage(bodyImg, 0, 0);
+	}
+
+</script>
+
+</body>

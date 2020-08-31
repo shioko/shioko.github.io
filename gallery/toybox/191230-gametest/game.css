@@ -1,0 +1,69 @@
+.layer {
+	display: none;
+}
+
+#game-box {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#canvas-box {
+	position: relative;
+	width: 1024px;
+	max-width: 100%;
+}
+
+#loading {
+	width: 100%;
+	position: absolute;
+	vertical-align: middle;
+	top:calc(50% - 1em);
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+#loading p{
+	margin-bottom: 0;
+	display: block;
+	text-align: center;
+}
+
+#button-head {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-name,
+.color-box >span {
+	display: inline-block;
+	text-align: center;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+#but-box div {
+	display: none;
+}
+#but-box .show {
+	display: block;
+	margin-top: 2em;
+	width: 100%;
+	overflow-x:auto;
+	white-space:nowrap;
+}
+#but-box a {
+	display: inline-block;
+	text-align: center;
+	width: 2em;
+	height: 2em;
+	border-radius: 25%;
+	border: 1px solid #f9a972;
+	margin: 0 0.5em;
+}
+
+
+.color-but {
+	color: transparent !important;
+	width: 1.5em;
+	height: 1.5em;
+	border-bottom: 0px;
+	display: inline-block;
+	border-radius: 50%;
+}

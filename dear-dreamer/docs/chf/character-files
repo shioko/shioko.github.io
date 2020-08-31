@@ -1,0 +1,129 @@
+var _00Name = {
+	"fname":"???",
+	"sname":"???",
+	"gen":"???",
+	"birth":"???",
+	"age":"???",
+	"pro":"???",
+	"adr":"???",
+}
+
+var _08Amesa = {
+	"fname":"上梨子 糖砂",
+	"sname":"Amesa Kaminashi",
+	"gen":"女",
+	"birth":"Jul.25/08",
+	"age":"22",
+	"pro":"甜品店店主",
+	"adr":"MissDonuts甜品店"
+}
+
+var _08Shiori = {
+	"fname":"橘 诗织",
+	"sname":"Shiori Tachibana",
+	"gen":"女",
+	"birth":"Aug.23/09",
+	"age":"21",
+	"pro":"大学教师",
+	"adr":"雪野女子大学"
+}
+
+var _08Dia = {
+	"fname":"尔雅·凉",
+	"sname":"Dia Ryou",
+	"gen":"女",
+	"birth":"Feb.24/13",
+	"age":"17",
+	"pro":"学生",
+	"adr":"雪野女子大学"
+}
+
+var _08Cyan = {
+	"fname":"采薇·凉",
+	"sname":"Cyan Ryou",
+	"gen":"女",
+	"birth":"<span class='dead'>Jul.3/11</span>",
+	"age":"<span class='dead'>17</span>",
+	"pro":"学生",
+	"adr":"???"
+}
+
+var _08Kazuki = {
+	"fname":"婳月·栀",
+	"sname":"Kazuki Gardenia",
+	"gen":"女",
+	"birth":"Aug.12/12",
+	"age":"18",
+	"pro":"学生（休学中）",
+	"adr":"???",
+}
+
+var _01Charlotte = {
+	"fname":"夏洛特·哈罗斯",
+	"sname":"Charlotte Hallows",
+	"gen":"女",
+	"birth":"???/13",
+	"age":"17",
+	"pro":"无",
+	"adr":"女神湖精神疗养院",
+}
+
+var _03Juri = {
+	"fname":"和歌樱 树理",
+	"sname":"Juri Wakasa",
+	"gen":"女",
+	"birth":"???/08",
+	"age":"22",
+	"pro":"私家侦探",
+	"adr":"???",
+}
+
+var _08Murning = {
+	"fname":"末茗",
+	"sname":"Moaning",
+	"gen":"女",
+	"birth":"???/14",
+	"age":"16",
+	"pro":"地下偶像",
+	"adr":"MissDonuts甜品店",
+}
+
+var _03Lyra = {
+	"fname":"莱拉·伍德维尔",
+	"sname":"Lyra Woodwill",
+	"gen":"女",
+	"birth":"???/08",
+	"age":"22",
+	"pro":"教育部长",
+	"adr":"教育部",
+}
+
+var _03Minoru = {
+	"fname":"安永 实",
+	"sname":"Minoru Yasunaga",
+	"gen":"男",
+	"birth":"???/08",
+	"age":"22",
+	"pro":"治安部长",
+	"adr":"治安部",
+}
+
+var _01Joshua = {
+	"fname":"约书亚·克劳迪",
+	"sname":"Joshua Cloudy",
+	"gen":"男",
+	"birth":"???/07",
+	"age":"23",
+	"pro":"主治医生",
+	"adr":"女神湖精神疗养院",
+}
+
+var _03Aria = {
+	"fname":"朱森 亚里亚",
+	"sname":"Aria Akamori",
+	"gen":"女",
+	"birth":"Mar.13/11",
+	"age":"19",
+	"pro":"学生",
+	"adr":"???"
+}
