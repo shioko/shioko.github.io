@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1720;
+  background: #ff40a2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3155,13 +3155,6 @@ body::before {
   margin-top: 25px;
   margin-bottom: 50px;
   max-width: 70%;
-}
-.post-time {
-  display: block;
-  margin-bottom: 10px;
-}
-.post-category .post-meta-divider {
-  display: none;
 }
 .post-body,
 .posts-collapse {
