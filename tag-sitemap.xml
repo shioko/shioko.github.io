@@ -3,8 +3,8 @@
 
 
     <url>
-        <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2020-09-30T21:48:33.861Z</lastmod>
+        <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
+        <lastmod>2020-09-30T23:20:44.749Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -32,6 +32,13 @@
 
     <url>
         <loc>https://co5.me/tags/FF14/</loc>
+        <lastmod>2020-07-04T18:40:25.139Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
         <lastmod>2020-07-04T18:40:25.139Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -228,13 +235,6 @@
 
     <url>
         <loc>https://co5.me/tags/Tenshi/</loc>
-        <lastmod>2019-04-05T18:15:24.510Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
         <lastmod>2019-04-05T18:15:24.510Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
