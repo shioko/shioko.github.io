@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://co5.me/2020/201001-diary.html</loc>
+        <lastmod>2020-09-30T21:48:33.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://co5.me/2020/200925-diary.html</loc>
-        <lastmod>2020-09-24T20:50:59.985Z</lastmod>
+        <lastmod>2020-09-28T19:34:44.948Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
