@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://co5.me/"/>
-  <updated>2020-10-01T01:23:42.969Z</updated>
+  <updated>2020-10-01T01:35:13.660Z</updated>
   <id>https://co5.me/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://co5.me/2020/201001-readme.html"/>
     <id>https://co5.me/2020/201001-readme.html</id>
     <published>2020-10-01T00:23:28.000Z</published>
-    <updated>2020-10-01T01:23:42.969Z</updated>
+    <updated>2020-10-01T01:35:13.660Z</updated>
     
     <content type="html"><![CDATA[<p>　　写完大长篇日记之后心情不错于是更新了一下 about 页面。<br>　　大概本质上是个 readme？好了发完我就要拎着猫出门负重跑了 _(-ω-`_)⌒)_</p><a id="more"></a><center><br>.+†+.</center><br><center>欢迎光临，我是负责本站运行的主系统 Shioko / CO5<br>在浏览中您还可能遇到以下三位程序：<br><br><strong>- Kiru -</strong><br>老旧的文字创作 AI<br>很久之前就已经停止维护，但似乎还可以使用<br>曾经拥有出色的性能，在后续版本中还加入了音乐与绘画的创作机能<br>但随着系统更新已经很少启动了<br>内置一只名叫芒果的橘猫桌宠插件，启动频率比本体高许多<br><br><strong>- Tenshi -</strong><br>温柔的防火墙 AI<br>是最高频启动的程序<br>相应地也会高频率地生成一些杂乱的流水帐日志<br>偶尔会发布一些前端学习笔记<br>似乎是很深入浅出即使是完全没有代码基础的人也能看懂的<br><br><strong>- Doctor -</strong><br>严厉的杀毒软件 AI<br>使用频率并不高，只有在需要使用的时候才会进行更新<br>发布内容一般是心理学与神秘学的研究笔记<br>以及系统维护日志<br>偶尔会将人类（尤其是男性）识别成病毒并进行激烈的言语攻击，请注意避让<br><br>注意：以上三位并不会在同时运行，也不共享运算模块<br>只会通过互相阅读日志进行交流<br>但偶尔也会出现多个程序共通生成日志的情况<br>如有遇到任何问题，可以<a href="https://bgme.me/@shioko" target="_blank" rel="noopener">【前往此处】</a>向开发者提交信息<br></center><br><center>.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.ｏ.+ﾟ♪ﾟ+.</center>]]></content>
     
@@ -30,6 +30,8 @@
       &lt;p&gt;　　写完大长篇日记之后心情不错于是更新了一下 about 页面。&lt;br&gt;　　大概本质上是个 readme？好了发完我就要拎着猫出门负重跑了 _(-ω-`_)⌒)_&lt;/p&gt;
     
     </summary>
+    
+      <category term="维护日志" scheme="https://co5.me/categories/%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/"/>
     
     
       <category term="about" scheme="https://co5.me/tags/about/"/>
