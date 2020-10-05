@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【FF14】生产采集 490HQ 开荒笔记]]></title>
+    <url>%2F2020%2F201005-FF14.html</url>
+    <content type="text"><![CDATA[游戏里的宏位实在是不够了于是在 blog 上开一篇做笔记…… 开篇写点题外话，依稀记得当初刚挂上锤子图标的时候酸导问我：豆芽拿材料让你搓富婆衣你会搓吗？豆芽拿属性让你写宏你会写吗？ 现在我可以底气十足地回答我都会了，可是酸导转服去鸟区了，呜哇哇哇哇哇哇 :-cmx-02-: .+†+. 手法参考 NGA 帖子中什锦笔筒的 612cp 手法，在 garland tools 上查询后得到使用全 HQ 的 480 半成品得到的最低初始品质应当在 10742/46553 以上，于是在模拟器上调整得出以下结果： 宏#1/macrolock/ac 坚信 &lt;wait.3&gt;/ac 内静 &lt;wait.2&gt;/ac 掌握 &lt;wait.2&gt;/ac 崇敬 &lt;wait.2&gt;/ac 俭约 &lt;wait.2&gt;/ac 坯料制作 &lt;wait.3&gt;/ac 坯料制作 &lt;wait.3&gt;/ac 精密制作 &lt;wait.3&gt;/ac 坯料加工 &lt;wait.3&gt;/ac 俭约加工 &lt;wait.3&gt;/ac 改革 &lt;wait.2&gt;/ac 俭约加工 &lt;wait.3&gt;/ac 俭约加工 &lt;wait.3&gt;/echo 宏 #1 已完成！ &lt;se.1&gt; 宏#2/macrolock/ac 俭约加工 &lt;wait.3&gt;/ac 中级加工 &lt;wait.3&gt;/ac 观察 &lt;wait.3&gt;/ac 注视加工 &lt;wait.3&gt;/ac 改革 &lt;wait.2&gt;/ac 中级加工 &lt;wait.3&gt;/ac 秘诀 &lt;wait.3&gt;/ac 阔步 &lt;wait.2&gt;/ac 比尔格的祝福 &lt;wait.3&gt;/ac 模范制作 &lt;wait.3&gt;/echo 宏 #2 已完成！ &lt;se.14&gt; 需求属性 &amp; 变体 工序代码：1[&quot;muscleMemory&quot;,&quot;innerQuiet&quot;,&quot;manipulation&quot;,&quot;veneration&quot;,&quot;wasteNot&quot;,&quot;groundwork&quot;,&quot;groundwork&quot;,&quot;delicateSynthesis&quot;,&quot;preparatoryTouch&quot;,&quot;prudentTouch&quot;,&quot;innovation&quot;,&quot;prudentTouch&quot;,&quot;prudentTouch&quot;,&quot;prudentTouch&quot;,&quot;standardTouch&quot;,&quot;observe&quot;,&quot;focusedTouch&quot;,&quot;innovation&quot;,&quot;standardTouch&quot;,&quot;greatStrides&quot;,&quot;byregotsBlessing&quot;,&quot;carefulSynthesis&quot;] 最低需求属性是加工 2480，作业 2496，CP 590，吃个血五 HQ 就可以轻松达到，应该还有再优化的空间，但是反正我这篇东西应该也没人看所以只写个自己的宏就完事了【]]></content>
+      <categories>
+        <category>汐喵晒鱼</category>
+      </categories>
+      <tags>
+        <tag>FF14</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【-|梦蚀°】无日之黎 & 礼奈]]></title>
     <url>%2F2020%2F201002-killing-designer.html</url>
     <content type="text"><![CDATA[当你看到这篇东西说明我把之前梦蚀的设定都吃了。 我决定安心写超能力乱斗不搞什么社会派推理了，毕竟这世道已经烂得超出我能写出来的程度了，再操那份心干啥呢…… 【事实上还是保留了很多莫名其妙的影射内容，但是脑子不太清楚，等整理出来再说吧。 .+†+. 一些事前的设定变更：空集中的死者其一，田中茉乃→田中礼奈。从一个读着顺口的名字变成了一个有意义的名字，大约算是我最近几个月内心挣扎的成果【？ 然后教导主任从死者的小姨变成兼任养母，礼奈的母亲在她年幼的时候去世了，被教导主任收留（我忘记她叫什么了）所以也姓田中。另外田中老师一直未婚，所以礼奈实际上也是保留了母亲的姓氏。 这篇东西大概也是一些零碎的设定堆放，没什么明确的故事线，是比较松散的类似 kakera 的记录。 礼节 “礼奈啊……是个有乖巧懂事的好孩子，就像她的名字一样呢。” 成绩优异待人友善有些内向害羞却爱笑的，众人眼中的模范学生田中礼奈。大家都这么说，所以本人自己也这么觉得。 不是那种引以为豪骄傲自满的“觉得”，而是提心吊胆如履薄冰的“觉得”。 从出生起战战兢兢的十八年，永远维持着名列前茅的成绩，从不迟到从不早退从不违反校规——也从来没有朋友。 虽然也并不是孤身一人，一起上课一起吃饭的同学也是有的，只是大家似乎永远保持着礼节性的社交距离，不肯再接近一步。 礼节性的祝福：“礼奈这次又是年级第一，恭喜呀~” 礼节性的恭维：“真羡慕啊，我不挂科就谢天谢地了——” 以及礼节性的求助：“礼奈你是怎么考那么好的，下次教教我嘛~” 然而等礼奈认认真真整理好了笔记交给对方，或是提出要给对方补课，收到的回应却往往是：“诶我只是随口说说而已，礼奈你怎么当真了，像我这种笨脑子学不会的啦~” 不满和失望是肯定的，但又不能表现出来。 因为“礼奈才不可能因为这种小事斤斤计较”。 这大概算是，礼节性的自律吧。 濒死体验 亲爱的顾客您好，欢迎使用无日之黎催眠体验馆线上预约服务。本店提供的所有产品都通过催眠实现，并不会对您的日常生活造成任何影响，请您放心使用。 在预约前请填写如下信息确保您已经成年，本店不向未成年人提供服务。 您正在预约“死亡体验”项目，请选择您需要的死亡方式：☑自杀 ☐他杀 ☐意外死亡 请选择你需要的死亡痛苦程度：☐一般 ☐微痛 ☐无痛 ☑其它（请说明） 我们的工作人员将为您选择合适的死亡过程，如有需要，请在备注中填写。 请选择您需要的体验方式：☐到店体验 ☑远程邮寄催眠道具 请选择您需要的道具样式：☐食物 ☐饮料 ☑化妆品 ☐香薰 ☐其它（请说明） 是否需要一同邮寄说明书（说明书可以在本站在线查看）：☐是 ☑否 是否需要保密发货：☑是 ☐否 感谢您对无日之黎催眠体验馆的选择与信任，您的预约申请已提交，工作人员将在三个工作日内给予答复，请您耐心等待。]]></content>
@@ -1140,8 +1151,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>插件</tag>
         <tag>CSS</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -1545,8 +1556,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github pages</tag>
         <tag>next</tag>
+        <tag>github pages</tag>
         <tag>插件</tag>
         <tag>imgtag</tag>
       </tags>
@@ -1561,8 +1572,8 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-        <tag>插件</tag>
         <tag>CSS</tag>
+        <tag>插件</tag>
         <tag>ow</tag>
         <tag>imgtag</tag>
       </tags>
