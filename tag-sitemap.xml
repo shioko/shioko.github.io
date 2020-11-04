@@ -3,15 +3,22 @@
 
 
     <url>
-        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
-        <lastmod>2020-10-17T21:52:46.102Z</lastmod>
+        <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
+        <lastmod>2020-11-04T09:55:35.367Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://co5.me/tags/FF14/</loc>
-        <lastmod>2020-10-05T01:50:11.030Z</lastmod>
+        <lastmod>2020-11-04T07:42:21.851Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
+        <lastmod>2020-10-17T21:52:46.102Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,13 +45,6 @@
     </url>
 
     <url>
-        <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2020-10-01T00:16:08.716Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://co5.me/tags/%E4%B9%90%E8%B0%B1/</loc>
         <lastmod>2020-08-31T09:59:21.264Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -53,7 +53,7 @@
 
     <url>
         <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2020-07-04T18:40:25.139Z</lastmod>
+        <lastmod>2020-05-22T14:50:11.727Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
