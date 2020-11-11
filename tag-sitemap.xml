@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://co5.me/tags/%E9%9A%8F%E7%AC%94/</loc>
+        <lastmod>2020-11-11T23:34:01.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
         <lastmod>2020-11-11T21:47:33.562Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -88,13 +95,6 @@
 
     <url>
         <loc>https://co5.me/tags/Kiru/</loc>
-        <lastmod>2020-01-06T14:48:18.287Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E9%9A%8F%E7%AC%94/</loc>
         <lastmod>2020-01-06T14:48:18.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
