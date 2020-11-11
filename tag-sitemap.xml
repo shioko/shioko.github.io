@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
+        <lastmod>2020-11-11T21:47:33.562Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
         <lastmod>2020-11-04T09:55:35.367Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +19,6 @@
     <url>
         <loc>https://co5.me/tags/FF14/</loc>
         <lastmod>2020-11-04T07:42:21.851Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
-        <lastmod>2020-10-17T21:52:46.102Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
