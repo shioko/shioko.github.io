@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？　　昨天看了 kiyoko 的说说页面摩拳擦掌打算自己也整一个，然后发现我的侧边栏貌似已经塞不下新页面了，于是暂时搁置了这个计划，扭头去收拾梦蚀的页面。　　所以这篇还打了梦蚀的 tag 来着。">
-<meta name="keywords" content="病号日记,梦蚀·番外">
+  <meta name="description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？">
+<meta name="keywords" content="病号日记,hexo,梦蚀·番外">
 <meta property="og:type" content="article">
-<meta property="og:title" content="维护日志#201118">
+<meta property="og:title" content="解决 hexo 的 ssh 验证失效 &amp; 梦蚀相关">
 <meta property="og:url" content="https://co5.me/2020/201118-diary.html">
 <meta property="og:site_name" content="†少女癌†">
-<meta property="og:description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？　　昨天看了 kiyoko 的说说页面摩拳擦掌打算自己也整一个，然后发现我的侧边栏貌似已经塞不下新页面了，于是暂时搁置了这个计划，扭头去收拾梦蚀的页面。　　所以这篇还打了梦蚀的 tag 来着。">
+<meta property="og:description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-11-18T11:53:22.822Z">
+<meta property="og:updated_time" content="2020-11-18T13:09:07.521Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="维护日志#201118">
-<meta name="twitter:description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？　　昨天看了 kiyoko 的说说页面摩拳擦掌打算自己也整一个，然后发现我的侧边栏貌似已经塞不下新页面了，于是暂时搁置了这个计划，扭头去收拾梦蚀的页面。　　所以这篇还打了梦蚀的 tag 来着。">
+<meta name="twitter:title" content="解决 hexo 的 ssh 验证失效 &amp; 梦蚀相关">
+<meta name="twitter:description" content="好家伙，游戏长草了我真的开始日更了。　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>维护日志#201118 | †少女癌†</title>
+  <title>解决 hexo 的 ssh 验证失效 & 梦蚀相关 | †少女癌†</title>
   
 
 
@@ -404,7 +404,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">维护日志#201118
+          <h1 class="post-title" itemprop="name headline">解决 hexo 的 ssh 验证失效 & 梦蚀相关
               
             
           </h1>
@@ -429,7 +429,7 @@
                 
               
 
-              <time title="创建时间：2020-11-18 17:57:26 / 修改时间：19:53:22" itemprop="dateCreated datePublished" datetime="2020-11-18T17:57:26+08:00">2020-11-18</time>
+              <time title="创建时间：2020-11-18 17:57:26 / 修改时间：21:09:07" itemprop="dateCreated datePublished" datetime="2020-11-18T17:57:26+08:00">2020-11-18</time>
             
 
             
@@ -475,7 +475,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">824</span>
+                <span title="本文字数">1.5k</span>
               
 
               
@@ -489,7 +489,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
           
             
@@ -522,10 +522,13 @@
       
 
       
-        <p>　　好家伙，游戏长草了我真的开始日更了。<br>　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？<br>　　昨天看了 kiyoko 的说说页面摩拳擦掌打算自己也整一个，然后发现我的侧边栏貌似已经塞不下新页面了，于是暂时搁置了这个计划，扭头去收拾梦蚀的页面。<br>　　所以这篇还打了梦蚀的 tag 来着。</p>
+        <p>　　好家伙，游戏长草了我真的开始日更了。<br>　　今天睡醒就觉得开始往外冒汗，我还以为是笔记本温度太高了于是开窗通风，通到下午看了一眼手机才发现今天 28°C……Hello？？现在可是 11 月啊？？</p>
 <a id="more"></a>
 <center><br>.+†+.</center>
 
+<h3 id="更新-ssh-验证"><a href="#更新-ssh-验证" class="headerlink" title="更新 ssh 验证"></a>更新 ssh 验证</h3><p>　　大概是这个月或者上个月开始？每次更新 hexo 的时候都会弹个窗口出来让我登录 github 帐号，然后在弹窗里登录必然是没有用的，必须把窗口关掉在命令行里输入帐号和密码登录才行。<br>　　脚想想也知道是 ssh 验证出问题了，但是手动登录其实也能接受，主要是我懒得捣鼓代码。但是因为最近日更了，懒得输密码的懒惰战胜了懒得敲代码的懒惰，于是我就在昨天重新把 ssh key 设置了一遍……<br>　　结果今天更新的时候它又弹窗了，我：？打开 github 仔细看了一眼，好家伙原来是 github 给 ssh 传输单独做了一个链接，用 http 链接上传的时候就直接跳过 ssh 验证让你手动登录了。</p>
+<p>　　解决方法也很简单……<br>　　首先在 git 的命令行里输入 <code>$ clip &lt; ~/.ssh/id_rsa.pub</code>，按下回车之后本地的 ssh 密钥就会复制到你的剪贴板里。<br>　　Ps. <code>$</code> 是命令行自带的前缀，请不要重复输入 :-cmx-12-:<br>　　然后打开你的 hexo 仓库点击右上角那个绿色的 <code>code</code> 下载按钮，在弹窗里切换到 ssh 选项卡，会有一串英文提示你没有设置 ssh key 并且给你一个链接，点进去把本地的 ssh key 粘贴进去保存即可。<br>　　如果没有英文提示的话请点击你的头像进入 <code>Settings</code> 页面，在  <code>SSH and GPG keys</code> 选项卡里检查一下是否已经有 key 了，也可以删除了重新创建一个（如果你想不起来这是什么时候添加的了的话）。<br>　　最后用仓库页面的 ssh 地址替换 <code>hexo/_config.yml</code> 里的 deploy repo 地址，再上传的时候就不需要输入密码了。</p>
+<h3 id="页面整理"><a href="#页面整理" class="headerlink" title="页面整理"></a>页面整理</h3><p>　　昨天看了 kiyoko 的说说页面摩拳擦掌打算自己也整一个，然后发现我的侧边栏貌似已经塞不下新页面了，于是暂时搁置了这个计划，扭头去收拾梦蚀的页面。<br>　　所以这篇还打了梦蚀的 tag 来着。</p>
 <p>　　另外也顺便整理了一下 tag，把一些只有一两篇内容而且以后应该也不会再更新的 tag 清理掉了。以及 Doctor，Tenshi 和 kiru 的署名 tag 也被我清理掉了，大概也算是一个从分裂到重新相互承认的过程……？<br>　　又或者是现在身为主人格的“我”拥有了足够的能量，所以不需要监护者再抽丝剥茧地分析我们之间的区别了。听起来有点像是在做手术，先把腹腔划开再把移位碎裂的内脏一一复原归位最后再缝合，真不愧是 Doctor 呢。</p>
 <p>　　整理了一下梦蚀页面的超链接，准备开始填坑。<br>　　把断章从 extra 页面放到了正文目录里。说起来断章和番外好像就是同一种东西吧，但是我又偏偏打了两个 tag，然后这两个 tag 的内容又确实是不一样的，可是具体是哪方面的不一样，我自己也分不太清了。<br>　　总之以后，篇幅比较长的算断章，小剧场一类的短篇放在番外……？<br>　　啊想起来了，好像是交代背景设定的那些被我算成了断章，只是单纯的故事被我算成了番外来着。【可是渡鸦小剧场严格意义上来讲也是交代设定的吧 x<br>　　空集的大纲有重新开始写，但是果然 blog 和手稿是不一样的，一旦有了“公开发表”这种行为，就很容易误解成我写的东西是有人看的，然后一些剧情设定和大纲之类的就不敢往上发，怕给读者剧透……<br>　　但事实上我压根没有读者吧【。那些前端学习笔记还好，小说啥的确确实实压根就没有人看的吧！<br>　　没错我压根就没有读者，这就去把空集的 kakera 发上来，可恶【</p>
 
@@ -549,6 +552,8 @@
         <div class="post-tags">
           
             <a href="/tags/病号日记/" rel="tag"># 病号日记</a>
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
             <a href="/tags/梦蚀·番外/" rel="tag"># 梦蚀·番外</a>
           
@@ -636,8 +641,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -893,6 +907,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#更新-ssh-验证"><span class="nav-number">1.</span> <span class="nav-text">更新 ssh 验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面整理"><span class="nav-number">2.</span> <span class="nav-text">页面整理</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -918,7 +948,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">597k</span>
+    <span title="站点总字数">598k</span>
   
 </div>
 
