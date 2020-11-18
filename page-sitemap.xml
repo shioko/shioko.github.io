@@ -8,6 +8,27 @@
     </url>
     
     <url>
+        <loc>https://co5.me/dear-dreamer/</loc>
+        <lastmod>2020-11-18T09:56:50.165Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://co5.me/dear-dreamer/contents/</loc>
+        <lastmod>2020-11-18T09:48:01.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://co5.me/dear-dreamer/extra/</loc>
+        <lastmod>2020-11-18T09:40:27.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://co5.me/about/</loc>
         <lastmod>2020-10-01T01:21:40.570Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,27 +66,6 @@
     <url>
         <loc>https://co5.me/gallery/toybox/191230-gametest/</loc>
         <lastmod>2020-01-02T03:24:31.949Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://co5.me/dear-dreamer/</loc>
-        <lastmod>2019-04-08T16:20:48.487Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://co5.me/dear-dreamer/contents/</loc>
-        <lastmod>2019-04-07T20:05:29.467Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://co5.me/dear-dreamer/extra/</loc>
-        <lastmod>2019-04-07T20:03:59.463Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
