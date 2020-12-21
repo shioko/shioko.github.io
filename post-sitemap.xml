@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://co5.me/2020/201217-list.html</loc>
+        <lastmod>2020-12-21T16:40:14.942Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://co5.me/2020/201221-MTP.html</loc>
-        <lastmod>2020-12-21T13:43:24.203Z</lastmod>
+        <lastmod>2020-12-21T14:53:49.560Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://co5.me/2020/201216-poem.html</loc>
         <lastmod>2020-12-18T16:08:41.748Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://co5.me/2020/201217-list.html</loc>
-        <lastmod>2020-12-16T19:23:16.113Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
