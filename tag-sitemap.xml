@@ -4,7 +4,35 @@
 
     <url>
         <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2021-01-20T05:02:25.812Z</lastmod>
+        <lastmod>2021-01-25T01:04:42.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/%E6%B1%90%E7%90%86%E5%AD%A6/</loc>
+        <lastmod>2021-01-25T01:04:42.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/%E9%9A%8F%E7%AC%94/</loc>
+        <lastmod>2021-01-24T19:06:33.600Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/FF14/</loc>
+        <lastmod>2021-01-24T18:55:58.406Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
+        <lastmod>2021-01-24T18:22:44.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -59,20 +87,6 @@
     </url>
 
     <url>
-        <loc>https://co5.me/tags/%E6%BC%AB%E8%AF%84/</loc>
-        <lastmod>2020-12-29T02:47:57.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E9%9A%8F%E7%AC%94/</loc>
-        <lastmod>2020-12-29T02:47:57.385Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
         <lastmod>2020-12-26T23:42:25.710Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -115,14 +129,14 @@
     </url>
 
     <url>
-        <loc>https://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E7%95%AA%E5%A4%96/</loc>
+        <loc>https://co5.me/tags/hexo/</loc>
         <lastmod>2020-11-18T13:09:07.521Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://co5.me/tags/hexo/</loc>
+        <loc>https://co5.me/tags/%E6%A2%A6%E8%9A%80%C2%B7%E7%95%AA%E5%A4%96/</loc>
         <lastmod>2020-11-18T13:09:07.521Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -131,13 +145,6 @@
     <url>
         <loc>https://co5.me/tags/%E4%B9%90%E8%B0%B1/</loc>
         <lastmod>2020-11-18T09:09:44.582Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E6%B1%90%E7%90%86%E5%AD%A6/</loc>
-        <lastmod>2020-11-18T09:07:36.822Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -194,13 +201,6 @@
     <url>
         <loc>https://co5.me/tags/%E9%8A%80%E9%AD%82/</loc>
         <lastmod>2020-11-18T08:58:00.004Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/FF14/</loc>
-        <lastmod>2020-11-04T07:42:21.851Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

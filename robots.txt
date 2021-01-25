@@ -8,7 +8,5 @@ Allow: /message/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
-User-agent: baiduspider
-Disallow: /
 
 Sitemap: https://co5.me/sitemap.xml
