@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
+        <lastmod>2021-06-06T17:55:56.814Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://co5.me/tags/%E7%97%85%E5%8F%B7%E6%97%A5%E8%AE%B0/</loc>
         <lastmod>2021-05-08T23:11:35.112Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -82,13 +89,6 @@
     <url>
         <loc>https://co5.me/tags/styletag/</loc>
         <lastmod>2020-12-29T23:00:37.504Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://co5.me/tags/%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2020-12-26T23:42:25.710Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
